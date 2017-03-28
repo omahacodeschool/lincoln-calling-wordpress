@@ -85,4 +85,26 @@ img {
   background: #fff;
   color: pink; }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #21b0e6;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: lighter; }
+
+.navLink {
+  padding: 12px; }
+
+.navLink:hover {
+  background-color: #25bcac; }
+
+.navLink a {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: lighter; }
+
 /*# sourceMappingURL=style.css.map */
