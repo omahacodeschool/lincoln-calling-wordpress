@@ -87,21 +87,36 @@ img {
 
 .priceBoxContainer {
   color: white;
-  text-align: center;
-  letter-spacing: 4px; }
+  text-align: center; }
+
+.priceBox {
+  width: 250px;
+  background-color: #25bcac; }
 
 .priceBox__header {
   background-color: #21b0e6;
-  padding: 8px;
-  margin-bottom: 30px; }
+  padding: 8px; }
 
-.priceBox {
-  background-color: #25bcac; }
+.priceBox__options {
+  padding-top: 30px;
+  margin: 0px 40px; }
+
+.priceBox__option {
+  padding-bottom: 30px; }
 
 .priceBox__price {
   font-size: 34px; }
 
-.priceBox__option {
-  padding-bottom: 30px; }
+.priceBox__title {
+  font-size: 18px;
+  padding-top: 8px; }
+
+.priceBox__description {
+  padding-top: 4px; }
+
+.priceBox__price,
+.priceBox__title,
+.priceBox__header {
+  letter-spacing: 4px; }
 
 /*# sourceMappingURL=style.css.map */
