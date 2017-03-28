@@ -107,4 +107,14 @@ img {
   text-decoration: none;
   font-weight: lighter; }
 
+.buyTicketsButton a {
+  display: inline-block;
+  background-color: #21b0e6;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 3em; }
+
 /*# sourceMappingURL=style.css.map */
