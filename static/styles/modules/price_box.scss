@@ -1,0 +1,19 @@
+.priceBoxContainer{
+	color: white;
+	text-align: center;
+	letter-spacing: 4px;
+}
+.priceBox__header{
+	background-color: $blue;
+	padding: 8px;
+	margin-bottom: 30px;
+}
+.priceBox{
+	background-color: $aqua;
+}
+.priceBox__price{
+	font-size: 34px;
+}
+.priceBox__option{
+	padding-bottom: 30px;
+}

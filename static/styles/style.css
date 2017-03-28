@@ -85,4 +85,23 @@ img {
   background: #fff;
   color: pink; }
 
+.priceBoxContainer {
+  color: white;
+  text-align: center;
+  letter-spacing: 4px; }
+
+.priceBox__header {
+  background-color: #21b0e6;
+  padding: 8px;
+  margin-bottom: 30px; }
+
+.priceBox {
+  background-color: #25bcac; }
+
+.priceBox__price {
+  font-size: 34px; }
+
+.priceBox__option {
+  padding-bottom: 30px; }
+
 /*# sourceMappingURL=style.css.map */
