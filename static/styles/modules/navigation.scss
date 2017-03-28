@@ -1,0 +1,25 @@
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $blue;
+	color: $white;
+	font-family: $font-fam;
+	font-weight: lighter;
+}
+
+.navLink {
+	padding: 12px;
+}
+
+.navLink:hover {
+	background-color: $green;
+}
+
+.navLink a {
+	text-align: center;
+	color: $white;
+	font-family: $font-fam;
+	text-decoration: none;
+	font-weight: lighter;
+}
