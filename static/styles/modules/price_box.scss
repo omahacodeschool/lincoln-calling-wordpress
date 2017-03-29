@@ -1,0 +1,41 @@
+.priceBoxContainer{
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	margin: 0px 10px;
+}
+.priceBox{
+	width: 250px;
+	background-color: $green;
+	@include grid-column(4);
+	flex-grow: 1;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+.priceBox__header{
+	background-color: $blue;
+	padding: 8px;
+}
+.priceBox__options{
+	padding-top: 30px;
+	margin: 0px 40px;
+}
+.priceBox__option{
+	padding-bottom: 30px;
+}
+.priceBox__price{
+	font-size: 34px;
+}
+.priceBox__title{
+	font-size: 18px;
+	padding-top: 8px;
+}
+.priceBox__description{
+	padding-top: 4px;
+}
+.priceBox__price, 
+.priceBox__title, 
+.priceBox__header{
+	letter-spacing: 4px;
+}

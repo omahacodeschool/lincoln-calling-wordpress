@@ -85,6 +85,49 @@ img {
   background: #fff;
   color: pink; }
 
+.priceBoxContainer {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px; }
+
+.priceBox {
+  width: 250px;
+  background-color: #25bcac;
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  flex-grow: 1;
+  margin-left: 10px !important;
+  margin-right: 10px !important; }
+
+.priceBox__header {
+  background-color: #21b0e6;
+  padding: 8px; }
+
+.priceBox__options {
+  padding-top: 30px;
+  margin: 0px 40px; }
+
+.priceBox__option {
+  padding-bottom: 30px; }
+
+.priceBox__price {
+  font-size: 34px; }
+
+.priceBox__title {
+  font-size: 18px;
+  padding-top: 8px; }
+
+.priceBox__description {
+  padding-top: 4px; }
+
+.priceBox__price,
+.priceBox__title,
+.priceBox__header {
+  letter-spacing: 4px; }
+
 .navigation {
   display: flex;
   align-items: center;
