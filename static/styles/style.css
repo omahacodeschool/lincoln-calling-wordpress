@@ -85,6 +85,16 @@ img {
   background: #fff;
   color: pink; }
 
+.buyTicketsButton a {
+  display: inline-block;
+  background-color: #21b0e6;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 3em; }
+
 .priceBoxContainer {
   color: white;
   text-align: center;
@@ -150,14 +160,28 @@ img {
   text-decoration: none;
   font-weight: lighter; }
 
-.buyTicketsButton a {
-  display: inline-block;
-  background-color: #21b0e6;
-  font-family: sans-serif;
+.footerLinksContainer {
+  background-color: #260b0c; }
+  .footerLinksContainer::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.footerLink {
   color: #fff;
-  font-weight: bold;
-  padding: 20px 40px;
-  text-decoration: none;
-  font-size: 3em; }
+  letter-spacing: 4px;
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
+
+.footerLink__title {
+  font-size: 20px;
+  padding: 10px 0px; }
+
+.footerLink__links {
+  line-height: 20px; }
+
+.footerLink__sublinks {
+  padding-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */
