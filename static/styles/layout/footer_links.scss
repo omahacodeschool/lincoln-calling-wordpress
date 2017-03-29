@@ -1,6 +1,6 @@
 .footerLinksContainer{
   @include grid-container;
 }
-.footerLink{
+.footerLinks{
   @include grid-column(3);
 }
