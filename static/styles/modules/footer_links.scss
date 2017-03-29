@@ -1,23 +1,25 @@
 .footerLinksContainer{
 	background-color: $black;
-	@include grid-container;
 }
-.footerLink{
+
+.footerLink__title,
+.footerLink li,
+.footerLink__sublinks {
 	font-family: $font-fam;
 	font-weight: lighter;
 	color: $white;
 	letter-spacing: 4px;
-	line-height: 20px;
-	@include grid-column(3);
 }
+
+.footerLink li{	
+	line-height: 20px;
+}
+
 .footerLink__title{
-	font-family: $font-fam;
-	font-weight: lighter;
 	font-size: 20px;
 	padding: 10px 0px;
 }
+
 .footerLink__sublinks{
-	font-family: $font-fam;
-	font-weight: lighter;
 	padding-left: 30px;
 }
