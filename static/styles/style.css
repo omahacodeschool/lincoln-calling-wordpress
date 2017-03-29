@@ -217,4 +217,32 @@ img {
   color: #999999;
   font-weight: 600; }
 
+.footerLinksContainer {
+  background-color: #260b0c; }
+  .footerLinksContainer::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.footerLink {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  letter-spacing: 4px;
+  line-height: 20px;
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
+
+.footerLink__title {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  padding: 10px 0px; }
+
+.footerLink__sublinks {
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-left: 30px; }
+
 /*# sourceMappingURL=style.css.map */
