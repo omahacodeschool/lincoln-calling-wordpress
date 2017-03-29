@@ -170,6 +170,7 @@ img {
 .footerLink {
   color: #fff;
   letter-spacing: 4px;
+  line-height: 20px;
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px; }
@@ -177,9 +178,6 @@ img {
 .footerLink__title {
   font-size: 20px;
   padding: 10px 0px; }
-
-.footerLink__links {
-  line-height: 20px; }
 
 .footerLink__sublinks {
   padding-left: 30px; }

@@ -5,14 +5,12 @@
 .footerLink{
 	color: $white;
 	letter-spacing: 4px;
+	line-height: 20px;
 	@include grid-column(3);
 }
 .footerLink__title{
 	font-size: 20px;
 	padding: 10px 0px;
-}
-.footerLink__links{
-	line-height: 20px;
 }
 .footerLink__sublinks{
 	padding-left: 30px;
