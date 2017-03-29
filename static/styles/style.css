@@ -2498,18 +2498,8 @@ img {
   text-decoration: none;
   font-weight: lighter; }
 
-.searchContainer {
-  background-color: #260b0c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh; }
-
 .searchForm {
-  width: 100%;
-  display: flex;
-  align-items: center; }
+  display: flex; }
 
 .searchBar {
   height: 30px;
@@ -2525,7 +2515,8 @@ img {
   background-position: 50% 50%;
   width: 30px;
   height: 30px;
-  border-style: none; }
+  border-style: none;
+  cursor: pointer; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
