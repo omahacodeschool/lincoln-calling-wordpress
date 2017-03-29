@@ -1,16 +1,5 @@
-.searchContainer {
-	background-color: $black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
-}
-
 .searchForm {
-	width: 100%;
 	display: flex;
-	align-items: center;
 }
 
 .searchBar {
@@ -29,25 +18,11 @@
 	width: 30px;
 	height: 30px;
 	border-style: none;
+	cursor: pointer;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	letter-spacing: 2px;
-	color: $lightGray;
-	font-weight: 600;
-}
-::-moz-placeholder { /* Firefox 19+ */
-	letter-spacing: 2px;
-	color: $lightGray;
-	font-weight: 600;
-}
-:-ms-input-placeholder { /* IE 10+ */
-	letter-spacing: 2px;
-	color: $lightGray;
-	font-weight: 600;
-}
-:-moz-placeholder { /* Firefox 18- */
-	letter-spacing: 2px;
-	color: $lightGray;
-	font-weight: 600;
+@include placeholder {
+    letter-spacing: 2px;
+    color: $lightGray;
+    font-weight: 600;
 }
