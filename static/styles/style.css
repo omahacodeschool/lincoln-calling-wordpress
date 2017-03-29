@@ -52,6 +52,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+input[type=button] {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
 img {
   width: 100%; }
 
@@ -84,6 +88,16 @@ img {
 .artist__city {
   background: #fff;
   color: pink; }
+
+.buyTicketsButton a {
+  display: inline-block;
+  background-color: #21b0e6;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 3em; }
 
 .priceBoxContainer {
   color: white;
@@ -150,14 +164,32 @@ img {
   text-decoration: none;
   font-weight: lighter; }
 
-.buyTicketsButton a {
-  display: inline-block;
-  background-color: #21b0e6;
-  font-family: sans-serif;
-  color: #fff;
-  font-weight: bold;
-  padding: 20px 40px;
-  text-decoration: none;
-  font-size: 3em; }
+.searchContainer {
+  background-color: #260b0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; }
+
+.searchForm {
+  width: 25%;
+  display: flex;
+  align-items: center; }
+
+.searchBar {
+  height: 30px;
+  width: 95%;
+  padding-left: 10px;
+  border-style: none; }
+
+.searchSubmit {
+  background: url("../assets/images/magnifyingGlass.png") no-repeat;
+  background-color: #fff;
+  background-size: 22px;
+  background-position: 50% 50%;
+  width: 30px;
+  height: 30px;
+  border-style: none; }
 
 /*# sourceMappingURL=style.css.map */
