@@ -168,6 +168,8 @@ img {
     display: block; }
 
 .footerLink {
+  font-family: sans-serif;
+  font-weight: lighter;
   color: #fff;
   letter-spacing: 4px;
   line-height: 20px;
@@ -176,10 +178,14 @@ img {
   margin-left: 20px; }
 
 .footerLink__title {
+  font-family: sans-serif;
+  font-weight: lighter;
   font-size: 20px;
   padding: 10px 0px; }
 
 .footerLink__sublinks {
+  font-family: sans-serif;
+  font-weight: lighter;
   padding-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */
