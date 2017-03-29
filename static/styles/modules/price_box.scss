@@ -1,10 +1,17 @@
 .priceBoxContainer{
 	color: white;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	margin: 0px 10px;
 }
 .priceBox{
 	width: 250px;
 	background-color: $green;
+	@include grid-column(4);
+	flex-grow: 1;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
 }
 .priceBox__header{
 	background-color: $blue;
