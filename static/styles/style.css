@@ -2391,6 +2391,16 @@ img {
 @media (max-width: 600px) {
   .outerContainer {
     width: 100%; } }
+.footerLinksContainer::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.footerLink {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
+
 .artistsContainer::after {
   clear: both;
   content: "";
@@ -2469,7 +2479,6 @@ img {
 
 .navigation {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: #21b0e6;
   color: #fff;
@@ -2498,13 +2507,13 @@ img {
   height: 100vh; }
 
 .searchForm {
-  width: 25%;
+  width: 100%;
   display: flex;
   align-items: center; }
 
 .searchBar {
   height: 30px;
-  width: 95%;
+  width: 100%;
   padding-left: 12px;
   border-style: none;
   padding-top: 2px; }
@@ -2544,30 +2553,23 @@ img {
 
 .footerLinksContainer {
   background-color: #260b0c; }
-  .footerLinksContainer::after {
-    clear: both;
-    content: "";
-    display: block; }
 
-.footerLink {
+.footerLink__title,
+.footerLink li,
+.footerLink__sublinks {
   font-family: sans-serif;
   font-weight: lighter;
   color: #fff;
-  letter-spacing: 4px;
-  line-height: 20px;
-  width: calc(25% - 25px);
-  float: left;
-  margin-left: 20px; }
+  letter-spacing: 4px; }
+
+.footerLink li {
+  line-height: 20px; }
 
 .footerLink__title {
-  font-family: sans-serif;
-  font-weight: lighter;
   font-size: 20px;
   padding: 10px 0px; }
 
 .footerLink__sublinks {
-  font-family: sans-serif;
-  font-weight: lighter;
   padding-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */
