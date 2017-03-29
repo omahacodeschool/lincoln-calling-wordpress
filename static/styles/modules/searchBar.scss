@@ -1,0 +1,53 @@
+.searchContainer {
+	background-color: $black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.searchForm {
+	width: 25%;
+	display: flex;
+	align-items: center;
+}
+
+.searchBar {
+	height: 30px;
+	width: 95%;
+	padding-left: 12px;
+	border-style: none;
+	padding-top: 2px;
+}
+
+.searchSubmit {
+	background: url("../assets/images/magnifyingGlass.png") no-repeat;
+	background-color: $white;
+	background-size: 22px;
+	background-position: 50% 50%;
+	width: 30px;
+	height: 30px;
+	border-style: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	letter-spacing: 2px;
+	color: $lightGray;
+	font-weight: 600;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	letter-spacing: 2px;
+	color: $lightGray;
+	font-weight: 600;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	letter-spacing: 2px;
+	color: $lightGray;
+	font-weight: 600;
+}
+:-moz-placeholder { /* Firefox 18- */
+	letter-spacing: 2px;
+	color: $lightGray;
+	font-weight: 600;
+}
