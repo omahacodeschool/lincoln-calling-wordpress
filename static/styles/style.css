@@ -2493,9 +2493,13 @@ img {
 .priceBox__description {
   padding-top: 4px; }
 
-[class="priceBox__option"]:hover {
+.priceBox__option:hover {
   color: grey;
   cursor: pointer; }
+
+.priceBox__option.priceBox__sold:hover {
+  color: dimgray;
+  cursor: default; }
 
 .priceBox__sold {
   color: dimgray; }
