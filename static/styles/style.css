@@ -2409,6 +2409,11 @@ img {
   float: left;
   margin-left: 20px; }
 
+.socialLinks {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 185px; }
+
 .artistsContainer::after {
   clear: both;
   content: "";
@@ -2441,6 +2446,14 @@ img {
   padding: 20px 40px;
   text-decoration: none;
   font-size: 3em; }
+
+.hr {
+  text-align: center; }
+
+.hr .fa {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0px 10px; }
 
 .priceBoxContainer {
   background-color: #260b0c;
@@ -2574,5 +2587,12 @@ img {
   font-weight: lighter;
   color: #fff;
   letter-spacing: 4px; }
+
+.socialLinksContainer {
+  background-color: #260b0c; }
+
+.socialLinks .fa {
+  color: #fff;
+  font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */
