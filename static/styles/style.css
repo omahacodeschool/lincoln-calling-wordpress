@@ -2446,6 +2446,14 @@ img {
   text-decoration: none;
   font-size: 3em; }
 
+.hr {
+  text-align: center; }
+
+.hr .fa {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0px 10px; }
+
 .priceBoxContainer {
   background-color: #260b0c;
   text-align: center; }
