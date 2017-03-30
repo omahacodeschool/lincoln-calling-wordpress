@@ -2414,6 +2414,14 @@ img {
   justify-content: space-around;
   padding: 0px 185px; }
 
+.footerCredits {
+  display: flex;
+  justify-content: space-between; }
+
+.credit {
+  display: flex;
+  align-items: center; }
+
 .artistsContainer::after {
   clear: both;
   content: "";
@@ -2485,9 +2493,13 @@ img {
 .priceBox__description {
   padding-top: 4px; }
 
-[class="priceBox__option"]:hover {
+.priceBox__option:hover {
   color: grey;
   cursor: pointer; }
+
+.priceBox__option.priceBox__sold:hover {
+  color: dimgray;
+  cursor: default; }
 
 .priceBox__sold {
   color: dimgray; }
@@ -2594,5 +2606,19 @@ img {
 .socialLinks .fa {
   color: #fff;
   font-size: 2em; }
+
+.footerCredits img {
+  height: 60px;
+  width: 120px;
+  margin-left: 10px; }
+
+.credit {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #fff; }
+
+.footerCredits {
+  background-color: #260b0c; }
 
 /*# sourceMappingURL=style.css.map */

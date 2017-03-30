@@ -1,0 +1,16 @@
+.footerCredits img{
+	height: 60px;  
+	width: 120px;
+	margin-left: 10px;
+}
+
+.credit{
+	text-transform: uppercase;
+	font-family: $font-fam;
+	font-weight: lighter;
+	color: $white;
+}
+
+.footerCredits{
+	background-color: $black;
+}
