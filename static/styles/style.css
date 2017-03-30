@@ -2437,8 +2437,8 @@ img {
 .hr {
   text-align: center; }
 
-.fa {
-  font-size: 1.5em !important;
+.hr .fa {
+  font-size: 1.5em;
   color: #fff;
   padding: 0px 10px; }
 
