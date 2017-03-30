@@ -2409,6 +2409,10 @@ img {
   float: left;
   margin-left: 20px; }
 
+.socialLinks {
+  display: flex;
+  justify-content: space-around; }
+
 .artistsContainer::after {
   clear: both;
   content: "";
@@ -2574,5 +2578,14 @@ img {
   font-weight: lighter;
   color: #fff;
   letter-spacing: 4px; }
+
+.socialLinksContainer {
+  background-color: #260b0c;
+  width: 100%;
+  padding: 0px 185px; }
+
+.socialLinks .fa {
+  color: #fff;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
