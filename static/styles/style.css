@@ -2391,15 +2391,28 @@ img {
 @media (max-width: 600px) {
   .outerContainer {
     width: 100%; } }
-.footerLinksContainer::after {
+.l-footerCredits {
+  display: flex;
+  justify-content: space-between; }
+
+.l-credit {
+  display: flex;
+  align-items: center; }
+
+.l-footerLinksContainer::after {
   clear: both;
   content: "";
   display: block; }
 
-.footerLinks {
+.l-footerLinks {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px; }
+
+.l-socialLinks {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 185px; }
 
 .priceBoxContainer {
   display: flex; }
@@ -2408,19 +2421,6 @@ img {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px; }
-
-.socialLinks {
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 185px; }
-
-.footerCredits {
-  display: flex;
-  justify-content: space-between; }
-
-.credit {
-  display: flex;
-  align-items: center; }
 
 .artistsContainer::after {
   clear: both;
@@ -2579,6 +2579,20 @@ img {
   color: #999999;
   font-weight: 600; }
 
+.footerCredits img {
+  height: 60px;
+  width: 120px;
+  margin-left: 10px; }
+
+.credit {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #fff; }
+
+.footerCredits {
+  background-color: #260b0c; }
+
 .footerLinksContainer {
   background-color: #260b0c; }
 
@@ -2606,19 +2620,5 @@ img {
 .socialLinks .fa {
   color: #fff;
   font-size: 2em; }
-
-.footerCredits img {
-  height: 60px;
-  width: 120px;
-  margin-left: 10px; }
-
-.credit {
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-weight: lighter;
-  color: #fff; }
-
-.footerCredits {
-  background-color: #260b0c; }
 
 /*# sourceMappingURL=style.css.map */
