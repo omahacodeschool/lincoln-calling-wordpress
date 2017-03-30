@@ -1,0 +1,6 @@
+.priceBoxContainer{
+	display: flex;
+}
+.priceBox{
+	@include grid-column(4);
+}

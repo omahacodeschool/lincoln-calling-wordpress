@@ -2,24 +2,24 @@
 	background-color: $black;
 }
 
-.footerLink__title,
-.footerLink li,
-.footerLink__sublinks {
-	font-family: $font-fam;
-	font-weight: lighter;
-	color: $white;
-	letter-spacing: 4px;
-}
-
-.footerLink li{	
+.footerLinks li{	
 	line-height: 20px;
 }
 
-.footerLink__title{
+.footerLinks__title{
 	font-size: 20px;
 	padding: 10px 0px;
 }
 
-.footerLink__sublinks{
+.footerLinks__sublinks{
 	padding-left: 30px;
+}
+
+.footerLinks__title,
+.footerLinks li,
+.footerLinks__sublinks {
+	font-family: $font-fam;
+	font-weight: lighter;
+	color: $white;
+	letter-spacing: 4px;
 }
