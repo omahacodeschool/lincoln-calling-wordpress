@@ -1,12 +1,27 @@
 .imageContainer {
-	height: 250px;
-	background-size: auto 260px;
+	height: 220px;
+	background-size: auto 250px !important;
 }
 
 .artist__name {
 	font-family: $font-fam;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: $white;
+	background-color: $green;
+	font-style: italic;
+	padding: 35px 25px;
+	text-transform: uppercase;
 }
 
 .artist__city {
 	font-family: $font-fam;
+	font-size: 1.5em;
+	font-weight: lighter;
+	color: $white;
+	background-color: $blue;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 15px;
+	text-transform: uppercase;
 }
