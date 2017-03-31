@@ -2414,10 +2414,10 @@ img {
   justify-content: space-around;
   padding: 0px 185px; }
 
-.priceBoxContainer {
+.l-priceBoxContainer {
   display: flex; }
 
-.priceBox {
+.l-priceBox {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px; }
@@ -2463,11 +2463,8 @@ img {
   color: #fff;
   padding: 0px 10px; }
 
-.priceBoxContainer {
-  background-color: #260b0c;
-  text-align: center; }
-
 .priceBox {
+  text-align: center;
   background-color: #25bcac;
   color: #fff; }
 
@@ -2590,12 +2587,6 @@ img {
   font-weight: lighter;
   color: #fff; }
 
-.footerCredits {
-  background-color: #260b0c; }
-
-.footerLinksContainer {
-  background-color: #260b0c; }
-
 .footerLinks li {
   line-height: 20px; }
 
@@ -2613,9 +2604,6 @@ img {
   font-weight: lighter;
   color: #fff;
   letter-spacing: 4px; }
-
-.socialLinksContainer {
-  background-color: #260b0c; }
 
 .socialLinks .fa {
   color: #fff;
