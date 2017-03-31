@@ -2414,28 +2414,10 @@ img {
   justify-content: space-around;
   padding: 0px 185px; }
 
-.artistsContainer::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.artist {
-  width: calc(25% - 25px);
+.artistCardContainer {
+  width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px; }
-
-@media (max-width: 600px) {
-  .artist {
-    width: calc(50% - 30px);
-    float: left;
-    margin-left: 20px; } }
-.artist__name {
-  background: blue;
-  color: #fff; }
-
-.artist__city {
-  background: #fff;
-  color: pink; }
 
 .buyTicketsButton a {
   display: inline-block;
@@ -2587,6 +2569,16 @@ img {
   font-weight: lighter;
   color: #fff;
   letter-spacing: 4px; }
+
+.imageContainer {
+  height: 250px;
+  background-size: auto 260px; }
+
+.artist__name {
+  font-family: sans-serif; }
+
+.artist__city {
+  font-family: sans-serif; }
 
 .socialLinksContainer {
   background-color: #260b0c; }
