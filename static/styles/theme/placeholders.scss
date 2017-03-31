@@ -4,3 +4,11 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}  
 }
+
+@mixin stretch($width:true){
+	-webkit-transform:scale( $width, 1); /* Safari and Chrome */
+    -moz-transform:scale( $width, 1); /* Firefox */
+    -ms-transform:scale( $width, 1); /* IE 9 */
+    -o-transform:scale( $width, 1); /* Opera */
+    transform:scale( $width, 1);
+}
