@@ -2463,6 +2463,58 @@ img {
   color: #fff;
   padding: 0px 10px; }
 
+.passOption {
+  padding: 10px 0px;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #fff; }
+
+.passOption > * {
+  line-height: 20px; }
+
+.option__note, .option__date {
+  text-transform: capitalize;
+  font-weight: lighter; }
+
+.option__note {
+  font-style: italic;
+  font-size: 12px; }
+
+.option__date {
+  font-size: 15px; }
+
+.forSale:after {
+  content: "On sale now";
+  color: #25bcac; }
+
+.soldOut:after {
+  content: "Sold out";
+  color: dimgray; }
+
+.option__title {
+  color: #21b0e6; }
+
+.option__note {
+  color: #25bcac; }
+
+.passOption.soldOut * {
+  color: gray; }
+
+.fa.fa-minus {
+  -webkit-transform: scale(1.4, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.4, 1);
+  /* Firefox */
+  -ms-transform: scale(1.4, 1);
+  /* IE 9 */
+  -o-transform: scale(1.4, 1);
+  /* Opera */
+  transform: scale(1.4, 1);
+  padding: 0px 5px; }
+
 .priceBox {
   text-align: center;
   background-color: #25bcac;

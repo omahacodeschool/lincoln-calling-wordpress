@@ -1,64 +1,54 @@
-.priceBox{
-	text-align: center;
-	background-color: $green;
+.passOption{
+	padding: 10px 0px;
+	font-family: $font-fam;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 1px;
 	color: $white;
 }
 
-.priceBox__header{
-	background-color: $blue;
-	padding: 8px;
+.passOption > *{
+	line-height: 20px;
 }
 
-.priceBoxOptions{
-	padding-top: 30px;
-	margin: 0px 40px;
-}
-
-.priceBox__option{
-	padding-bottom: 30px;
-}
-
-.priceBox__price{
-	font-size: 34px;
-	font-style: italic;
-}
-
-.priceBox__title{
-	font-size: 16px;
-	padding-top: 10px;
-}
-
-.priceBox__description{
-	padding-top: 4px;
-}
-
-.priceBox__option:hover{
-	color: $hover-gray;
-	cursor: pointer;
-}
-
-.priceBox__option.priceBox__sold:hover{
-	color: $grayed-out;
-	cursor: default;
-}
-
-.priceBox__sold{
-	color: $grayed-out;
-}
-
-.priceBox__sold .priceBox__price{
-	text-decoration: line-through;
-}
-
-.priceBox__title, 
-.priceBox__header{
+.option__note, .option__date{
+	text-transform: capitalize;
 	font-weight: lighter;
 }
 
-.priceBox__price, 
-.priceBox__title, 
-.priceBox__header{
-	font-family: $font-fam;
-	text-transform: uppercase;
-	letter-spacing: 4px;
+.option__note{
+	font-style: italic;
+	font-size: 12px;
+}
+
+.option__date{
+	font-size: 15px;
+}
+
+.forSale:after{
+	content: "On sale now";
+	color: $green;
+}
+
+.soldOut:after{
+	content: "Sold out";
+	color: $grayed-out;
+}
+
+.option__title{
+	color: $blue;
+}
+
+.option__note{
+	color: $green;
+}
+
+.passOption.soldOut *{
+	color:gray;
+}
+
+.fa.fa-minus{
+	@include stretch(1.4);
+	padding: 0px 5px;
 }
