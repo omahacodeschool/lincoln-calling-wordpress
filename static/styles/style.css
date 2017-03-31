@@ -2391,33 +2391,41 @@ img {
 @media (max-width: 600px) {
   .outerContainer {
     width: 100%; } }
-.footerLinksContainer::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.footerLinks {
-  width: calc(25% - 25px);
-  float: left;
-  margin-left: 20px; }
-
-.priceBoxContainer {
+.l-priceBoxContainer {
   display: flex; }
 
-.priceBox {
+.l-priceBox {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px; }
-
-.socialLinks {
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 185px; }
 
 .artistCardContainer {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px; }
+
+.l-footerCredits {
+  display: flex;
+  justify-content: space-between; }
+
+.l-credit {
+  display: flex;
+  align-items: center; }
+
+.l-footerLinksContainer::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.l-footerLinks {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
+
+.l-socialLinks {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 185px; }
 
 .buyTicketsButton a {
   display: inline-block;
@@ -2437,11 +2445,8 @@ img {
   color: #fff;
   padding: 0px 10px; }
 
-.priceBoxContainer {
-  background-color: #260b0c;
-  text-align: center; }
-
 .priceBox {
+  text-align: center;
   background-color: #25bcac;
   color: #fff; }
 
@@ -2467,9 +2472,13 @@ img {
 .priceBox__description {
   padding-top: 4px; }
 
-[class="priceBox__option"]:hover {
+.priceBox__option:hover {
   color: grey;
   cursor: pointer; }
+
+.priceBox__option.priceBox__sold:hover {
+  color: dimgray;
+  cursor: default; }
 
 .priceBox__sold {
   color: dimgray; }
@@ -2549,27 +2558,6 @@ img {
   color: #999999;
   font-weight: 600; }
 
-.footerLinksContainer {
-  background-color: #260b0c; }
-
-.footerLinks li {
-  line-height: 20px; }
-
-.footerLinks__title {
-  font-size: 20px;
-  padding: 10px 0px; }
-
-.footerLinks__sublinks {
-  padding-left: 30px; }
-
-.footerLinks__title,
-.footerLinks li,
-.footerLinks__sublinks {
-  font-family: sans-serif;
-  font-weight: lighter;
-  color: #fff;
-  letter-spacing: 4px; }
-
 .imageContainer {
   height: 220px;
   background-size: auto 250px !important; }
@@ -2595,8 +2583,34 @@ img {
   padding: 15px;
   text-transform: uppercase; }
 
-.socialLinksContainer {
-  background-color: #260b0c; }
+.footerCredits img {
+  height: 60px;
+  width: 120px;
+  margin-left: 10px; }
+
+.credit {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #fff; }
+
+.footerLinks li {
+  line-height: 20px; }
+
+.footerLinks__title {
+  font-size: 20px;
+  padding: 10px 0px; }
+
+.footerLinks__sublinks {
+  padding-left: 30px; }
+
+.footerLinks__title,
+.footerLinks li,
+.footerLinks__sublinks {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  letter-spacing: 4px; }
 
 .socialLinks .fa {
   color: #fff;

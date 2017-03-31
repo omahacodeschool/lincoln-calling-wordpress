@@ -1,9 +1,5 @@
-.priceBoxContainer{
-	background-color: $black;
-	text-align: center;
-}
-
 .priceBox{
+	text-align: center;
 	background-color: $green;
 	color: $white;
 }
@@ -36,14 +32,18 @@
 	padding-top: 4px;
 }
 
-// If element is only 'this' class
-[class="priceBox__option"]:hover{
-	color: grey;
+.priceBox__option:hover{
+	color: $hover-gray;
 	cursor: pointer;
 }
 
+.priceBox__option.priceBox__sold:hover{
+	color: $grayed-out;
+	cursor: default;
+}
+
 .priceBox__sold{
-	color: dimgray;
+	color: $grayed-out;
 }
 
 .priceBox__sold .priceBox__price{
