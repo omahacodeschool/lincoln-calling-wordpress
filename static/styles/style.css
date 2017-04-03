@@ -2668,4 +2668,63 @@ img {
   color: #fff;
   font-size: 2em; }
 
+.featured {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 50px 34px;
+  position: relative; }
+
+.featured > hr {
+  border-color: #25bcac;
+  margin: 20px 100px; }
+
+.featured li {
+  padding: 12px 0px; }
+
+.featured__artist, .featured__article {
+  display: inline-block; }
+
+.fa-circle {
+  font-size: 16px;
+  padding: 0px 8px; }
+
+.featured > a {
+  display: block;
+  font-size: 18px;
+  padding-top: 30px;
+  text-decoration: none;
+  color: #21b0e6; }
+
+.featured__artist {
+  color: #21b0e6; }
+
+.featuredArtists .fa-circle {
+  color: #25bcac; }
+
+.featured__article {
+  color: #25bcac; }
+
+.featuredArticles .fa-circle {
+  color: #21b0e6; }
+
+.decor img {
+  width: 80px;
+  height: 80px;
+  position: absolute; }
+
+.top {
+  top: 0px; }
+
+.bottom {
+  bottom: 0px; }
+
+.left {
+  left: 0px; }
+
+.right {
+  right: 0px; }
+
 /*# sourceMappingURL=style.css.map */
