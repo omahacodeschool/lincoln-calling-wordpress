@@ -2668,4 +2668,40 @@ img {
   color: #fff;
   font-size: 2em; }
 
+.text {
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+  padding: 14px 0px; }
+
+.text__title {
+  color: #21b0e6;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.text__subtitle {
+  color: #25bcac;
+  font-style: italic;
+  text-transform: capitalize;
+  padding: 8px 0px; }
+
+.text__body {
+  color: #fff; }
+
+.fa.fa-minus {
+  -webkit-transform: scale(1.4, 0.4);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.4, 0.4);
+  /* Firefox */
+  -ms-transform: scale(1.4, 0.4);
+  /* IE 9 */
+  -o-transform: scale(1.4, 0.4);
+  /* Opera */
+  transform: scale(1.4, 0.4);
+  padding: 0px 5px; }
+
 /*# sourceMappingURL=style.css.map */
