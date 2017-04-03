@@ -1,7 +1,7 @@
 .buyTicketsButton a {
 	display: inline-block;
 	background-color: $blue;
-	font-family: $font-fam;
+	font-family: $font-fam-Bold;
 	color: $white;
 	font-weight: bold;
 	padding: 20px 40px;
@@ -10,12 +10,22 @@
 	font-size: 3em;
 }
 
-.buyNowButton a {
+.buyNowButton {
 	background-color: $green;
-	font-family: $font-fam;
+	font-family: $font-fam-SemiboldItalic;
 	color: $white;
 	padding: 20px 0px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 3em;
+	text-align: center;
+	letter-spacing: 4px;
+}
+
+.condensed {
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+    -moz-transform:scale(0.9,1); /* Firefox */
+    -ms-transform:scale(0.9,1); /* IE 9 */
+    -o-transform:scale(0.9,1); /* Opera */
+    transform:scale(0.9	,1); /* W3C */
 }

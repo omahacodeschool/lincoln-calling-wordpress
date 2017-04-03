@@ -6,6 +6,9 @@
   font-family: freightSansMedium;
   src: url("../../static/assets/fonts/Freight Sans Pro Medium.otf"); }
 @font-face {
+  font-family: freightSansSemiboldItalic;
+  src: url("../../static/assets/fonts/Freight Sans Pro Semibold Italic.otf"); }
+@font-face {
   font-family: freightSansBoldItalic;
   src: url("../../static/assets/fonts/Freight Sans Pro Bold Italic.otf"); }
 @font-face {
@@ -2396,6 +2399,10 @@ input[type=button] {
 img {
   width: 100%; }
 
+.l-fullWidth {
+  display: block;
+  width: 100%; }
+
 .outerContainer {
   width: 1000px;
   margin: 0 auto; }
@@ -2431,7 +2438,6 @@ img {
   justify-content: space-around;
   padding: 0px 185px; }
 
-<<<<<<< HEAD
 .l-modalOverlay {
   width: 100%;
   height: 100vh;
@@ -2479,7 +2485,7 @@ img {
 
 .modalIcon {
   margin: 10px 27px; }
-=======
+
 .l-priceBoxContainer {
   display: flex; }
 
@@ -2487,17 +2493,40 @@ img {
   width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px; }
->>>>>>> master
 
 .buyTicketsButton a {
   display: inline-block;
   background-color: #21b0e6;
-  font-family: freightSansMedium, sans-serif;
+  font-family: freightSansBold, sans-serif;
   color: #fff;
   font-weight: bold;
   padding: 20px 40px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 3em; }
+
+.buyNowButton {
+  background-color: #25bcac;
+  font-family: freightSansSemiboldItalic, sans-serif;
+  color: #fff;
+  padding: 20px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 4px; }
+
+.condensed {
+  -webkit-transform: scale(0.9, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(0.9, 1);
+  /* Firefox */
+  -ms-transform: scale(0.9, 1);
+  /* IE 9 */
+  -o-transform: scale(0.9, 1);
+  /* Opera */
+  transform: scale(0.9, 1);
+  /* W3C */ }
 
 .hr {
   text-align: center; }
@@ -2509,7 +2538,7 @@ img {
 
 .passOption {
   padding: 10px 0px;
-  font-family: sans-serif;
+  font-family: freightSansMedium, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -2558,58 +2587,6 @@ img {
   /* Opera */
   transform: scale(1.4, 1);
   padding: 0px 5px; }
-
-.priceBox {
-  text-align: center;
-  background-color: #25bcac;
-  color: #fff; }
-
-.priceBox__header {
-  background-color: #21b0e6;
-  padding: 8px; }
-
-.priceBoxOptions {
-  padding-top: 30px;
-  margin: 0px 40px; }
-
-.priceBox__option {
-  padding-bottom: 30px; }
-
-.priceBox__price {
-  font-size: 34px;
-  font-style: italic; }
-
-.priceBox__title {
-  font-size: 16px;
-  padding-top: 10px; }
-
-.priceBox__description {
-  padding-top: 4px; }
-
-.priceBox__option:hover {
-  color: grey;
-  cursor: pointer; }
-
-.priceBox__option.priceBox__sold:hover {
-  color: dimgray;
-  cursor: default; }
-
-.priceBox__sold {
-  color: dimgray; }
-
-.priceBox__sold .priceBox__price {
-  text-decoration: line-through; }
-
-.priceBox__title,
-.priceBox__header {
-  font-weight: lighter; }
-
-.priceBox__price,
-.priceBox__title,
-.priceBox__header {
-  font-family: freightSansMedium, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px; }
 
 .navigation {
   display: flex;
@@ -2730,7 +2707,6 @@ img {
   color: #fff;
   font-size: 2em; }
 
-<<<<<<< HEAD
 .modalOverlay {
   background-color: rgba(38, 11, 12, 0.7); }
 
@@ -2752,17 +2728,7 @@ img {
   color: #25bcac;
   font-style: italic;
   font-weight: bold;
-  font-size: 4em;
-  -webkit-transform: scale(0.9, 1);
-  /* Safari and Chrome */
-  -moz-transform: scale(0.9, 1);
-  /* Firefox */
-  -ms-transform: scale(0.9, 1);
-  /* IE 9 */
-  -o-transform: scale(0.9, 1);
-  /* Opera */
-  transform: scale(0.9, 1);
-  /* W3C */ }
+  font-size: 4em; }
 
 .closeModal {
   font-family: freightSansBold, sans-serif;
@@ -2838,9 +2804,9 @@ img {
   /* W3C */
   cursor: pointer;
   padding: 10px; }
-=======
+
 .featured {
-  font-family: sans-serif;
+  font-family: freightSansMedium, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -2902,7 +2868,7 @@ img {
   width: 600px;
   margin: 0px auto;
   text-align: center;
-  font-family: sans-serif;
+  font-family: freightSansMedium, sans-serif;
   font-weight: lighter;
   font-size: 22px;
   padding: 14px 0px; }
@@ -2914,7 +2880,7 @@ img {
   text-transform: uppercase; }
 
 .text__subtitle {
-  color: #fff;
+  color: #25bcac;
   font-style: italic;
   text-transform: capitalize;
   padding: 8px 0px; }
@@ -2933,6 +2899,57 @@ img {
   /* Opera */
   transform: scale(1.4, 0.4);
   padding: 0px 5px; }
->>>>>>> master
+
+.priceBox {
+  text-align: center;
+  background-color: #25bcac;
+  color: #fff; }
+
+.priceBox__header {
+  background-color: #21b0e6;
+  padding: 8px; }
+
+.priceBoxOptions {
+  padding-top: 30px;
+  margin: 0px 40px; }
+
+.priceBox__option {
+  padding-bottom: 30px; }
+
+.priceBox__price {
+  font-size: 34px;
+  font-style: italic; }
+
+.priceBox__title {
+  font-size: 16px;
+  padding-top: 10px; }
+
+.priceBox__description {
+  padding-top: 4px; }
+
+.priceBox__option:hover {
+  color: grey;
+  cursor: pointer; }
+
+.priceBox__option.priceBox__sold:hover {
+  color: dimgray;
+  cursor: default; }
+
+.priceBox__sold {
+  color: dimgray; }
+
+.priceBox__sold .priceBox__price {
+  text-decoration: line-through; }
+
+.priceBox__title,
+.priceBox__header {
+  font-weight: lighter; }
+
+.priceBox__price,
+.priceBox__title,
+.priceBox__header {
+  font-family: freightSansMedium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
 
 /*# sourceMappingURL=style.css.map */
