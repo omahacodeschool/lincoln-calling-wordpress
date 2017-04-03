@@ -40,11 +40,6 @@
 	position: absolute;
 }
 
-.l-spaceBetw {
-	display: flex;
-	justify-content: space-between;
-}
-
 .l-vertCenter {
 	display: flex;
 	align-items: center;
@@ -57,5 +52,9 @@
 .nextPrevButtons {
 	right: 20px;
 	bottom: -20px;
+}
+
+.modalIcon {
+	margin: 10px 27px;
 }
 

@@ -2473,10 +2473,6 @@ img {
 .l-posAbsolute {
   position: absolute; }
 
-.l-spaceBetw {
-  display: flex;
-  justify-content: space-between; }
-
 .l-vertCenter {
   display: flex;
   align-items: center; }
@@ -2487,6 +2483,9 @@ img {
 .nextPrevButtons {
   right: 20px;
   bottom: -20px; }
+
+.modalIcon {
+  margin: 10px 27px; }
 
 .buyTicketsButton a {
   display: inline-block;
@@ -2753,11 +2752,9 @@ img {
   background-color: #929292;
   border-radius: 100%;
   color: #fff;
-  font-size: 1.7em;
-  margin-top: 20px; }
+  font-size: 1.7em; }
 
 .modalSocialIcons {
-  padding-right: 80px;
   box-shadow: -20px -30px 30px #fff; }
 
 .iconOblong {
