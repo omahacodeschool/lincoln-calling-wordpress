@@ -1,0 +1,40 @@
+.l-featured{
+	position: relative;
+	text-align: center;
+}
+
+.l-inline-block{
+	display: inline-block;
+}
+
+.l-block{
+	display: block;
+}
+
+.l-pos-rel{
+	position: relative;
+}
+
+.l-pos-top-left{
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+.l-pos-top-right{
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+
+.l-pos-bottom-left{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.l-pos-bottom-right{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}

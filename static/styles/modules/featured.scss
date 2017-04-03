@@ -3,22 +3,16 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: bolder;
-	text-align: center;
 	padding: 50px 34px;
-	position: relative;
 }
 
-.featured > hr{
+.featuredDivider{
 	border-color: $green;
 	margin: 20px 100px;
 }
 
-.featured li{
+.featuredItem{
 	padding: 12px 0px;
-}
-
-.featured__artist, .featured__article{
-	display: inline-block;
 }
 
 .fa-circle{
@@ -26,14 +20,12 @@
 	padding: 0px 8px;
 }
 
-.featured > a{
-	display: block;
+.featuredFullLink{
 	font-size: 18px;
 	padding-top: 30px;
 	text-decoration: none;
 	color: $blue;
 }
-
 
 .featured__artist{
 	color: $blue;
@@ -51,24 +43,7 @@
 	color: $blue;
 }
 
-.decor img{
+.corner{
 	width: 80px; 
 	height: 80px;
-	position: absolute;
-}
-
-.top{
-	top:0px;
-}
-
-.bottom{
-	bottom: 0px;
-}
-
-.left{
-	left: 0px;
-}
-
-.right{
-	right: 0px;
 }

@@ -1,7 +1,5 @@
 .centerText{
-	width: 600px;
 	margin: 0px auto;
-	text-align: center;
 	font-family: $font-fam;
 	font-weight: lighter;
 	font-size: 22px;
@@ -26,7 +24,7 @@
 	color: $white;
 }
 
-.fa.fa-minus{
+.centerText .fa.fa-minus{
 	@include stretch(1.4, 0.4);
 	padding: 0px 5px;
 }

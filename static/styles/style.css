@@ -2419,6 +2419,43 @@ img {
   justify-content: space-around;
   padding: 0px 185px; }
 
+.l-centerText {
+  width: 600px;
+  text-align: center; }
+
+.l-featured {
+  position: relative;
+  text-align: center; }
+
+.l-inline-block {
+  display: inline-block; }
+
+.l-block {
+  display: block; }
+
+.l-pos-rel {
+  position: relative; }
+
+.l-pos-top-left {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.l-pos-top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+.l-pos-bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px; }
+
+.l-pos-bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px; }
+
 .l-priceBoxContainer {
   display: flex; }
 
@@ -2673,26 +2710,20 @@ img {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bolder;
-  text-align: center;
-  padding: 50px 34px;
-  position: relative; }
+  padding: 50px 34px; }
 
-.featured > hr {
+.featuredDivider {
   border-color: #25bcac;
   margin: 20px 100px; }
 
-.featured li {
+.featuredItem {
   padding: 12px 0px; }
-
-.featured__artist, .featured__article {
-  display: inline-block; }
 
 .fa-circle {
   font-size: 16px;
   padding: 0px 8px; }
 
-.featured > a {
-  display: block;
+.featuredFullLink {
   font-size: 18px;
   padding-top: 30px;
   text-decoration: none;
@@ -2710,48 +2741,33 @@ img {
 .featuredArticles .fa-circle {
   color: #21b0e6; }
 
-.decor img {
+.corner {
   width: 80px;
-  height: 80px;
-  position: absolute; }
+  height: 80px; }
 
-.top {
-  top: 0px; }
-
-.bottom {
-  bottom: 0px; }
-
-.left {
-  left: 0px; }
-
-.right {
-  right: 0px; }
-
-.text {
-  width: 600px;
+.centerText {
   margin: 0px auto;
-  text-align: center;
   font-family: sans-serif;
   font-weight: lighter;
   font-size: 22px;
   padding: 14px 0px; }
 
-.text__title {
+.centerText__title {
   color: #21b0e6;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase; }
 
-.text__subtitle {
-  color: #fff;
+.centerText__subtitle {
+  color: #25bcac;
   font-style: italic;
   text-transform: capitalize;
   padding: 8px 0px; }
 
-.text__body {
+.centerText__body {
   color: #fff; }
 
-.fa.fa-minus {
+.centerText .fa.fa-minus {
   -webkit-transform: scale(1.4, 0.4);
   /* Safari and Chrome */
   -moz-transform: scale(1.4, 0.4);
