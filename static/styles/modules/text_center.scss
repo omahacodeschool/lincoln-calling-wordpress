@@ -1,4 +1,4 @@
-.text{
+.centerText{
 	width: 600px;
 	margin: 0px auto;
 	text-align: center;
@@ -8,21 +8,21 @@
 	padding: 14px 0px;
 }
 
-.text__title{
+.centerText__title{
 	color: $blue;
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.text__subtitle{
+.centerText__subtitle{
 	color: $green;
 	font-style: italic;
 	text-transform: capitalize;
 	padding: 8px 0px;
 }
 
-.text__body{
+.centerText__body{
 	color: $white;
 }
 
