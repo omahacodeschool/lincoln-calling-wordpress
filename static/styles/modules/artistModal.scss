@@ -8,11 +8,14 @@
 }
 
 .modalWindow {
-	background-color: $white;
+	background-color: $white !important;
+	background: url("../../static/assets/images/ArtistModalBGGraphic.png");
+	background-repeat: no-repeat;
+	background-position-y: -258px;
 	height: 650px;
 	width: 100%;
 	z-index: 9999;
-	padding: 50px;
+	padding: 40px;
 }
 
 .modalContent {
@@ -25,28 +28,50 @@
 }
 
 .artistName h1 {
-	display: block;
-	font-family: $font-fam;
+	font-family: $font-fam-BoldItalic;
 	text-transform: uppercase;
 	color: $green;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 4em;
-	top: -7px;
+	top: -14px;
 	position: relative;
 }
 
+.closeModal {
+	display: block;
+	font-family: $font-fam-Bold;
+	color: $green;
+	font-size: 1.8em;
+	position: absolute;
+	top: -15px;
+	right: -10px;
+	padding: 15px;
+	cursor: pointer;
+}
+
 .artistInfo {
-	padding-left: 20px;
+	padding-left: 30px;
+	position: relative;
 }
 
 .artistSummary {
 	overflow: auto;
-	width: 500px;
-	height: 65%;
+	width: 530px;
+	height: 50%;
 	max-height: 450px;
-	color: $blue;
+	color: $modalBlue;
 	font-family: $font-fam;
+	line-height: 1.35em;
+	font-size: 1.15em;
+	padding-right: 30px;
+	padding-bottom: 50px;
+}
+
+.artistSummary a {
+	text-decoration: none;
+	color: $modalBlue;
+	cursor: pointer;
 }
 
 .artistSummary::-webkit-scrollbar-track
@@ -66,33 +91,29 @@
 	border: 2px solid #eaeaea;
 }
 
-.modalSocialIconsContainer {
-	display: flex;
-	flex-direction: column;
-	background: -webkit-linear-gradient(top,rgba(255,255,255,0), white 40%);
-	background: -o-linear-gradient(bottom,rgba(255,255,255,0), white 40%);
-	background: -moz-linear-gradient(bottom,rgba(255,255,255,0), white 40%);
-	background: linear-gradient(to bottom, rgba(255,255,255,0), white 40%);
-	position: relative;
-	top: -50px;
-}
-
-.push {
-	display: block;
-	height: 50px;
-}
-
 .modalIcon {
 	border: 7px solid #929292;
 	background-color: #929292;
 	border-radius: 100%;
 	color: $white;
 	font-size: 1.7em;
+	margin-top: 20px;
 }
 
 .modalSocialIcons {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 50px;
+	padding-right: 80px;
+	box-shadow: -20px -30px 30px $white;
+	position: relative;
+}
+
+.iconOblong {
+	font-size: 1.4em;
+	padding-top: 2px;
+}
+
+.nextPrevButtons {
+	
 }
 
