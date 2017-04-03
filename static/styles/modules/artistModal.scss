@@ -1,30 +1,20 @@
 .modalOverlay {
 	background-color: $modalOverlay;
-	width: 100%;
-	height: 100vh;
-	z-index: 9998;
-	display: flex;
-	align-items: center;
 }
 
 .modalWindow {
-	background-color: $white !important;
-	background: url("../../static/assets/images/ArtistModalBGGraphic.png");
-	background-repeat: no-repeat;
+	background: $white url("../../static/assets/images/ArtistModalBGGraphic.png") no-repeat;
 	background-position-y: -258px;
-	height: 650px;
-	width: 100%;
-	z-index: 9999;
 	padding: 40px;
-}
-
-.modalContent {
-	display: flex;
-	flex-direction: row;
 }
 
 .artistModalImage {
 	flex-grow: 1;
+	overflow: hidden;
+}
+
+.artistModalImage img {
+	width: 100%;
 }
 
 .artistName h1 {
@@ -34,25 +24,24 @@
 	font-style: italic;
 	font-weight: bold;
 	font-size: 4em;
-	top: -14px;
-	position: relative;
+
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+    -moz-transform:scale(0.9,1); /* Firefox */
+    -ms-transform:scale(0.9,1); /* IE 9 */
+    -o-transform:scale(0.9,1); /* Opera */
+    transform:scale(0.9	,1); /* W3C */
 }
 
 .closeModal {
-	display: block;
 	font-family: $font-fam-Bold;
 	color: $green;
 	font-size: 1.8em;
-	position: absolute;
-	top: -15px;
-	right: -10px;
 	padding: 15px;
 	cursor: pointer;
 }
 
 .artistInfo {
 	padding-left: 30px;
-	position: relative;
 }
 
 .artistSummary {
@@ -101,11 +90,8 @@
 }
 
 .modalSocialIcons {
-	display: flex;
-	justify-content: space-between;
 	padding-right: 80px;
 	box-shadow: -20px -30px 30px $white;
-	position: relative;
 }
 
 .iconOblong {
@@ -114,6 +100,22 @@
 }
 
 .nextPrevButtons {
-	
+	color: $green;
+	text-transform: uppercase;
+	font-family: $font-fam-Lighter;
+	font-size: 1.2em;
+}
+
+.fa.fa-caret-left,
+.fa.fa-caret-right {
+	color: $blue;
+	font-size: 1.3em;
+	-webkit-transform:scale(1.8,1); /* Safari and Chrome */
+    -moz-transform:scale(1.8,1); /* Firefox */
+    -ms-transform:scale(1.8,1); /* IE 9 */
+    -o-transform:scale(1.8,1); /* Opera */
+    transform:scale(1.8,1); /* W3C */
+    cursor: pointer;
+    padding: 10px;
 }
 

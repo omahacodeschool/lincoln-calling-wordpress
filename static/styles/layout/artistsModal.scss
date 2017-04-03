@@ -1,0 +1,61 @@
+.l-modalOverlay {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.l-modalWindow {
+	height: 650px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.l-modalContentWrapper {
+	max-width: 1500px;
+}
+
+.l-modalContent {
+	display: flex;
+	flex-direction: row;
+}
+
+.l-moveUp {
+	top: -14px;
+	left: -27px;
+}
+
+.l-closeX {
+	position: absolute;
+	top: -15px;
+	right: -10px;
+}
+
+.l-posRelative {
+	position: relative;
+}
+
+.l-posAbsolute {
+	position: absolute;
+}
+
+.l-spaceBetw {
+	display: flex;
+	justify-content: space-between;
+}
+
+.l-vertCenter {
+	display: flex;
+	align-items: center;
+}
+
+.nextPrevButtons span {
+	padding: 0px 20px;
+}
+
+.nextPrevButtons {
+	right: 20px;
+	bottom: -20px;
+}
+

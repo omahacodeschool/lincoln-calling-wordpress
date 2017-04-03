@@ -1,4 +1,9 @@
 @font-face {
+    font-family: freightSansLighter;
+    src: url("../../static/assets/fonts/Freight Sans Pro Book.otf");
+}
+
+@font-face {
     font-family: freightSansMedium;
     src: url("../../static/assets/fonts/Freight Sans Pro Medium.otf");
 }
@@ -13,6 +18,7 @@
     src: url("../../static/assets/fonts/Freight Sans Pro Bold.otf");
 }
 
+$font-fam-Lighter: freightSansLighter, sans-serif;
 $font-fam: freightSansMedium, sans-serif;
 $font-fam-BoldItalic: freightSansBoldItalic, sans-serif;
 $font-fam-Bold: freightSansBold, sans-serif;
