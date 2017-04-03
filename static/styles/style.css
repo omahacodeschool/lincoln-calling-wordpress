@@ -2403,14 +2403,6 @@ img {
 @media (max-width: 600px) {
   .outerContainer {
     width: 100%; } }
-.l-priceBoxContainer {
-  display: flex; }
-
-.l-priceBox {
-  width: calc(33.33333% - 26.66667px);
-  float: left;
-  margin-left: 20px; }
-
 .artistCardContainer {
   width: calc(33.33333% - 26.66667px);
   float: left;
@@ -2439,6 +2431,7 @@ img {
   justify-content: space-around;
   padding: 0px 185px; }
 
+<<<<<<< HEAD
 .l-modalOverlay {
   width: 100%;
   height: 100vh;
@@ -2486,6 +2479,15 @@ img {
 
 .modalIcon {
   margin: 10px 27px; }
+=======
+.l-priceBoxContainer {
+  display: flex; }
+
+.l-priceBox {
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px; }
+>>>>>>> master
 
 .buyTicketsButton a {
   display: inline-block;
@@ -2504,6 +2506,58 @@ img {
   font-size: 1.5em;
   color: #fff;
   padding: 0px 10px; }
+
+.passOption {
+  padding: 10px 0px;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #fff; }
+
+.passOption > * {
+  line-height: 20px; }
+
+.option__note, .option__date {
+  text-transform: capitalize;
+  font-weight: lighter; }
+
+.option__note {
+  font-style: italic;
+  font-size: 12px; }
+
+.option__date {
+  font-size: 15px; }
+
+.forSale:after {
+  content: "On sale now";
+  color: #25bcac; }
+
+.soldOut:after {
+  content: "Sold out";
+  color: dimgray; }
+
+.option__title {
+  color: #21b0e6; }
+
+.option__note {
+  color: #25bcac; }
+
+.passOption.soldOut * {
+  color: gray; }
+
+.fa.fa-minus {
+  -webkit-transform: scale(1.4, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.4, 1);
+  /* Firefox */
+  -ms-transform: scale(1.4, 1);
+  /* IE 9 */
+  -o-transform: scale(1.4, 1);
+  /* Opera */
+  transform: scale(1.4, 1);
+  padding: 0px 5px; }
 
 .priceBox {
   text-align: center;
@@ -2676,6 +2730,7 @@ img {
   color: #fff;
   font-size: 2em; }
 
+<<<<<<< HEAD
 .modalOverlay {
   background-color: rgba(38, 11, 12, 0.7); }
 
@@ -2783,5 +2838,101 @@ img {
   /* W3C */
   cursor: pointer;
   padding: 10px; }
+=======
+.featured {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  padding: 50px 34px;
+  position: relative; }
+
+.featured > hr {
+  border-color: #25bcac;
+  margin: 20px 100px; }
+
+.featured li {
+  padding: 12px 0px; }
+
+.featured__artist, .featured__article {
+  display: inline-block; }
+
+.fa-circle {
+  font-size: 16px;
+  padding: 0px 8px; }
+
+.featured > a {
+  display: block;
+  font-size: 18px;
+  padding-top: 30px;
+  text-decoration: none;
+  color: #21b0e6; }
+
+.featured__artist {
+  color: #21b0e6; }
+
+.featuredArtists .fa-circle {
+  color: #25bcac; }
+
+.featured__article {
+  color: #25bcac; }
+
+.featuredArticles .fa-circle {
+  color: #21b0e6; }
+
+.decor img {
+  width: 80px;
+  height: 80px;
+  position: absolute; }
+
+.top {
+  top: 0px; }
+
+.bottom {
+  bottom: 0px; }
+
+.left {
+  left: 0px; }
+
+.right {
+  right: 0px; }
+
+.text {
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+  padding: 14px 0px; }
+
+.text__title {
+  color: #21b0e6;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.text__subtitle {
+  color: #fff;
+  font-style: italic;
+  text-transform: capitalize;
+  padding: 8px 0px; }
+
+.text__body {
+  color: #fff; }
+
+.fa.fa-minus {
+  -webkit-transform: scale(1.4, 0.4);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.4, 0.4);
+  /* Firefox */
+  -ms-transform: scale(1.4, 0.4);
+  /* IE 9 */
+  -o-transform: scale(1.4, 0.4);
+  /* Opera */
+  transform: scale(1.4, 0.4);
+  padding: 0px 5px; }
+>>>>>>> master
 
 /*# sourceMappingURL=style.css.map */

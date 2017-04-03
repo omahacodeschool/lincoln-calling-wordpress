@@ -1,0 +1,64 @@
+.priceBox{
+	text-align: center;
+	background-color: $green;
+	color: $white;
+}
+
+.priceBox__header{
+	background-color: $blue;
+	padding: 8px;
+}
+
+.priceBoxOptions{
+	padding-top: 30px;
+	margin: 0px 40px;
+}
+
+.priceBox__option{
+	padding-bottom: 30px;
+}
+
+.priceBox__price{
+	font-size: 34px;
+	font-style: italic;
+}
+
+.priceBox__title{
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+.priceBox__description{
+	padding-top: 4px;
+}
+
+.priceBox__option:hover{
+	color: $hover-gray;
+	cursor: pointer;
+}
+
+.priceBox__option.priceBox__sold:hover{
+	color: $grayed-out;
+	cursor: default;
+}
+
+.priceBox__sold{
+	color: $grayed-out;
+}
+
+.priceBox__sold .priceBox__price{
+	text-decoration: line-through;
+}
+
+.priceBox__title, 
+.priceBox__header{
+	font-weight: lighter;
+}
+
+.priceBox__price, 
+.priceBox__title, 
+.priceBox__header{
+	font-family: $font-fam;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}

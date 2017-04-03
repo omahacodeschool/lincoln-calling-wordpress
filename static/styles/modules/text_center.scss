@@ -1,0 +1,32 @@
+.text{
+	width: 600px;
+	margin: 0px auto;
+	text-align: center;
+	font-family: $font-fam;
+	font-weight: lighter;
+	font-size: 22px;
+	padding: 14px 0px;
+}
+
+.text__title{
+	color: $blue;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.text__subtitle{
+	color: $green;
+	font-style: italic;
+	text-transform: capitalize;
+	padding: 8px 0px;
+}
+
+.text__body{
+	color: $white;
+}
+
+.fa.fa-minus{
+	@include stretch(1.4, 0.4);
+	padding: 0px 5px;
+}
