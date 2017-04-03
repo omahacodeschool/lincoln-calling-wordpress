@@ -2544,10 +2544,9 @@ img {
 
 .passOption {
   padding: 10px 0px;
-  font-family: freightSansMedium, sans-serif;
+  font-family: freightSansBold, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: bolder;
   letter-spacing: 1px;
   color: #fff; }
 
@@ -2822,10 +2821,9 @@ img {
   padding: 10px; }
 
 .featured {
-  font-family: freightSansMedium, sans-serif;
+  font-family: freightSansBold, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
-  font-weight: bolder;
   padding: 50px 34px; }
 
 .featuredDivider {
@@ -2871,7 +2869,7 @@ img {
 .centerText__title {
   color: #21b0e6;
   font-size: 30px;
-  font-weight: bold;
+  font-family: freightSansBold, sans-serif;
   text-transform: uppercase; }
 
 .centerText__subtitle {
