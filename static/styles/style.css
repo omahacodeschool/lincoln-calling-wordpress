@@ -2624,19 +2624,18 @@ img {
   color: gray; }
 
 .navigationList {
-  background-color: #21b0e6;
-  position: relative;
-  z-index: 1000; }
+  background-color: #21b0e6; }
 
-.navigationList a {
+.navigationList a,
+.navigationList li {
   color: #fff;
   font-family: freightSansLighter, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
-  background-color: #21b0e6;
   flex-grow: 1;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .navLink {
   padding: 12px; }
@@ -2658,15 +2657,25 @@ img {
   /* W3C */ }
 
 .subNavList {
-  background-color: #21b0e6;
+  display: flex;
+  justify-content: space-between;
+  background-color: #25bcac;
   position: absolute;
   z-index: -1;
   width: 100%;
-  top: 0; }
+  top: 0;
+  left: 0;
+  transition: top 0.5s; }
 
 .subNavList a {
   flex-grow: 1;
   text-align: center; }
+
+.subNavLink {
+  padding: 12px; }
+
+.subNavLink:hover {
+  background-color: #21b0e6; }
 
 .searchForm {
   display: flex; }
