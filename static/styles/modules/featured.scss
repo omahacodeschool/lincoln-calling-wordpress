@@ -1,8 +1,7 @@
 .featured{
 	font-size: 48px;
 	padding: 80px 0px;
-	color: $blue;
-	// @extend .header-bold;
+	@extend .header-bold-blue;
 }
 
 .featuredDivider{

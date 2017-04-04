@@ -1,14 +1,7 @@
 .passOption{
 	padding: 24px 0px;
 	font-size: 30px;
-	color: $blue;
-	// Should i use?
-	//
-	// @extend .header-bold
-	//
-	// or dump .header-bold into a class for each that uses it
-	//
-	// .{block}--header-bold
+	@extend .header-bold-blue;
 }
 
 .passOption__note, .passOption__date{
@@ -44,8 +37,9 @@
 	content: "Sold out";
 }
 
-.passOption--soldOut,
+.passOption--soldOut:after,
 .passOption--soldOut .passOption__date,
+.passOption--soldOut .passOption__title,
 .passOption--soldOut .passOption__note{
 	color:gray;
 }

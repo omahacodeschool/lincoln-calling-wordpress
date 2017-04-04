@@ -2542,8 +2542,7 @@ img {
 
 .passOption {
   padding: 24px 0px;
-  font-size: 30px;
-  color: #21b0e6; }
+  font-size: 30px; }
 
 .passOption__note, .passOption__date {
   text-transform: capitalize;
@@ -2579,8 +2578,9 @@ img {
 .passOption--soldOut:after {
   content: "Sold out"; }
 
-.passOption--soldOut,
+.passOption--soldOut:after,
 .passOption--soldOut .passOption__date,
+.passOption--soldOut .passOption__title,
 .passOption--soldOut .passOption__note {
   color: gray; }
 
@@ -2813,8 +2813,7 @@ img {
 
 .featured {
   font-size: 48px;
-  padding: 80px 0px;
-  color: #21b0e6; }
+  padding: 80px 0px; }
 
 .featuredDivider {
   border-color: #25bcac;
@@ -2849,7 +2848,6 @@ img {
   color: #fff; }
 
 .centerText__title {
-  color: #21b0e6;
   font-size: 44px; }
 
 .centerText__subtitle {
@@ -2870,9 +2868,10 @@ img {
   transform: scale(1.4, 0.4);
   padding: 0px 5px; }
 
-.header-bold {
+.header-bold-blue, .passOption, .featured, .centerText__title {
   font-family: freightSansBold, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #21b0e6; }
 
 .priceBox {
   text-align: center;
