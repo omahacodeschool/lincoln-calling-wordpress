@@ -1,0 +1,24 @@
+.centerText{
+	margin: 0px auto;
+	font-family: $font-fam-Lighter;
+	font-size: 30px;
+	padding: 30px 0px;
+	color: $white;
+}
+
+.centerText__title{
+	font-size: 44px;
+	@extend .header-bold-blue;
+}
+
+.centerText__subtitle{
+	color: $green;
+	font-style: italic;
+	text-transform: capitalize;
+	padding: 8px 0px;
+}
+
+.centerText .fa.fa-minus{
+	@include stretch(1.4, 0.4);
+	padding: 0px 5px;
+}

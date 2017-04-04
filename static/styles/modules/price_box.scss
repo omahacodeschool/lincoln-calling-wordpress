@@ -1,54 +1,45 @@
 .passOption{
-	padding: 10px 0px;
+	padding: 24px 0px;
+	font-size: 30px;
+	@extend .header-bold-blue;
+}
+
+.passOption__note, .passOption__date{
+	text-transform: capitalize;
 	font-family: $font-fam;
+}
+
+.passOption__note{
+	font-style: italic;
 	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: bolder;
-	letter-spacing: 1px;
+}
+
+.passOption__date{
+	font-size: 24px;
 	color: $white;
 }
 
-.passOption > *{
-	line-height: 20px;
+.passOption__note{
+	color: $green;
 }
 
-.option__note, .option__date{
-	text-transform: capitalize;
-	font-weight: lighter;
+.passOption .fa.fa-minus{
+	@include stretch(1.2,0.6);
+	padding: 0px 8px;
 }
 
-.option__note{
-	font-style: italic;
-	font-size: 12px;
-}
-
-.option__date{
-	font-size: 15px;
-}
-
-.forSale:after{
+.passOption--forSale:after{
 	content: "On sale now";
 	color: $green;
 }
 
-.soldOut:after{
+.passOption--soldOut:after{
 	content: "Sold out";
-	color: $grayed-out;
 }
 
-.option__title{
-	color: $blue;
-}
-
-.option__note{
-	color: $green;
-}
-
-.passOption.soldOut *{
+.passOption--soldOut:after,
+.passOption--soldOut .passOption__date,
+.passOption--soldOut .passOption__title,
+.passOption--soldOut .passOption__note{
 	color:gray;
-}
-
-.fa.fa-minus{
-	@include stretch(1.4);
-	padding: 0px 5px;
 }
