@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: freightSansSemiboldItalic;
+    src: url("../../static/assets/fonts/Freight Sans Pro Semibold Italic.otf");
+}
+
+@font-face {
     font-family: freightSansBoldItalic;
     src: url("../../static/assets/fonts/Freight Sans Pro Bold Italic.otf");
 }
@@ -20,5 +25,6 @@
 
 $font-fam-Lighter: freightSansLighter, sans-serif;
 $font-fam: freightSansMedium, sans-serif;
+$font-fam-SemiboldItalic: freightSansSemiboldItalic, sans-serif;
 $font-fam-BoldItalic: freightSansBoldItalic, sans-serif;
 $font-fam-Bold: freightSansBold, sans-serif;
