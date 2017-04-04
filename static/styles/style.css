@@ -2644,7 +2644,7 @@ img {
 .passOption--soldOut .passOption__date,
 .passOption--soldOut .passOption__title,
 .passOption--soldOut .passOption__note {
-  color: gray; }
+  color: #808080; }
 
 .navigation {
   background-color: #21b0e6; }
@@ -2883,7 +2883,7 @@ img {
 
 .featuredDivider {
   border-color: #25bcac;
-  margin: 40px 100px; }
+  margin: 40px 70px; }
 
 .featuredItem {
   padding: 12px 0px; }
@@ -2921,16 +2921,16 @@ img {
   padding: 8px 0px; }
 
 .centerText .fa.fa-minus {
-  -webkit-transform: scale(1.4, 0.4);
+  -webkit-transform: scale(1.2, 0.6);
   /* Safari and Chrome */
-  -moz-transform: scale(1.4, 0.4);
+  -moz-transform: scale(1.2, 0.6);
   /* Firefox */
-  -ms-transform: scale(1.4, 0.4);
+  -ms-transform: scale(1.2, 0.6);
   /* IE 9 */
-  -o-transform: scale(1.4, 0.4);
+  -o-transform: scale(1.2, 0.6);
   /* Opera */
-  transform: scale(1.4, 0.4);
-  padding: 0px 5px; }
+  transform: scale(1.2, 0.6);
+  padding: 0px 8px; }
 
 .header-bold-blue, .passOption, .featured, .centerText__title {
   font-family: freightSansBold, sans-serif;
