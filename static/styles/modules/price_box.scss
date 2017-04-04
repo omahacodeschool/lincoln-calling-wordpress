@@ -1,7 +1,7 @@
 .passOption{
 	padding: 24px 0px;
 	font-size: 30px;
-	@extend .header-bold-blue;
+	@include header-bold-blue;
 }
 
 .passOption__note, .passOption__date{

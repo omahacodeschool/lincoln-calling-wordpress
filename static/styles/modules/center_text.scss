@@ -8,7 +8,7 @@
 
 .centerText__title{
 	font-size: 44px;
-	@extend .header-bold-blue;
+	@include header-bold-blue;
 }
 
 .centerText__subtitle{
