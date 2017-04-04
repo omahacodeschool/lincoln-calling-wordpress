@@ -1,6 +1,8 @@
 .l-featured{
+	width: 870px;
 	position: relative;
 	text-align: center;
+	// @extend .l-text-center;
 }
 
 .l-inline-block{
@@ -9,10 +11,6 @@
 
 .l-block{
 	display: block;
-}
-
-.l-pos-rel{
-	position: relative;
 }
 
 .l-pos-top-left{
