@@ -1,60 +1,50 @@
 .navigationList {
 	background-color: $blue;
-	position: relative;
 }
 
-.navigationList li {
+.navigationList a {
 	color: $white;
 	font-family: $font-fam-Lighter;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	flex-grow: 1;
 	text-align: center;
-	position: relative;
+	display: inline-block;
+	padding: 12px;
 }
 
 .navLink {
 	display: flex;
-	position: relative;
-	z-index: 1000;
-}
-
-.navLink a {
-	display: inline-block;
-	padding: 12px;
 	flex-grow: 1;
-	z-index: 1000;
 }
 
-.navLink a:hover {
+.navigationList a:hover {
 	background-color: $green;
 }
 
 .subNavList {
 	background-color: $green;
-	position: fixed;
-	z-index: -1;
+	position: absolute;
 	width: 100%;
-	top: 0;
 	left: 0;
-	transition: top 0.5s;
+	visibility: visible;
+	transition: maxHeight 0.5s;
+}
+
+.subNavLink {
+	display: flex;
+	justify-content: space-around;
 }
 
 .subNavLink a {
-	flex-grow: 1;
-	text-align: center;
-	padding: 12px;
+	background-color: $green;
 }
 
 .subNavLink a:hover {
 	background-color: $blue;
 }
 
-.hasDropDown {
-	position: relative;
-}
-
-.fa-envelope-o {
+.newsletterLink {
 	padding-right: 10px;
 
 	-webkit-transform:scale(1.3,1); /* Safari and Chrome */
