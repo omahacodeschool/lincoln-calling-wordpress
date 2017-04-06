@@ -2787,7 +2787,7 @@ body, html {
   border-style: none;
   padding-top: 2px; }
 
-.searchSubmit {
+input[type=button].searchSubmit {
   background: url("../assets/images/magnifyingGlass.png") no-repeat;
   background-color: #fff;
   background-size: 22px;
@@ -2796,6 +2796,9 @@ body, html {
   height: 30px;
   border-style: none;
   cursor: pointer; }
+
+.searchSubmit:focus {
+  outline: none; }
 
 ::-webkit-input-placeholder {
   letter-spacing: 2px;
@@ -2872,7 +2875,7 @@ body, html {
   text-transform: uppercase; }
 
 .footerLinks__title,
-.footerLinks li,
+.footerLinks li a,
 .footerLinks__sublinks {
   font-family: freightSansLighter, sans-serif;
   font-weight: lighter;
