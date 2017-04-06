@@ -2,15 +2,16 @@
 	padding-bottom: 150px;
 }
 
-.footerCredits img{
-	height: 44px;  
-	width: 110px;
-	margin-left: 10px;
+.footerCredits img{  
+	height: 50px;
+	width: auto;
+	margin-left: 20px;
 }
 
 .credit{
 	text-transform: uppercase;
-	font-family: $font-fam;
+	font-family: $font-fam-Lighter;
 	font-weight: lighter;
 	color: $white;
+	font-size: 1.4em;
 }
