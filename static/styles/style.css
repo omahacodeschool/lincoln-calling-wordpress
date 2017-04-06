@@ -2602,6 +2602,17 @@ img {
   color: #fff;
   padding: 0px 10px; }
 
+body {
+  width: 1000px;
+  margin: 0px auto;
+  background-color: #2f0000; }
+
+.header {
+  width: 100%; }
+
+.header img {
+  width: 100%; }
+
 .passOption {
   padding: 24px 0px;
   font-size: 30px;
@@ -2948,7 +2959,7 @@ img {
 
 .slideShow {
   background-color: #21b0e6;
-  color: #260b0c; }
+  color: #2f0000; }
 
 .slideShowImages {
   overflow: hidden; }
