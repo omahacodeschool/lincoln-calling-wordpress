@@ -7,7 +7,6 @@
 }
 .l-widgets__slideshow{
 	@include grid-column(8);
-	height: 535px;
 }
 .l-widgets__spotify{
 	@include grid-column(4);

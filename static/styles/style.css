@@ -2497,9 +2497,10 @@ body, html {
   text-align: center; }
 
 .l-featured {
-  width: 870px;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px; }
 
 .l-inline-block {
   display: inline-block; }
@@ -2545,8 +2546,7 @@ body, html {
 .l-widgets__slideshow {
   width: calc(66.66667% - 33.33333px);
   float: left;
-  margin-left: 20px;
-  height: 535px; }
+  margin-left: 20px; }
 
 .l-widgets__spotify {
   width: calc(33.33333% - 26.66667px);
@@ -2562,13 +2562,28 @@ body, html {
   float: left;
   margin-left: 20px; }
 
+.buyTicketsDecor {
+  position: relative;
+  height: 600px;
+  background-image: url("../assets/images/buyNowDecor.png");
+  background-size: 100% 100%;
+  padding: 20px 0px; }
+
+.buyTicketsDecor .buyTicketsButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-66%);
+  width: 100%; }
+
 .buyTicketsButton a {
   display: inline-block;
   background-color: #21b0e6;
+  text-align: center;
+  width: 100%;
   font-family: freightSansBold, sans-serif;
   color: #fff;
   font-weight: bold;
-  padding: 20px 40px;
+  padding: 14px 40px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 3em; }
@@ -3080,9 +3095,6 @@ body, html {
 .widgets__youtube {
   margin-bottom: 70px;
   background-color: #21b0e6; }
-
-.widgets__slideshow {
-  background-color: #25bcac; }
 
 .widgets__spotify {
   background-color: #808080; }
