@@ -2957,7 +2957,7 @@ img {
   display: flex;
   position: relative;
   height: 250px;
-  transition: right 1s linear; }
+  transition: right 300ms; }
 
 .slideShowControls {
   text-align: center;
@@ -2967,7 +2967,7 @@ img {
   padding: 0px 10px;
   font-size: 18px; }
 
-.slideShowArticles a {
+.slideShow__article {
   font-family: freightSansBold, sans-serif;
   font-size: 24px;
   display: block;
