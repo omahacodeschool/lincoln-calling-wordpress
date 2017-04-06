@@ -15,7 +15,7 @@
 	display: flex;
 	position: relative;
 	height: 250px;
-	transition: right 0.2s;
+	transition: right 300ms;
 }
 
 .slideShowControls{
@@ -28,7 +28,7 @@
 	font-size: 18px;
 }
 
-.slideShow__article a{
+.slideShow__article{
 	font-family: $font-fam-Bold;
 	font-size: 24px;
 	display: block;
