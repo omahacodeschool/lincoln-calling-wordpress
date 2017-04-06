@@ -2998,6 +2998,46 @@ body {
   transform: scale(1.2, 0.6);
   padding: 0px 8px; }
 
+.fake_container {
+  width: calc(66.66667% - 33.33333px);
+  float: left;
+  margin-left: 20px; }
+
+.slideShow {
+  background-color: #21b0e6;
+  color: #2f0000; }
+
+.slideShowImages {
+  overflow: hidden; }
+
+.imageStrip {
+  display: flex;
+  position: relative;
+  height: 250px;
+  transition: right 300ms; }
+
+.slideShowControls {
+  text-align: center;
+  padding: 16px 0px; }
+
+.slideShow .fa.fa-circle {
+  padding: 0px 10px;
+  font-size: 18px; }
+
+.slideShow__article {
+  font-family: freightSansBold, sans-serif;
+  font-size: 24px;
+  display: block;
+  text-transform: uppercase;
+  padding: 8px 40px; }
+
+.slideShowArticles {
+  padding-bottom: 16px; }
+
+.slideShow__article--hover,
+.slideShow__control--hover {
+  color: #fff; }
+
 .widgets {
   padding: 50px 0px; }
 
