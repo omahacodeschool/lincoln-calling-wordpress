@@ -16,12 +16,14 @@ window.addEventListener("load", function(){
 	const controls = document.getElementsByClassName("slideShowControls")[0].children;
 	const links = document.getElementsByClassName("slideShowArticles")[0].children;
 
-	container.addEventListener("mouseover", clear);
-	container.addEventListener("mouseout", intSet);
-
 	var currentPos = 0;
 	var state = 0;
 	var slideshow;
+
+	container.addEventListener("mouseover", clear);
+	container.addEventListener("mouseout", intSet);
+	addUserHighlights();
+	addUserUnhighlight();
 
 	intSet();
 
@@ -80,14 +82,18 @@ window.addEventListener("load", function(){
 		clearInterval(slideshow);		
 	}
 
-	for (var i=0; i < links.length; i++){
-		links[i].addEventListener("mouseover", userToggle);
-		controls[i].addEventListener("mouseover", userToggle);
+	function addUserHighlights(){
+		for (var i=0; i < links.length; i++){
+			links[i].addEventListener("mouseover", userToggle);
+			controls[i].addEventListener("mouseover", userToggle);
+		}
 	}
 
-	for (var i=0; i < links.length; i++){
-		links[i].addEventListener("mouseout", untoggle);
-		controls[i].addEventListener("mouseout", untoggle);
+	function addUserUnhighlight(){
+		for (var i=0; i < links.length; i++){
+			links[i].addEventListener("mouseout", untoggle);
+			controls[i].addEventListener("mouseout", untoggle);
+		}
 	}
 
 	function userToggle(el){
