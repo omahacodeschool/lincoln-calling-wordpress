@@ -28,7 +28,22 @@
 	color: $green;
 }
 
-.corner{
+.corner-top-left{
+	@include rotate(90deg);
+}
+
+.corner-top-right{
+	@include rotate(180deg);
+}
+
+.corner-bottom-right{
+	@include rotate(270deg);
+}
+
+.corner-top-left,
+.corner-top-right,
+.corner-bottom-left,
+.corner-bottom-right{
 	width: 80px; 
 	height: 80px;
 }

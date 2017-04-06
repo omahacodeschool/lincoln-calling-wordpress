@@ -2448,8 +2448,7 @@ body, html {
 
 .l-socialLinks {
   display: flex;
-  justify-content: space-around;
-  padding: 0px 185px; }
+  justify-content: space-around; }
 
 .l-modalOverlay {
   width: 100%;
@@ -2776,7 +2775,10 @@ body, html {
   /* W3C */ }
 
 .searchForm {
-  display: flex; }
+  display: flex;
+  width: 350px;
+  margin: auto;
+  padding-top: 100px; }
 
 .searchBar {
   height: 30px;
@@ -2841,9 +2843,12 @@ body, html {
   padding: 15px;
   text-transform: uppercase; }
 
+.footerCredits {
+  padding-bottom: 150px; }
+
 .footerCredits img {
-  height: 60px;
-  width: 120px;
+  height: 44px;
+  width: 110px;
   margin-left: 10px; }
 
 .credit {
@@ -2873,6 +2878,9 @@ body, html {
 .socialLinks .fa {
   color: #fff;
   font-size: 2em; }
+
+.socialLinks {
+  padding: 70px 185px; }
 
 .modalOverlay {
   background-color: rgba(38, 11, 12, 0.7); }
@@ -2998,7 +3006,25 @@ body, html {
 .featured__article {
   color: #25bcac; }
 
-.corner {
+.corner-top-left {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.corner-top-right {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.corner-bottom-right {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.corner-top-left,
+.corner-top-right,
+.corner-bottom-left,
+.corner-bottom-right {
   width: 80px;
   height: 80px; }
 
