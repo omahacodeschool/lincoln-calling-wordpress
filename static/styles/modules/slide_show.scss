@@ -15,16 +15,8 @@
 	display: flex;
 	position: relative;
 	height: 250px;
-	transition: right 0.5s linear;
+	transition: right 0.2s;
 }
-
-// .imageStrip--image-1{ right: 0}
-
-// .imageStrip--image-2{ right: 0}
-
-// .imageStrip--image-3{ right: 0}
-
-// .imageStrip--image-4{ right: 0}
 
 .slideShowControls{
 	text-align: center;
@@ -36,7 +28,7 @@
 	font-size: 18px;
 }
 
-.slideShowArticles a{
+.slideShow__article a{
 	font-family: $font-fam-Bold;
 	font-size: 24px;
 	display: block;

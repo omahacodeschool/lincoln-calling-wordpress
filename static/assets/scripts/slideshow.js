@@ -30,15 +30,11 @@ window.addEventListener("load", function(){
 	}
 
 	function checkPos(){
-		if (currentPos >= maxPos){
-			currentPos = 0;
-		}
+		if (currentPos >= maxPos){ currentPos = 0 };
 	}
 
 	function checkstate(){
-		if (state >= 4){
-			state = 0;
-		}
+		if (state >= 4){ state = 0 };
 	}
 
 	function moveControl(){
@@ -54,7 +50,6 @@ window.addEventListener("load", function(){
 	}
 
 	function clear(){
-
 		clearInterval(slideshow);		
 	}
 
