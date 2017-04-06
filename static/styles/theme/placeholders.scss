@@ -12,3 +12,9 @@
     -o-transform:scale( $width, $height); /* Opera */
     transform:scale( $width, $height);
 }
+
+@mixin header-bold-blue{
+	font-family: $font-fam-Bold;
+	text-transform: uppercase;
+	color: $blue;
+}

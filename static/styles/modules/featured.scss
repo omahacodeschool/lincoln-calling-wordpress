@@ -1,12 +1,12 @@
 .featured{
 	font-size: 48px;
 	padding: 80px 0px;
-	@extend .header-bold-blue;
+	@include header-bold-blue;
 }
 
 .featuredDivider{
 	border-color: $green;
-	margin: 40px 100px;
+	margin: 40px 70px;
 }
 
 .featuredItem{

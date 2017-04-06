@@ -2529,6 +2529,29 @@ img {
   display: flex;
   justify-content: space-between; }
 
+.l-widgets::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.l-widgets__youtube {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  height: 380px; }
+
+.l-widgets__slideshow {
+  width: calc(66.66667% - 33.33333px);
+  float: left;
+  margin-left: 20px;
+  height: 535px; }
+
+.l-widgets__spotify {
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  height: 535px; }
+
 .l-priceBoxContainer {
   display: flex; }
 
@@ -2581,7 +2604,10 @@ img {
 
 .passOption {
   padding: 24px 0px;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: freightSansBold, sans-serif;
+  text-transform: uppercase;
+  color: #21b0e6; }
 
 .passOption__note, .passOption__date {
   text-transform: capitalize;
@@ -2621,7 +2647,7 @@ img {
 .passOption--soldOut .passOption__date,
 .passOption--soldOut .passOption__title,
 .passOption--soldOut .passOption__note {
-  color: gray; }
+  color: #808080; }
 
 /*Main nav background*/
 .nav ul {
@@ -2745,7 +2771,8 @@ img {
 
 .imageContainer {
   height: 220px;
-  background-size: auto 250px !important; }
+  background-size: cover;
+  background-position: center; }
 
 .artist__name {
   font-family: freightSansMedium, sans-serif;
@@ -2901,11 +2928,14 @@ img {
 
 .featured {
   font-size: 48px;
-  padding: 80px 0px; }
+  padding: 80px 0px;
+  font-family: freightSansBold, sans-serif;
+  text-transform: uppercase;
+  color: #21b0e6; }
 
 .featuredDivider {
   border-color: #25bcac;
-  margin: 40px 100px; }
+  margin: 40px 70px; }
 
 .featuredItem {
   padding: 12px 0px; }
@@ -2934,7 +2964,10 @@ img {
   color: #fff; }
 
 .centerText__title {
-  font-size: 44px; }
+  font-size: 44px;
+  font-family: freightSansBold, sans-serif;
+  text-transform: uppercase;
+  color: #21b0e6; }
 
 .centerText__subtitle {
   color: #25bcac;
@@ -2943,21 +2976,29 @@ img {
   padding: 8px 0px; }
 
 .centerText .fa.fa-minus {
-  -webkit-transform: scale(1.4, 0.4);
+  -webkit-transform: scale(1.2, 0.6);
   /* Safari and Chrome */
-  -moz-transform: scale(1.4, 0.4);
+  -moz-transform: scale(1.2, 0.6);
   /* Firefox */
-  -ms-transform: scale(1.4, 0.4);
+  -ms-transform: scale(1.2, 0.6);
   /* IE 9 */
-  -o-transform: scale(1.4, 0.4);
+  -o-transform: scale(1.2, 0.6);
   /* Opera */
-  transform: scale(1.4, 0.4);
-  padding: 0px 5px; }
+  transform: scale(1.2, 0.6);
+  padding: 0px 8px; }
 
-.header-bold-blue, .passOption, .featured, .centerText__title {
-  font-family: freightSansBold, sans-serif;
-  text-transform: uppercase;
-  color: #21b0e6; }
+.widgets {
+  padding: 50px 0px; }
+
+.widgets__youtube {
+  margin-bottom: 70px;
+  background-color: #21b0e6; }
+
+.widgets__slideshow {
+  background-color: #25bcac; }
+
+.widgets__spotify {
+  background-color: #808080; }
 
 .priceBox {
   text-align: center;

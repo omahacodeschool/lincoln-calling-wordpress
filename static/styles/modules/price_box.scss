@@ -1,7 +1,7 @@
 .passOption{
 	padding: 24px 0px;
 	font-size: 30px;
-	@extend .header-bold-blue;
+	@include header-bold-blue;
 }
 
 .passOption__note, .passOption__date{
@@ -41,5 +41,5 @@
 .passOption--soldOut .passOption__date,
 .passOption--soldOut .passOption__title,
 .passOption--soldOut .passOption__note{
-	color:gray;
+	color: $gray;
 }
