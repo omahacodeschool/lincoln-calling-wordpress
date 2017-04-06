@@ -2404,16 +2404,14 @@ img {
   width: 100%; }
 
 body, html {
-  background-color: #2f0000;
-  width: 1000px;
-  margin: 0px auto; }
+  background-color: #2f0000; }
 
 .l-fullWidth {
   display: block;
   width: 100%; }
 
 .outerContainer {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto; }
 
 @media (max-width: 600px) {
@@ -2496,7 +2494,7 @@ body, html {
   margin: 10px 27px; }
 
 .l-centerText {
-  width: 620px;
+  padding: 30px 170px;
   text-align: center; }
 
 .l-featured {
@@ -2621,26 +2619,25 @@ body, html {
   margin: 1em 0px; }
 
 .passOption {
-  padding: 24px 0px;
-  font-size: 30px;
+  padding: 12px 0px 22px;
+  font-size: 2.5em;
   font-family: freightSansBold, sans-serif;
   text-transform: uppercase;
   color: #21b0e6; }
 
 .passOption__note, .passOption__date {
-  text-transform: capitalize;
+  text-transform: none;
   font-family: freightSansMedium, sans-serif; }
 
 .passOption__note {
   font-style: italic;
-  font-size: 18px; }
+  font-size: 0.6em;
+  color: #25bcac; }
 
 .passOption__date {
-  font-size: 24px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
   color: #fff; }
-
-.passOption__note {
-  color: #25bcac; }
 
 .passOption .fa.fa-minus {
   -webkit-transform: scale(1.2, 0.6);
@@ -2656,7 +2653,8 @@ body, html {
 
 .passOption--forSale:after {
   content: "On sale now";
-  color: #25bcac; }
+  color: #25bcac;
+  font-size: 0.95em; }
 
 .passOption--soldOut:after {
   content: "Sold out"; }
@@ -2975,14 +2973,14 @@ body, html {
   height: 80px; }
 
 .centerText {
-  margin: 0px auto;
+  margin: 20px auto 0px;
   font-family: freightSansLighter, sans-serif;
-  font-size: 30px;
-  padding: 30px 0px;
+  font-size: 2.3em;
   color: #fff; }
 
 .centerText__title {
-  font-size: 44px;
+  font-size: 1.35em;
+  line-height: 0.8em;
   font-family: freightSansBold, sans-serif;
   text-transform: uppercase;
   color: #21b0e6; }
@@ -2992,6 +2990,11 @@ body, html {
   font-style: italic;
   text-transform: capitalize;
   padding: 8px 0px; }
+
+.centerText__body {
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  font-size: 0.95em; }
 
 .centerText .fa.fa-minus {
   -webkit-transform: scale(1.2, 0.6);
