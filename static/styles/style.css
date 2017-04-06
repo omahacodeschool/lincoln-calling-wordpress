@@ -2403,6 +2403,11 @@ input[type=button] {
 img {
   width: 100%; }
 
+body, html {
+  background-color: #2f0000;
+  width: 1000px;
+  margin: 0px auto; }
+
 .l-fullWidth {
   display: block;
   width: 100%; }
@@ -2580,7 +2585,7 @@ img {
   text-transform: uppercase;
   font-size: 3em;
   text-align: center;
-  letter-spacing: 4px; }
+  letter-spacing: 8px; }
 
 .condensed {
   -webkit-transform: scale(0.9, 1);
@@ -2602,16 +2607,18 @@ img {
   color: #fff;
   padding: 0px 10px; }
 
-body {
-  width: 1000px;
-  margin: 0px auto;
-  background-color: #2f0000; }
-
 .header {
   width: 100%; }
 
 .header img {
   width: 100%; }
+
+.announcement h2 {
+  color: #25bcac;
+  font-family: freightSansBold, sans-serif;
+  font-size: 3.2em;
+  text-align: center;
+  margin: 1em 0px; }
 
 .passOption {
   padding: 24px 0px;
@@ -2665,6 +2672,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
   background-color: #21b0e6; }
 
 /*Formats the link text*/
@@ -2707,14 +2715,13 @@ body {
   .nav li ul {
     position: absolute;
     display: none;
-    width: inherit;
+    width: 100%;
     justify-content: space-between;
-    width: 100%; }
+    left: 0; }
 
   .nav li:hover ul {
     display: flex;
-    align-items: stretch;
-    left: 0; }
+    align-items: stretch; }
 
   .nav li ul {
     background-color: #25bcac; }
