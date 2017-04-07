@@ -1,0 +1,26 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin stretch($width:true, $height:1){
+	-webkit-transform:scale( $width, $height); /* Safari and Chrome */
+    -moz-transform:scale( $width, $height); /* Firefox */
+    -ms-transform:scale( $width, $height); /* IE 9 */
+    -o-transform:scale( $width, $height); /* Opera */
+    transform:scale( $width, $height);
+}
+
+@mixin header-bold-blue{
+	font-family: $font-fam-Bold;
+	text-transform: uppercase;
+	color: $blue;
+}
+
+@mixin rotate($deg){
+  -webkit-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+          transform: rotate($deg);
+}

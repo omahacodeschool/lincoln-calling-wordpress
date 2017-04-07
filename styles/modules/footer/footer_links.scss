@@ -1,0 +1,25 @@
+.footerLinks li{	
+	line-height: 1.4em;
+}
+
+.footerLinks__title{
+	font-size: 1.6em;
+	letter-spacing: 3px;
+	padding: 10px 0px;
+}
+
+.footerLinks__sublinks{
+	padding-left: 30px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.footerLinks__title,
+.footerLinks li a,
+.footerLinks__sublinks {
+	font-family: $font-fam-Lighter;
+	font-weight: lighter;
+	color: $white;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}

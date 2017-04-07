@@ -1,0 +1,30 @@
+.centerText{
+	margin: 40px auto 0px;
+	font-family: $font-fam-Lighter;
+	font-size: 2.3em;
+	color: $white;
+}
+
+.centerText__title{
+	font-size: 1.35em;
+	line-height: 0.8em;
+	@include header-bold-blue;
+}
+
+.centerText__subtitle{
+	color: $green;
+	font-style: italic;
+	text-transform: capitalize;
+	padding: 8px 0px;
+}
+
+.centerText__body {
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	font-size: 0.95em;
+}
+
+.centerText .fa.fa-minus{
+	@include stretch(1.2, 0.6);
+	padding: 0px 8px;
+}

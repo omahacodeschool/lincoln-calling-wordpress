@@ -1,0 +1,44 @@
+.passOption{
+	padding: 12px 0px 22px;
+	font-size: 2.5em;
+	@include header-bold-blue;
+}
+
+.passOption__note, .passOption__date{
+	text-transform: none;
+	font-family: $font-fam;
+}
+
+.passOption__note{
+	font-style: italic;
+	font-size: 0.6em;
+	color: $green;
+}
+
+.passOption__date{
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	color: $white;
+}
+
+.passOption .fa.fa-minus{
+	@include stretch(1.2,0.6);
+	padding: 0px 8px;
+}
+
+.passOption--forSale:after{
+	content: "On sale now";
+	color: $green;
+	font-size: 0.95em;
+}
+
+.passOption--soldOut:after{
+	content: "Sold out";
+}
+
+.passOption--soldOut:after,
+.passOption--soldOut .passOption__date,
+.passOption--soldOut .passOption__title,
+.passOption--soldOut .passOption__note{
+	color: $gray;
+}

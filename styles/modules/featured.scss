@@ -1,0 +1,49 @@
+.featured{
+	font-size: 48px;
+	padding: 80px 0px;
+	@include header-bold-blue;
+}
+
+.featuredDivider{
+	border-color: $green;
+	margin: 40px 70px;
+}
+
+.featuredItem{
+	padding: 12px 0px;
+}
+
+.featured .fa-circle{
+	font-size: 16px;
+	padding: 0px 8px;
+}
+
+.featuredFullLink{
+	font-size: 18px;
+	padding-top: 30px;
+}
+
+.featuredArtists .fa-circle,
+.featured__article{
+	color: $green;
+}
+
+.corner-top-left{
+	@include rotate(90deg);
+}
+
+.corner-top-right{
+	@include rotate(180deg);
+}
+
+.corner-bottom-right{
+	@include rotate(270deg);
+}
+
+.corner-top-left,
+.corner-top-right,
+.corner-bottom-left,
+.corner-bottom-right{
+	width: 80px; 
+	height: 80px;
+}

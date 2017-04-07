@@ -1,0 +1,30 @@
+@font-face {
+    font-family: freightSansLighter;
+    src: url("assets/fonts/Freight Sans Pro Book.otf");
+}
+
+@font-face {
+    font-family: freightSansMedium;
+    src: url("assets/fonts/Freight Sans Pro Medium.otf");
+}
+
+@font-face {
+    font-family: freightSansSemiboldItalic;
+    src: url("assets/fonts/Freight Sans Pro Semibold Italic.otf");
+}
+
+@font-face {
+    font-family: freightSansBoldItalic;
+    src: url("assets/fonts/Freight Sans Pro Bold Italic.otf");
+}
+
+@font-face {
+    font-family: freightSansBold;
+    src: url("assets/fonts/Freight Sans Pro Bold.otf");
+}
+
+$font-fam-Lighter: freightSansLighter, sans-serif;
+$font-fam: freightSansMedium, sans-serif;
+$font-fam-SemiboldItalic: freightSansSemiboldItalic, sans-serif;
+$font-fam-BoldItalic: freightSansBoldItalic, sans-serif;
+$font-fam-Bold: freightSansBold, sans-serif;

@@ -1,0 +1,48 @@
+.buyTicketsDecor{
+	position: relative;
+	height: 600px;
+	background-image: url("../assets/images/buyNowDecor.png");
+	background-size: 100% 100%;
+	padding: 20px 0px;
+}
+
+.buyTicketsDecor .buyTicketsButton{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-66%);
+	width: 100%;
+}
+
+.buyTicketsButton a {
+	display: inline-block;
+	background-color: $blue;
+	text-align: center;
+	width: 100%;
+	font-family: $font-fam-Bold;
+	color: $white;
+	font-weight: bold;
+	padding: 14px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.buyNowButton {
+	background-color: $green;
+	font-family: $font-fam-SemiboldItalic;
+	color: $white;
+	padding: 20px 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	letter-spacing: 8px;
+}
+
+.condensed {
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+    -moz-transform:scale(0.9,1); /* Firefox */
+    -ms-transform:scale(0.9,1); /* IE 9 */
+    -o-transform:scale(0.9,1); /* Opera */
+    transform:scale(0.9	,1); /* W3C */
+}

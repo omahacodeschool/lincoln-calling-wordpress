@@ -1,0 +1,10 @@
+.l-footerCredits{
+	display: flex;
+	// Gutter will make this look less strange
+	justify-content: space-between;
+}
+
+.l-credit{
+	display: flex;
+	align-items: center;
+}

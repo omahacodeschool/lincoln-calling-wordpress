@@ -1,0 +1,35 @@
+.searchForm {
+	display: flex;
+	width: 350px;
+	margin: auto;
+	padding-top: 100px;
+}
+
+.searchBar {
+	height: 30px;
+	width: 100%;
+	padding-left: 12px;
+	border-style: none;
+	padding-top: 2px;
+}
+
+input[type=button].searchSubmit {
+	background: url("assets/images/magnifyingGlass.png") no-repeat;
+	background-color: $white;
+	background-size: 22px;
+	background-position: 50% 50%;
+	width: 30px;
+	height: 30px;
+	border-style: none;
+	cursor: pointer;
+}
+
+.searchSubmit:focus {
+	outline: none;
+}
+
+@include placeholder {
+    letter-spacing: 2px;
+    color: $lightGray;
+    font-weight: 600;
+}
