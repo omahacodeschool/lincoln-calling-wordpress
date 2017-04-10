@@ -9,7 +9,7 @@
 				</div>
 
 				<div class="artist__name"><?php the_title(); ?></div>
-				<div class="artist__city"><?php artist_city(); ?></div>
+				<div class="artist__city"><?php echo get_field('artist_city'); ?></div>
 			</div>
 
 		<?php

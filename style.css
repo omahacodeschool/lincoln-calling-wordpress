@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Lincoln Calling
 Author: Evin, Spencer, Sumeet
@@ -2409,7 +2410,7 @@ img {
   width: 100%; }
 
 body, html {
-  background-color: #2f0000; }
+  background-color: #2a0000; }
 
 .clearFloat {
   clear: both; }
@@ -2658,7 +2659,10 @@ body, html {
   font-size: 2.5em;
   font-family: freightSansBold, sans-serif;
   text-transform: uppercase;
-  color: #21b0e6; }
+  color: #21b0e6;
+  background-image: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%; }
 
 .passOption__note, .passOption__date {
   text-transform: none;
@@ -3105,7 +3109,7 @@ input[type=button].searchSubmit {
 
 .slideShow {
   background-color: #21b0e6;
-  color: #2f0000; }
+  color: #2a0000; }
 
 .slideShowImages {
   overflow: hidden; }

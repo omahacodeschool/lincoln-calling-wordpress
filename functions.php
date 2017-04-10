@@ -99,6 +99,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Artist City',
 				'name' => 'artist_city',
 				'type' => 'text',
+				'required' => 1,
 				'instructions' => 'Artist city of origin.',
 				'default_value' => '',
 				'placeholder' => 'Artist City...',

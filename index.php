@@ -4,7 +4,6 @@
     <h2>A limited number of Early Bird tickets are available now! Get them while they last.</h2>
   </div>
 
-  <br>
   <a href="#" class="buyNowButton l-fullWidth l-buyNow">
     <div class="condensed">Buy Now</div>
   </a>
@@ -12,10 +11,6 @@
   <div class="centerText l-centerText">
     <h3 class="centerText__title">Festival Passes</h3>
     <p class="centerText__subtitle">3 Day Pass &mdash; All Venues.</p>
-  </div>
-
-  <div class="ticketsGraphic">
-    <img src="../assets/images/ticketsPageGraphic.png">
   </div>
 
   <div class="passOptions">
@@ -30,7 +25,7 @@
           <li class="passOption passOption--forSale">
             <small class="passOption__date">April 21</small>  
             <h3 class="passOption__title">
-              Early Bird <i class="fa fa-minus"></i> $20 
+              Early Bird &mdash; $20 
               <span class="passOption__note">(Limited availability)</span>
             </h3>
           </li>
@@ -62,7 +57,7 @@
 
     <div class="centerText l-centerText">
       <h3 class="centerText__title">Specialty Passes</h3>
-      <p class="centerText__subtitle">3 day pass <i class="fa fa-minus"></i> All Venues</p>
+      <p class="centerText__subtitle">3 day pass &mdash; All Venues</p>
       <p class="centerText__body">Featuring perks designed to enhance your Lincoln Calling experience, these will go live on May 4, coinciding with first-round lineup announcement.</p>
     </div>
   </div>
