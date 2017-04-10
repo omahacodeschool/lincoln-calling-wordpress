@@ -40,7 +40,7 @@
 	<?php endif ?>
 
             <small class="passOption__date">
-		<?php echo get_field('start_date'); echo get_field('end_date')?>
+		<?php echo get_field('start_date')." "; echo get_field('end_date')?>
 	    </small>  
             <h3 class="passOption__title">
               <?php the_title(); ?> <i class="fa fa-minus"></i> $<?php echo get_field('price'); ?>
