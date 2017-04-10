@@ -44,7 +44,7 @@ if(function_exists("register_field_group"))
         'required' => 1,
         'default_value' => '',
         'placeholder' => '',
-        'prepend' => '',
+        'prepend' => '$',
         'append' => '',
         'min' => '',
         'max' => '',
@@ -65,6 +65,25 @@ if(function_exists("register_field_group"))
         'save_other_choice' => 0,
         'default_value' => 'Regular',
         'layout' => 'vertical',
+      ),
+      array (
+	'key' => 'field_58e9b4f05a71f',
+	'label' => 'Start Date',
+	'name' => 'start_date',
+	'type' => 'date_picker',
+	'required' => 1,
+	'date_format' => 'MM dd',
+	'display_format' => 'MM dd',
+	'first_day' => 1,
+      ),
+      array (
+	'key' => 'field_58e9b5605a720',
+	'label' => 'End Date',
+	'name' => 'end_date',
+	'type' => 'date_picker',
+	'date_format' => 'MM dd',
+	'display_format' => 'MM dd',
+	'first_day' => 1,
       ),
     ),
     'location' => array (
@@ -230,4 +249,5 @@ if(function_exists("register_field_group"))
 	));
 }
 
+remove_filter('the_content', 'wpautop');
 ?>
