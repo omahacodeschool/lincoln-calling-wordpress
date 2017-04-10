@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+  <div class="centerText l-centerText">
+    <h3 class="centerText__title">Tickets</h3>
+  </div>
+
 <ul>
 <?php 
 	if ( have_posts() ) : 
