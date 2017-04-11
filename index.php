@@ -13,27 +13,32 @@
     <p class="centerText__subtitle">3 Day Pass &mdash; All Venues.</p>
   </div>
 
+  <div class="ticketsGraphic">
+    <img src="../assets/images/ticketsPageGraphic.png">
+  </div>
+
   <div class="passOptions">
     <ul>
-      <?php if ( have_posts() ) : ?>
-
-        <?php
+      <?php if ( have_posts() ) :
+        // Change Query to post_type of tickets rather than post (default)
+        $args = array('post_type'=>array('ticket'));
+        query_posts($args);
         // Start the loop.
         while ( have_posts() ) : the_post();
         ?>
 
-	<?php if (get_field('status') == "Discounted"): ?>
-		<li class="passOption passOption--forSale">
-	<?php elseif (get_field('status') == "Sold Out"): ?> 
-		<li class="passOption passOption--soldOut">
-	<?php else: ?> 
-		<li class="passOption">
-	<?php endif ?>
-
+          <!-- Change class depending on status -->
+          <?php if (get_field('status') == "Discounted"): ?>
+          <li class="passOption passOption--forSale">
+          <?php elseif (get_field('status') == "Sold Out"): ?> 
+          <li class="passOption passOption--soldOut">
+          <?php else: ?> 
+          <li class="passOption">
+          <?php endif ?>
+          
             <small class="passOption__date">
-		<?php echo get_field('start_date')." "; echo get_field('end_date')?>
-	    </small>  
-
+		          <?php echo get_field('start_date')." "; echo get_field('end_date')?>
+            </small>  
             <h3 class="passOption__title">
               Early Bird &mdash; $20 
               <span class="passOption__note">(Limited availability)</span>
@@ -43,14 +48,13 @@
         <?php
         // End the loop.
         endwhile;
-
         // Previous/next page navigation.
         the_posts_pagination();
-
       endif;
       ?>
     </ul>
   </div>
+
 
   <div class="clearFloat">
   </div>
