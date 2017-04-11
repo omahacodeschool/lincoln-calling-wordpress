@@ -73,19 +73,19 @@
       <li>
         <div class="credit l-credit">
           <p>Presented by:</p>
-          <img src="../assets/images/Allo.png">
+          <img src="<?php bloginfo("template_directory"); ?>/assets/images/Allo.png">
         </div>
       </li>
       <li>
         <div class="credit l-credit">
           <p>Site by:</p>
-          <img src="../assets/images/OCS.png">
+          <img src="<?php bloginfo("template_directory"); ?>/assets/images/OCS.png">
         </div>
       </li>
       <li>
         <div class="credit l-credit">
           <p>Produced by:</p>
-          <img src="../assets/images/HearNE.png">
+          <img src="<?php bloginfo("template_directory"); ?>/assets/images/HearNE.png">
         </div>
       </li>
     </ul>

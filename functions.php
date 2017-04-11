@@ -30,6 +30,21 @@ function create_artist_type() {
   );
 }
 
+add_action( 'init', 'create_pagetemplate_type' );
+
+function create_pagetemplate_type() {
+  register_post_type( 'template',
+    array(
+      'labels' => array(
+        'name' => __( 'Template Page' ),
+        'singular_name' => __( 'Template' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
+
 if(function_exists("register_field_group"))
 {
   register_field_group(array (
