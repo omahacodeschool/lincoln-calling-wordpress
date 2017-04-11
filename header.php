@@ -24,7 +24,7 @@
       <li><a href="#">Buy Tickets</a></li>
 
       <li>
-        <a href="#">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
+        <a href="">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
 
         <ul class="subNav">
 
@@ -38,7 +38,7 @@
       </li>
 
       <li>
-        <a href="#">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
+        <a href="">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
         
         <ul class="subNav">
 
