@@ -3152,6 +3152,9 @@ input[type=button].searchSubmit {
 .widgets__spotify {
   background-color: #808080; }
 
+.templateBody {
+  color: #fff; }
+
 .priceBox {
   text-align: center;
   background-color: #25bcac;
