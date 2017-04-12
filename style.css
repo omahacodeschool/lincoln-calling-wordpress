@@ -2514,7 +2514,8 @@ body, html {
 
 @media (max-width: 700px) {
   .l-centerText {
-    text-align: left; } }
+    text-align: left;
+    padding: 10px 0px 40px; } }
 .l-featured {
   position: relative;
   text-align: center;
