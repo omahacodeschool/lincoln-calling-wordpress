@@ -2505,7 +2505,6 @@ body, html {
   margin: 10px 27px; }
 
 .l-centerText {
-  margin: 35px auto 0px;
   padding: 10px 120px 40px;
   text-align: center; }
 
@@ -2665,9 +2664,7 @@ body, html {
 .passOptions {
   background-image: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png");
   background-repeat: no-repeat;
-  background-position: 100% 35px;
-  background-size: auto;
-  padding-bottom: 60px; }
+  background-position: 100% 50%; }
 
 .passOption__note, .passOption__date {
   text-transform: none;
@@ -2681,8 +2678,7 @@ body, html {
 .passOption__date {
   font-size: 0.9em;
   letter-spacing: 1px;
-  color: #fff;
-  -webkit-font-smoothing: antialiased; }
+  color: #fff; }
 
 .passOption .fa.fa-minus {
   -webkit-transform: scale(1.2, 0.6);
@@ -3073,6 +3069,7 @@ input[type=button].searchSubmit {
   height: 80px; }
 
 .centerText {
+  margin: 40px auto 0px;
   font-family: freightSansLighter, sans-serif;
   font-size: 2.3em;
   color: #fff; }
@@ -3209,4 +3206,4 @@ input[type=button].searchSubmit {
   text-transform: uppercase;
   letter-spacing: 4px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

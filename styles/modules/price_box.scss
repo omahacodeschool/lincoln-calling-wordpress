@@ -2,9 +2,14 @@
 	padding: 12px 0px 22px;
 	font-size: 2.5em;
 	@include header-bold-blue;
+}
+
+.passOptions {
 	background-image: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png");
 	background-repeat: no-repeat;
-	background-position: 100% 50%;
+	background-position: 100% 35px;
+	background-size: auto;
+	padding-bottom: 60px;
 }
 
 .passOption__note, .passOption__date{
@@ -22,6 +27,7 @@
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	color: $white;
+	-webkit-font-smoothing: antialiased;
 }
 
 .passOption .fa.fa-minus{
