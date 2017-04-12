@@ -2460,6 +2460,9 @@ body, html {
   clear: both;
   content: "";
   display: block; }
+@media (max-width: 700px) {
+  .l-footerLinksContainer {
+    display: none; } }
 
 .l-footerLinks {
   width: calc(25% - 25px);
@@ -2591,6 +2594,9 @@ body, html {
 .ticketsGraphic {
   float: right;
   margin: 20px 0px 0px 0px; }
+  @media (max-width: 700px) {
+    .ticketsGraphic {
+      display: none; } }
 
 .ticketsGraphic img {
   width: 450px; }
@@ -2661,6 +2667,9 @@ body, html {
 
 .header {
   width: 100%; }
+  @media (max-width: 700px) {
+    .header {
+      display: none; } }
 
 .header img {
   width: 100%; }
@@ -2826,6 +2835,9 @@ body, html {
   width: 350px;
   margin: auto;
   padding-top: 100px; }
+  @media (max-width: 700px) {
+    .searchForm {
+      display: none; } }
 
 .searchBar {
   height: 30px;
