@@ -31,7 +31,8 @@
         <?php wp_list_categories( array (
           'title_li' => '',
           'orderby' => 'id',
-          'child_of' => 24
+          'child_of' => get_cat_ID( 'lineup' ),
+          'hide_empty' => 0
         ) ); ?>
 
         </ul>
@@ -45,7 +46,8 @@
           <?php wp_list_categories( array (
             'title_li' => '',
             'orderby' => 'id',
-            'child_of' => 25
+            'child_of' => get_cat_ID( 'get-involved' ),
+            'hide_empty' => 0 
           ) ); ?>
 
         </ul>
