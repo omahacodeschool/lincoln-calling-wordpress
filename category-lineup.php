@@ -13,10 +13,14 @@
 
 	<div class="artistCardContainer l-artistCardContainer">
 
-		<a href="#">
-			<div class="imageContainer" style="background-image: url( <?php echo get_field('artist_card_image') ?>)">
+		<a href="#" class="artistThumbnail">
+			<div class="imageContainer" style="background-image: url( <?php echo get_field('artist_card_image'); ?>)">
 			</div>
 		</a>
+
+		<div class="artistFullImage" style="display: none;">
+			<?php echo get_field('artist_full_image'); ?>
+		</div>
 
 		<a href="#" class="artist__name">
 			<?php echo strip_tags( the_title() ); ?>
@@ -39,46 +43,50 @@
 
 <div class="l-clearFloat"></div>
 
+
+
+<?php get_footer(); ?>
+
 <!-- Modal -->
-<div class="modalOverlay l-modalOverlay" style="display: none;">
+<div class="l-positionRel">
+	<div class="modalOverlay l-modalOverlay" style="display: none;">
 
-	<div class="modalWindow l-modalWindow">
+		<div class="modalWindow l-modalWindow">
 
-		<div class="l-modalContentWrapper l-posRelative">
+			<div class="l-modalContentWrapper l-posRelative">
 
-			<div class="l-modalContent">
-			
-				<div class="artistModalImage"></div>
+				<div class="l-modalContent">
+				
+					<div class="artistModalImage"></div>
 
-				<div class="artistInfo l-posRelative">
+					<div class="artistInfo l-posRelative">
 
-					<div class="artistName condensed l-moveUp l-posRelative">
-						<h1></h1>
-					</div>
+						<div class="artistName condensed l-moveUp l-posRelative">
+							
+						</div>
 
-					<div class="closeModal l-closeX">x</div>
+						<div class="closeModal l-closeX">x</div>
 
-					<div class="artistSummary">
-						<a href=""></a>
-					</div>
+						<div class="artistSummary">
+							<a href=""></a>
+						</div>
 
-					<div class="modalSocialIcons l-posRelative">
-						<i class="fa fa-instagram modalIcon" aria-hidden="true"></i>
-						<i class="fa fa-snapchat-ghost modalIcon" aria-hidden="true"></i>
-						<i class="fa fa-facebook-square modalIcon" aria-hidden="true"></i>
-						<i class="fa fa-twitter modalIcon" aria-hidden="true"></i>
-						<i class="fa fa-soundcloud modalIcon iconOblong" aria-hidden="true"></i>
+						<div class="modalSocialIcons l-posRelative">
+							<i class="fa fa-instagram modalIcon" aria-hidden="true"></i>
+							<i class="fa fa-snapchat-ghost modalIcon" aria-hidden="true"></i>
+							<i class="fa fa-facebook-square modalIcon" aria-hidden="true"></i>
+							<i class="fa fa-twitter modalIcon" aria-hidden="true"></i>
+							<i class="fa fa-soundcloud modalIcon iconOblong" aria-hidden="true"></i>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="nextPrevButtons l-posAbsolute l-vertCenter">
-				<i class="fa fa-caret-left" aria-hidden="true"></i>
-				<span>Next/Previous</span>
-				<i class="fa fa-caret-right" aria-hidden="true"></i>
+				<div class="nextPrevButtons l-posAbsolute l-vertCenter">
+					<i class="fa fa-caret-left" aria-hidden="true"></i>
+					<span>Next/Previous</span>
+					<i class="fa fa-caret-right" aria-hidden="true"></i>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<?php get_footer(); ?>
