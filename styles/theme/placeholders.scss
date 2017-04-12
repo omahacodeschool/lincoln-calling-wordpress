@@ -24,3 +24,15 @@
       -ms-transform: rotate($deg);
           transform: rotate($deg);
 }
+
+@mixin display-on-mobile($prop){
+  @media (max-width: 700px){
+    display: $prop;
+  }
+}
+
+@mixin display-on-desktop($prop){
+  @media (min-width: 700px){
+    display: $prop;
+  }
+}
