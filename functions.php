@@ -289,7 +289,6 @@ add_filter( 'category_template', 'new_subcategory_hierarchy' );
 add_action( 'init', 'my_remove_post_type_support', 999 );
 function my_remove_post_type_support() {
     remove_post_type_support( 'post', 'editor' );
-    remove_post_type_support( 'post', 'title' );
 }
 
 remove_filter('the_content', 'wpautop');
