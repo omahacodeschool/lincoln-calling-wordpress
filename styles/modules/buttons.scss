@@ -46,3 +46,9 @@
     -o-transform:scale(0.9,1); /* Opera */
     transform:scale(0.9	,1); /* W3C */
 }
+
+@media (max-width: 700px){
+	.buyNowButton {
+		font-family: $font-fam-Bold;
+	}
+}

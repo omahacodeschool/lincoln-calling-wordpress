@@ -264,13 +264,72 @@ if(function_exists("register_field_group"))
 	));
 }
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_get-involved-posts',
+		'title' => 'Get Involved posts',
+		'fields' => array (
+			array (
+				'key' => 'field_58ed4933ceb7d',
+				'label' => 'Article Body',
+				'name' => 'article_body',
+				'type' => 'textarea',
+				'instructions' => 'Write the meat of your post in here.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'Body...',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_58ee367170da6',
+				'label' => 'Article Image',
+				'name' => 'article_image',
+				'type' => 'image',
+				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title)',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'null',
+							'operator' => '==',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'save_format' => 'object',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_category',
+					'operator' => '==',
+					'value' => '16',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+// Makes children categories use parents template
 function new_subcategory_hierarchy() { 
     $category = get_queried_object();
-
     $parent_id = $category->category_parent;
-
     $templates = array();
-
     if ( $parent_id == 0 ) {
         // Use default values from get_category_template()
         $templates[] = "category-{$category->slug}.php";
@@ -278,10 +337,8 @@ function new_subcategory_hierarchy() {
     } else {
         // Create replacement $templates array
         $parent = get_category( $parent_id );
-
         // Current first
         $templates[] = "category-{$category->slug}.php";
-
         // Parent second
         $templates[] = "category-{$parent->slug}.php";
         $templates[] = 'category.php'; 
@@ -290,6 +347,11 @@ function new_subcategory_hierarchy() {
 }
 
 add_filter( 'category_template', 'new_subcategory_hierarchy' );
+
+add_action( 'init', 'my_remove_post_type_support', 999 );
+function my_remove_post_type_support() {
+    remove_post_type_support( 'post', 'editor' );
+}
 
 remove_filter('the_content', 'wpautop');
 ?>
