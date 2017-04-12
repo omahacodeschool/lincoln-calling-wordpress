@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'modal' ); ?>
 
 <h1 class="templateTitle l-templateTitle"><?php single_cat_title("Info - "); ?></h1>
 
@@ -22,6 +22,10 @@
 			<?php echo strip_tags( the_title() ); ?>
 		</a>
 
+		<div class="artistDescription" style="display: none;">
+			<?php echo the_content(); ?>
+		</div>
+
 		<div class="artist__city">
 			<?php echo strip_tags( get_field( 'artist_subtitle' ) ); ?>
 		</div>
@@ -34,5 +38,47 @@
 </div>
 
 <div class="l-clearFloat"></div>
+
+<!-- Modal -->
+<div class="modalOverlay l-modalOverlay" style="display: none;">
+
+	<div class="modalWindow l-modalWindow">
+
+		<div class="l-modalContentWrapper l-posRelative">
+
+			<div class="l-modalContent">
+			
+				<div class="artistModalImage"></div>
+
+				<div class="artistInfo l-posRelative">
+
+					<div class="artistName condensed l-moveUp l-posRelative">
+						<h1></h1>
+					</div>
+
+					<div class="closeModal l-closeX">x</div>
+
+					<div class="artistSummary">
+						<a href=""></a>
+					</div>
+
+					<div class="modalSocialIcons l-posRelative">
+						<i class="fa fa-instagram modalIcon" aria-hidden="true"></i>
+						<i class="fa fa-snapchat-ghost modalIcon" aria-hidden="true"></i>
+						<i class="fa fa-facebook-square modalIcon" aria-hidden="true"></i>
+						<i class="fa fa-twitter modalIcon" aria-hidden="true"></i>
+						<i class="fa fa-soundcloud modalIcon iconOblong" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="nextPrevButtons l-posAbsolute l-vertCenter">
+				<i class="fa fa-caret-left" aria-hidden="true"></i>
+				<span>Next/Previous</span>
+				<i class="fa fa-caret-right" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>
