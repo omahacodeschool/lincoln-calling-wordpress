@@ -2430,10 +2430,23 @@ body, html {
   .outerContainer {
     width: 100%;
     padding: 0px 50px; } }
-.artistCardContainer {
+.l-artistCardContainer {
   width: calc(33.33333% - 26.66667px);
   float: left;
-  margin-left: 20px; }
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; }
+
+.l-clearFloat {
+  clear: both; }
+
+.l-allArtistCards {
+  display: flex;
+  -webkit-flex-wrap: wrap; }
+
+.artist__name {
+  flex-grow: 1; }
 
 .l-footerCredits {
   display: flex;
@@ -2506,6 +2519,7 @@ body, html {
   margin: 10px 27px; }
 
 .l-centerText {
+  margin: 35px auto 0px;
   padding: 10px 120px 40px;
   text-align: center; }
 
@@ -2580,6 +2594,10 @@ body, html {
 
 .ticketsGraphic img {
   width: 450px; }
+
+.l-templateTitle {
+  text-align: center;
+  margin-top: 40px; }
 
 .buyTicketsDecor {
   position: relative;
@@ -2659,10 +2677,14 @@ body, html {
   font-size: 2.5em;
   font-family: freightSansBold, sans-serif;
   text-transform: uppercase;
-  color: #21b0e6;
+  color: #21b0e6; }
+
+.passOptions {
   background-image: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%; }
+  background-position: 100% 35px;
+  background-size: auto;
+  padding-bottom: 60px; }
 
 .passOption__note, .passOption__date {
   text-transform: none;
@@ -2676,7 +2698,8 @@ body, html {
 .passOption__date {
   font-size: 0.9em;
   letter-spacing: 1px;
-  color: #fff; }
+  color: #fff;
+  -webkit-font-smoothing: antialiased; }
 
 .passOption .fa.fa-minus {
   -webkit-transform: scale(1.2, 0.6);
@@ -3067,7 +3090,6 @@ input[type=button].searchSubmit {
   height: 80px; }
 
 .centerText {
-  margin: 40px auto 0px;
   font-family: freightSansLighter, sans-serif;
   font-size: 2.3em;
   color: #fff; }
@@ -3151,6 +3173,32 @@ input[type=button].searchSubmit {
 
 .widgets__spotify {
   background-color: #808080; }
+
+.templateTitle {
+  font-family: freightSansBoldItalic, sans-serif;
+  color: #fff;
+  font-size: 3.3em;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2em;
+  -webkit-transform: scale(1, 1.1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1, 1.1);
+  /* Firefox */
+  -ms-transform: scale(1, 1.1);
+  /* IE 9 */
+  -o-transform: scale(1, 1.1);
+  /* Opera */
+  transform: scale(1, 1.1);
+  /* W3C */ }
+
+.pageDescription {
+  font-family: freightSansMedium, sans-serif;
+  color: #fff;
+  font-size: 1.62em;
+  line-height: 1.23em;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 90px 65px; }
 
 .templateBody {
   color: #fff; }
