@@ -2512,6 +2512,9 @@ body, html {
 .l-centerAnnouncement {
   margin-bottom: 40px; }
 
+@media (max-width: 700px) {
+  .l-centerText {
+    text-align: left; } }
 .l-featured {
   position: relative;
   text-align: center;
