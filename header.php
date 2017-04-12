@@ -45,7 +45,7 @@
           <?php wp_list_categories( array (
             'title_li' => '',
             'orderby' => 'id',
-            'child_of' => 25
+            'child_of' => get_cat_ID( 'get-involved' )
           ) ); ?>
 
         </ul>
