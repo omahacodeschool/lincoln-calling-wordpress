@@ -1,0 +1,23 @@
+.templateTitle {
+	font-family: $font-fam-BoldItalic;
+	color: $white;
+	font-size: 3.3em;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	line-height: 2em;
+
+    -webkit-transform:scale(1,1.1); /* Safari and Chrome */
+    -moz-transform:scale(1,1.1); /* Firefox */
+    -ms-transform:scale(1,1.1); /* IE 9 */
+    -o-transform:scale(1,1.1); /* Opera */
+    transform:scale(1,1.1); /* W3C */
+}
+
+.pageDescription {
+	font-family: $font-fam;
+	color: $white;
+	font-size: 1.62em;
+	line-height: 1.23em;
+	-webkit-font-smoothing: antialiased;
+	padding: 20px 90px;
+}
