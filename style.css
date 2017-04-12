@@ -2532,7 +2532,8 @@ body, html {
 @media (max-width: 700px) {
   .l-centerText {
     text-align: left;
-    padding: 10px 0px 40px; } }
+    padding: 10px 0px 0px;
+    margin: 75px 0px; } }
 .l-featured {
   position: relative;
   text-align: center;
@@ -2604,6 +2605,10 @@ body, html {
 .l-templateTitle {
   text-align: center;
   margin-top: 40px; }
+
+@media (min-width: 700px) {
+  .l-starDivider {
+    display: none; } }
 
 .buyTicketsDecor {
   position: relative;
@@ -3214,5 +3219,11 @@ input[type=button].searchSubmit {
 
 .templateBody {
   color: #fff; }
+
+.starDivider {
+  width: calc(100% + 100px);
+  height: 80px;
+  margin: 0px -50px;
+  background-image: url("assets/images/stars.png"); }
 
 /*# sourceMappingURL=style.css.map */
