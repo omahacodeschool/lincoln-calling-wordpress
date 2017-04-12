@@ -2429,10 +2429,23 @@ body, html {
 @media (max-width: 600px) {
   .outerContainer {
     width: 100%; } }
-.artistCardContainer {
+.l-artistCardContainer {
   width: calc(33.33333% - 26.66667px);
   float: left;
-  margin-left: 20px; }
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; }
+
+.l-clearFloat {
+  clear: both; }
+
+.l-allArtistCards {
+  display: flex;
+  -webkit-flex-wrap: wrap; }
+
+.artist__name {
+  flex-grow: 1; }
 
 .l-footerCredits {
   display: flex;
@@ -3185,7 +3198,7 @@ input[type=button].searchSubmit {
   font-size: 1.62em;
   line-height: 1.23em;
   -webkit-font-smoothing: antialiased;
-  padding: 20px 90px; }
+  padding: 20px 90px 65px; }
 
 .priceBox {
   text-align: center;
