@@ -1,8 +1,38 @@
 .socialLinks .fa{
-	color: $white;
 	font-size: 2em;
 }
 
-.socialLinks{
-	padding: 70px 185px;
+@media (max-width: 700px){
+	.socialLinks{
+		background-color: $white;
+	}
+
+	.socialLinks .fa{
+		color: $m-icon-gray;
+		font-size: 100px;
+	}
+
+	.socialLinks a{
+		padding: 14px 0px;
+		width: 100%;
+	}
+
+	.socialLinks a:nth-child(even){
+		background-color: $dim-white;
+	}
+
+	.socialLinks .fa.fa-soundcloud{
+		font-size: 79px;
+		margin-top: 9px;
+	}
+}
+
+@media (min-width: 700px){
+	.socialLinks{
+		padding: 70px 185px;		
+	}
+
+	.socialLinks .fa{
+		color: $white;
+	}
 }
