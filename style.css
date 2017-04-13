@@ -2459,7 +2459,6 @@ body, html {
 @media (max-width: 700px) {
   .l-credit {
     text-align: center; } }
-
 .l-footerLinksContainer::after {
   clear: both;
   content: "";
@@ -2477,6 +2476,9 @@ body, html {
   display: flex;
   justify-content: space-around; }
 
+@media (max-width: 700px) {
+  .l-socialLinks a {
+    text-align: center; } }
 .l-modalOverlay {
   width: 100%;
   height: 100vh;
@@ -2917,12 +2919,6 @@ input[type=button].searchSubmit {
 .footerCredits img {
   height: 50px;
   width: auto; }
-  @media (min-width: 700px) {
-    .footerCredits img {
-      margin-left: 20px; } }
-  @media (max-width: 700px) {
-    .footerCredits img {
-      margin-top: 10px; } }
 
 .credit {
   text-transform: uppercase;
@@ -2931,6 +2927,12 @@ input[type=button].searchSubmit {
   color: #fff;
   font-size: 1.4em; }
 
+@media (min-width: 700px) {
+  .footerCredits img {
+    margin-left: 20px; } }
+@media (max-width: 700px) {
+  .footerCredits img {
+    margin-top: 10px; } }
 .footerLinks li {
   line-height: 1.4em; }
 
@@ -2954,12 +2956,32 @@ input[type=button].searchSubmit {
   text-transform: uppercase; }
 
 .socialLinks .fa {
-  color: #fff;
   font-size: 2em; }
 
-.socialLinks {
-  padding: 70px 185px; }
+@media (max-width: 700px) {
+  .socialLinks {
+    background-color: #fff; }
 
+  .socialLinks .fa {
+    color: #b0b1b0;
+    font-size: 100px; }
+
+  .socialLinks a {
+    padding: 14px 0px;
+    width: 100%; }
+
+  .socialLinks a:nth-child(even) {
+    background-color: #EEEEEE; }
+
+  .socialLinks .fa.fa-soundcloud {
+    font-size: 79px;
+    margin-top: 9px; } }
+@media (min-width: 700px) {
+  .socialLinks {
+    padding: 70px 185px; }
+
+  .socialLinks .fa {
+    color: #fff; } }
 .footerContainer {
   margin-top: 100px;
   background-image: url("assets/images/footerGraphic.png");
