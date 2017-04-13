@@ -4,3 +4,9 @@
 	background-repeat: no-repeat;
 	background-position: 100% 87%;
 }
+
+@media (max-width: 700px){
+	.footerContainer{
+		padding-top: 100px;
+	}
+}
