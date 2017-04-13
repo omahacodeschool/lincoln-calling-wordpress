@@ -98,6 +98,8 @@ window.addEventListener("load", function(){
 		var nextButton = document.getElementsByClassName("nextButton")[0];
 		var prevButton = document.getElementsByClassName("prevButton")[0];
 		
+		checkFirstLast(nextButton, prevButton, clickedElement);
+
 		var originalArtist = clickedElement.parentNode;
 
 		console.log("Prep For Next.");
@@ -172,6 +174,22 @@ window.addEventListener("load", function(){
 		var pb = document.getElementsByClassName("prevButton")[0];
 		var prevClone = pb.cloneNode(true);
 		pb.parentNode.replaceChild(prevClone, pb);
+	}
+
+	function checkFirstLast(nextButton, prevButton, clickedElement){
+
+		if(clickedElement.parentNode.previousElementSibling === null){
+			prevButton.style.visibility = "hidden";
+		}
+
+		else if(clickedElement.parentNode.nextElementSibling === null){
+			nextButton.style.visibility = "hidden";
+		}
+
+		else {
+			prevButton.style.visibility = "visible";
+			nextButton.style.visibility = "visible";
+		}
 	}
 });
 
