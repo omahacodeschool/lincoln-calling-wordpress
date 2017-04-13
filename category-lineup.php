@@ -11,7 +11,7 @@
 	while ( have_posts() ) : the_post(); ?>
 
 
-	<div class="artistCardContainer l-artistCardContainer">
+	<div class="artistCardContainer l-artistCardContainer" data-artist-name="<?php echo strip_tags( the_title() ); ?>">
 
 		<a href="#" class="artistThumbnail">
 			<div class="imageContainer" style="background-image: url( <?php echo get_field('artist_card_image'); ?>)">
@@ -71,7 +71,7 @@
 				
 					<div class="artistModalImage"></div>
 
-					<div class="artistInfo l-posRelative">
+					<div class="artistInfo l-posRelative l-artistInfo">
 
 						<div class="artistName l-artistName condensed l-moveUp l-posRelative">
 							
@@ -96,12 +96,13 @@
 							<a class="soundcloudLink" href=""><i class="fa fa-soundcloud modalIcon iconOblong" aria-hidden="true"></i></a>
 						</div>
 					</div>
-				</div>
 
-				<div class="nextPrevButtons l-posAbsolute l-vertCenter">
-					<i class="fa fa-caret-left prevButton" aria-hidden="true"></i>
-					<span>Next/Previous</span>
-					<i class="fa fa-caret-right nextButton" aria-hidden="true"></i>
+					<div class="nextPrevButtons l-posAbsolute l-vertCenter l-nextPrevButtons">
+						<i class="fa fa-caret-left prevButton" aria-hidden="true"></i>
+						<span>Next/Previous</span>
+						<i class="fa fa-caret-right nextButton" aria-hidden="true"></i>
+					</div>
+					
 				</div>
 			</div>
 		</div>

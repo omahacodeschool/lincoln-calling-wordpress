@@ -2484,7 +2484,7 @@ body, html {
 
 .l-modalWindow {
   height: 90vh;
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   justify-content: center; }
@@ -2493,8 +2493,12 @@ body, html {
   max-width: 1500px; }
 
 .l-modalContent {
+  display: flex; }
+
+.l-artistInfo {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  max-height: 100%; }
 
 .l-moveUp {
   top: -14px;
@@ -2515,25 +2519,28 @@ body, html {
   display: flex;
   align-items: center; }
 
-.nextPrevButtons span {
+.l-nextPrevButtons span {
   padding: 0px 20px; }
 
-.nextPrevButtons {
+.l-nextPrevButtons {
   right: 20px;
   bottom: -20px; }
+
+.l-modalSocialIcons {
+  top: -50px; }
 
 .modalIcon {
   margin: 10px 27px; }
 
 .l-artistName {
   max-width: 530px;
-  height: 128px;
   overflow: hidden; }
 
 .l-artistSummary {
-  width: 530px;
-  height: 50%;
-  max-height: 450px; }
+  flex-grow: 1;
+  max-height: 450px;
+  max-width: 530px;
+  padding-bottom: 100px; }
 
 @media screen and (max-width: 1200px) {
   .l-modalContentWrapper {
@@ -3015,8 +3022,7 @@ input[type=button].searchSubmit {
   font-family: freightSansMedium, sans-serif;
   line-height: 1.35em;
   font-size: 1.15em;
-  padding-right: 30px;
-  padding-bottom: 50px; }
+  padding-right: 30px; }
 
 .artistSummary a {
   text-decoration: none;
@@ -3042,7 +3048,8 @@ input[type=button].searchSubmit {
   font-size: 1.7em; }
 
 .modalSocialIcons {
-  box-shadow: -20px -30px 30px #fff; }
+  box-shadow: -20px -30px 30px #fff;
+  background-color: #fff; }
 
 .iconOblong {
   font-size: 1.4em;

@@ -60,7 +60,7 @@ window.addEventListener("load", function(){
 
 	function fillHeader(clickedElement){
 		// Fills artist name.
-		var artistName = clickedElement.parentNode.childNodes[5].innerHTML;
+		var artistName = clickedElement.parentNode.dataset.artistName;
 		artistTitle.innerHTML = '<h1>' + artistName + '</h1>';
 	}
 
@@ -102,75 +102,66 @@ window.addEventListener("load", function(){
 
 		var originalArtist = clickedElement.parentNode;
 
-		console.log("Prep For Next.");
+		addButtonListeners(nextButton, prevButton, originalArtist);
+	}
+
+	function addButtonListeners(nextButton, prevButton, originalArtist){
 		nextButton.addEventListener("click", function(){ fillNextModal(originalArtist); });
-		
-		
-		console.log("Prep For Prev.");
 		prevButton.addEventListener("click", function(){ fillPrevModal(originalArtist); });
-		
 	}
 
 	function fillNextModal(originalArtist){
 
-		console.log("NEXT Fill artist image.");
 		// Fills artist image.
 		var artistImageURL = originalArtist.nextSibling.nextSibling.childNodes[3].innerHTML;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
-		console.log("NEXT Fill artist description.");
 		// Fills artist description.
 		var artistLink = originalArtist.nextSibling.nextSibling.childNodes[7].innerHTML;
 		var artistDescription = originalArtist.nextSibling.nextSibling.childNodes[9].innerHTML;
 		artistSummary.innerHTML = artistLink + "<br>" + artistDescription;
 
-		console.log("NEXT Fill artist name.");
 		// Fills artist name.
 		var artistName = originalArtist.nextSibling.nextSibling.childNodes[5].innerHTML;
 		artistTitle.innerHTML = '<h1>' + artistName + '</h1>';
 
-		console.log("NEXT Setting new original artist.");
+		// Sets new point of origin.
 		var newOriginal = originalArtist.nextSibling.nextSibling.childNodes[1];
 
+		// Prepares Next and Previous buttons in the modal.
 		prepForNextPrev(newOriginal);
 		
 	}
 
 	function fillPrevModal(originalArtist){
-
-		console.log("PREV Fill artist image.");
 		
 		// Fills artist image.
 		var artistImageURL = originalArtist.previousSibling.previousSibling.childNodes[3].innerHTML;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
-		console.log("PREV Fill artist description.");
 		// Fills artist description.
 		var artistLink = originalArtist.previousSibling.previousSibling.childNodes[7].innerHTML;
 		var artistDescription = originalArtist.previousSibling.previousSibling.childNodes[9].innerHTML;
 		artistSummary.innerHTML = artistLink + "<br>" + artistDescription;
 
-		console.log("PREV Fill artist name.");
 		// Fills artist name.
 		var artistName = originalArtist.previousSibling.previousSibling.childNodes[5].innerHTML;
 		artistTitle.innerHTML = '<h1>' + artistName + '</h1>';
 
-		console.log("PREV Setting new original artist.");
+		// Sets new point of origin.
 		var newOriginal = originalArtist.previousSibling.previousSibling.childNodes[1];
 
+		// Prepares Next and Previous buttons in the modal.
 		prepForNextPrev(newOriginal);
-		
 	}
 
 	function removeListenersNext(nextButton){
-		
 		var nb = document.getElementsByClassName("nextButton")[0];
 		var nextClone = nb.cloneNode(true);
 		nb.parentNode.replaceChild(nextClone, nb);
 	}
 
 	function removeListenersPrev(prevButton){
-		
 		var pb = document.getElementsByClassName("prevButton")[0];
 		var prevClone = pb.cloneNode(true);
 		pb.parentNode.replaceChild(prevClone, pb);

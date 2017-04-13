@@ -14,7 +14,7 @@
 
 .l-modalWindow {
 	height: 90vh;
-	min-height: 600px;
+	min-height: 500px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -26,7 +26,12 @@
 
 .l-modalContent {
 	display: flex;
-	flex-direction: row;
+}
+
+.l-artistInfo {
+	display: flex;
+	flex-direction: column;
+	max-height: 100%;
 }
 
 .l-moveUp {
@@ -53,13 +58,17 @@
 	align-items: center;
 }
 
-.nextPrevButtons span {
+.l-nextPrevButtons span {
 	padding: 0px 20px;
 }
 
-.nextPrevButtons {
+.l-nextPrevButtons {
 	right: 20px;
 	bottom: -20px;
+}
+
+.l-modalSocialIcons {
+	top: -50px;
 }
 
 .modalIcon {
@@ -68,14 +77,14 @@
 
 .l-artistName {
 	max-width: 530px;
-	height: 128px;
 	overflow: hidden;
 }
 
 .l-artistSummary {
-	width: 530px;
-	height: 50%;
+	flex-grow: 1;
 	max-height: 450px;
+	max-width: 530px;
+	padding-bottom: 100px;
 }
 
 @media screen and (max-width: 1200px) {
