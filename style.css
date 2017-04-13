@@ -2483,7 +2483,8 @@ body, html {
   position: relative; }
 
 .l-modalWindow {
-  height: 650px;
+  height: 90vh;
+  min-height: 600px;
   width: 100%;
   display: flex;
   justify-content: center; }
@@ -2524,6 +2525,32 @@ body, html {
 .modalIcon {
   margin: 10px 27px; }
 
+.l-artistName {
+  max-width: 530px;
+  height: 128px;
+  overflow: hidden; }
+
+.l-artistSummary {
+  width: 530px;
+  height: 50%;
+  max-height: 450px; }
+
+@media screen and (max-width: 1200px) {
+  .l-modalContentWrapper {
+    min-width: 1050px; }
+
+  .l-modalWindow {
+    overflow: scroll; }
+
+  .l-artistName {
+    max-width: 360px; }
+
+  .l-artistSummary {
+    width: 360px;
+    height: 50%; }
+
+  .modalIcon {
+    margin: 10px 12px; } }
 .l-centerText {
   margin: 35px auto 0px;
   padding: 10px 120px 40px;
@@ -2960,6 +2987,9 @@ input[type=button].searchSubmit {
 .artistModalImage img {
   width: 100%; }
 
+.artistName {
+  background-color: #fff; }
+
 .artistName h1 {
   font-family: freightSansBoldItalic, sans-serif;
   text-transform: uppercase;
@@ -2979,10 +3009,8 @@ input[type=button].searchSubmit {
   padding-left: 30px; }
 
 .artistSummary {
+  background-color: #fff;
   overflow: auto;
-  width: 530px;
-  height: 50%;
-  max-height: 450px;
   color: #46c1f2;
   font-family: freightSansMedium, sans-serif;
   line-height: 1.35em;
@@ -3043,6 +3071,17 @@ input[type=button].searchSubmit {
   cursor: pointer;
   padding: 10px; }
 
+@media screen and (max-width: 1200px) {
+  .modalWindow::-webkit-scrollbar-track {
+    background-color: #eaeaea; }
+
+  .modalWindow::-webkit-scrollbar {
+    height: 9px;
+    background-color: #eaeaea; }
+
+  .modalWindow::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa;
+    border: 2px solid #eaeaea; } }
 .featured {
   font-size: 48px;
   padding: 80px 0px;
