@@ -42,8 +42,7 @@ window.addEventListener("load", function(){
 		fillDescription(clickedElement);
 		fillHeader(clickedElement);
 		fillSocials(clickedElement);
-		prepForNext(clickedElement);
-		prepForPrev(clickedElement);
+		prepForNextPrev(clickedElement);
 	}
 
 	function fillImage(clickedElement){
@@ -88,26 +87,33 @@ window.addEventListener("load", function(){
 	}
 
 
+	
 
 
-	function prepForNext(clickedElement){
-		console.log("Prep For Next.");
-		var originalArtist = clickedElement.parentNode;
+	function prepForNextPrev(clickedElement){
+
+		removeListenersNext(nextButton);
+		removeListenersPrev(prevButton);
+
 		var nextButton = document.getElementsByClassName("nextButton")[0];
-		nextButton.addEventListener("click", function(){ fillNextModal(originalArtist); });
-	}
-
-	function prepForPrev(clickedElement){
-		console.log("Prep For Previous.");
-		var originalArtist = clickedElement.parentNode;
 		var prevButton = document.getElementsByClassName("prevButton")[0];
+		
+		var originalArtist = clickedElement.parentNode;
+
+		console.log("Prep For Next.");
+		nextButton.addEventListener("click", function(){ fillNextModal(originalArtist); });
+		
+		
+		console.log("Prep For Prev.");
 		prevButton.addEventListener("click", function(){ fillPrevModal(originalArtist); });
+		
 	}
 
 	function fillNextModal(originalArtist){
+
 		console.log("NEXT Fill artist image.");
 		// Fills artist image.
-		var artistImageURL = originalArtist.nextSibling.nextSibling.childNodes[3].innerHTML
+		var artistImageURL = originalArtist.nextSibling.nextSibling.childNodes[3].innerHTML;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
 		console.log("NEXT Fill artist description.");
@@ -124,14 +130,16 @@ window.addEventListener("load", function(){
 		console.log("NEXT Setting new original artist.");
 		var newOriginal = originalArtist.nextSibling.nextSibling.childNodes[1];
 
-		prepForNext(newOriginal);
-		prepForPrev(newOriginal);
+		prepForNextPrev(newOriginal);
+		
 	}
 
 	function fillPrevModal(originalArtist){
+
 		console.log("PREV Fill artist image.");
+		
 		// Fills artist image.
-		var artistImageURL = originalArtist.previousSibling.previousSibling.childNodes[3].innerHTML
+		var artistImageURL = originalArtist.previousSibling.previousSibling.childNodes[3].innerHTML;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
 		console.log("PREV Fill artist description.");
@@ -148,8 +156,22 @@ window.addEventListener("load", function(){
 		console.log("PREV Setting new original artist.");
 		var newOriginal = originalArtist.previousSibling.previousSibling.childNodes[1];
 
-		prepForNext(newOriginal);
-		prepForPrev(newOriginal);
+		prepForNextPrev(newOriginal);
+		
+	}
+
+	function removeListenersNext(nextButton){
+		
+		var nb = document.getElementsByClassName("nextButton")[0];
+		var nextClone = nb.cloneNode(true);
+		nb.parentNode.replaceChild(nextClone, nb);
+	}
+
+	function removeListenersPrev(prevButton){
+		
+		var pb = document.getElementsByClassName("prevButton")[0];
+		var prevClone = pb.cloneNode(true);
+		pb.parentNode.replaceChild(prevClone, pb);
 	}
 });
 
