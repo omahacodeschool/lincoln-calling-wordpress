@@ -28,6 +28,10 @@
 	.featured__article{
 		padding: 21px 0px;
 	}
+
+	.featured .fa.fa-circle{
+		display: none;
+	}
 }
 
 @media(min-width: 700px){
