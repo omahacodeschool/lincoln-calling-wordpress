@@ -1,5 +1,4 @@
 .navList{
-  background-color: $blue;
   text-align: center;
 }
 
@@ -12,13 +11,11 @@
   position: absolute;
   display: none;
   width: 100%;
-  justify-content: space-between;
   left: 0;
-  background-color: $green;
 }
 
 .navSubList__item{
-  font-size: 2vw;
+  font-size: inherit;
 }
 
 .navSubList__link{
@@ -52,15 +49,12 @@
   display: block;
 }
 
-.navList__item:hover .navSubList{
-  display: flex;
-  align-items: stretch;
-}
-
-.navSubList__link:hover {
+.navSubList__link:hover,
+.navList{
 	background-color: $blue;
 }
 
-.navList__link:hover {
+.navList__link:hover,
+.navSubList{
   background-color: $green;
 }

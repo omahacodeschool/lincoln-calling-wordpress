@@ -2616,6 +2616,13 @@ body, html {
   display: flex;
   justify-content: space-between; }
 
+.l-navSubList {
+  justify-content: space-between; }
+
+.navList__item:hover .l-navSubList {
+  display: flex;
+  align-items: stretch; }
+
 @media (min-width: 700px) {
   .l-widgets::after {
     clear: both;
@@ -2813,7 +2820,6 @@ body, html {
   .passOptions {
     background: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png") no-repeat 100% 35px; } }
 .navList {
-  background-color: #21b0e6;
   text-align: center; }
 
 .navList__item {
@@ -2824,12 +2830,10 @@ body, html {
   position: absolute;
   display: none;
   width: 100%;
-  justify-content: space-between;
-  left: 0;
-  background-color: #25bcac; }
+  left: 0; }
 
 .navSubList__item {
-  font-size: 2vw; }
+  font-size: inherit; }
 
 .navSubList__link {
   flex-grow: 1;
@@ -2873,14 +2877,12 @@ body, html {
   padding: 13px 4px;
   display: block; }
 
-.navList__item:hover .navSubList {
-  display: flex;
-  align-items: stretch; }
-
-.navSubList__link:hover {
+.navSubList__link:hover,
+.navList {
   background-color: #21b0e6; }
 
-.navList__link:hover {
+.navList__link:hover,
+.navSubList {
   background-color: #25bcac; }
 
 .searchForm {
