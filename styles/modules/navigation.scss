@@ -4,7 +4,8 @@
 }
 
 /*Formats the link text*/
-.nav li {
+.navList__item,
+.navSubList__item{
   flex-grow: 1;
   font-family: $font-fam-Lighter, sans-serif;
   text-transform: uppercase;

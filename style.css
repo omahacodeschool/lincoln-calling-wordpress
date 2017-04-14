@@ -2817,7 +2817,8 @@ body, html {
   background-color: #21b0e6; }
 
 /*Formats the link text*/
-.nav li {
+.navList__item,
+.navSubList__item {
   flex-grow: 1;
   font-family: freightSansLighter, sans-serif, sans-serif;
   text-transform: uppercase;
