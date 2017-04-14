@@ -9,21 +9,24 @@
 
 	.socialLinks .fa{
 		color: $m-icon-gray;
-		font-size: 100px;
+		font-size: 12vw;
+		margin: auto;
 	}
 
 	.socialLinks a{
-		padding: 14px 0px;
 		width: 100%;
+		align-items: center;
+		display: flex;
+	}
+
+	.socialLinks a:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
 	}
 
 	.socialLinks a:nth-child(even){
 		background-color: $dim-white;
-	}
-
-	.socialLinks .fa.fa-soundcloud{
-		font-size: 79px;
-		margin-top: 9px;
 	}
 }
 
