@@ -1,11 +1,6 @@
-.footerCredits{
-	padding-bottom: 150px;
-}
-
 .footerCredits img{  
 	height: 50px;
 	width: auto;
-	margin-left: 20px;
 }
 
 .credit{
@@ -14,4 +9,24 @@
 	font-weight: lighter;
 	color: $white;
 	font-size: 1.4em;
+}
+
+@media (min-width: 700px){
+	.footerCredits img{
+		margin-left: 20px;
+	}
+
+	.footerCredits{
+		padding-bottom: 150px;
+	}
+}
+
+@media (max-width: 700px){
+	.footerCredits img{
+		margin-top: 10px;
+	}
+
+	.footerCredits{
+		padding-bottom: 88px;
+	}
 }

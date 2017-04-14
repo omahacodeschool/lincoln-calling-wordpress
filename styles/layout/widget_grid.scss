@@ -1,14 +1,33 @@
-.l-widgets{
-	@include grid-container;
+@media(min-width: 700px){
+	.l-widgets{
+		@include grid-container;
+	}
+	.l-widgets__youtube{
+		@include grid-column(12);
+		height: 380px;
+	}
+	.l-widgets__slideshow{
+		@include grid-column(8);
+		height: 535px;
+	}
+	.l-widgets__spotify{
+		@include grid-column(4);
+		height: 535px;
+	}
 }
-.l-widgets__youtube{
-	@include grid-column(12);
-	height: 380px;
-}
-.l-widgets__slideshow{
-	@include grid-column(8);
-}
-.l-widgets__spotify{
-	@include grid-column(4);
-	height: 535px;
+
+@media(max-width: 700px){
+	.l-widgets__youtube{
+		height: 235px;
+	}
+
+	.l-widgets__spotify{
+		height: 250px;
+	}
+
+	.l-widgets__youtube,
+	.l-widgets__slideshow,
+	.l-widgets__spotify{
+		width: 100%;
+	}
 }

@@ -1,9 +1,13 @@
 .l-centerText{
-	margin: 35px auto 0px;
+	margin: 35px auto;
 	padding: 10px 120px 40px;
 	text-align: center;
 }
 
-.l-centerAnnouncement {
-	margin-bottom: 40px;
+@media (max-width: 700px){
+	.l-centerText{
+		text-align: left;
+		padding: 10px 0px 0px;
+		margin: 75px 0px;
+	}
 }

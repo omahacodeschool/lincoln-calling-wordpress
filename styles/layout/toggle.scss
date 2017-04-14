@@ -1,0 +1,7 @@
+.mobile-hide{
+	@include display-on-mobile(none);
+}
+
+.desktop-hide{
+	@include display-on-desktop(none);
+}

@@ -1,9 +1,8 @@
 .buyTicketsDecor{
 	position: relative;
 	height: 600px;
-	background-image: url("../assets/images/buyNowDecor.png");
+	background-image: url("assets/images/buyNowDecor.png");
 	background-size: 100% 100%;
-	padding: 20px 0px;
 }
 
 .buyTicketsDecor .buyTicketsButton{
@@ -50,5 +49,14 @@
 @media (max-width: 700px){
 	.buyNowButton {
 		font-family: $font-fam-Bold;
+	}
+
+	.buyTicketsButton{
+		letter-spacing: 10px;
+	}
+
+	.buyTicketsDecor{
+		height: 316px;
+		margin: 50px 0px;
 	}
 }

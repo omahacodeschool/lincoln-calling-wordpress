@@ -1,5 +1,6 @@
 .searchForm {
 	display: flex;
+	@include display-on-mobile(none);
 	width: 350px;
 	margin: auto;
 	padding-top: 100px;

@@ -1,8 +1,41 @@
 .socialLinks .fa{
-	color: $white;
 	font-size: 2em;
 }
 
-.socialLinks{
-	padding: 70px 185px;
+@media (max-width: 700px){
+	.socialLinks{
+		background-color: $white;
+	}
+
+	.socialLinks .fa{
+		color: $m-icon-gray;
+		font-size: 12vw;
+		margin: auto;
+	}
+
+	.socialLinks a{
+		width: 100%;
+		align-items: center;
+		display: flex;
+	}
+
+	.socialLinks a:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+
+	.socialLinks a:nth-child(even){
+		background-color: $dim-white;
+	}
+}
+
+@media (min-width: 700px){
+	.socialLinks{
+		padding: 70px 185px;		
+	}
+
+	.socialLinks .fa{
+		color: $white;
+	}
 }
