@@ -2487,13 +2487,18 @@ body, html {
   min-height: 500px;
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 40px 40px 10px; }
 
 .l-modalContentWrapper {
   max-width: 1500px; }
 
 .l-modalContent {
-  display: flex; }
+  display: flex;
+  height: 100%; }
+
+.l-artistModalImage {
+  margin-bottom: 30px; }
 
 .l-artistInfo {
   display: flex;
@@ -2523,24 +2528,19 @@ body, html {
   padding: 0px 20px; }
 
 .l-nextPrevButtons {
-  right: 20px;
-  bottom: -20px; }
-
-.l-modalSocialIcons {
-  top: -50px; }
+  text-align: right;
+  margin-top: 30px; }
 
 .modalIcon {
   margin: 10px 27px; }
 
 .l-artistName {
-  max-width: 530px;
-  overflow: hidden; }
+  max-width: 530px; }
 
 .l-artistSummary {
   flex-grow: 1;
-  max-height: 450px;
   max-width: 530px;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
 
 @media screen and (max-width: 1200px) {
   .l-modalContentWrapper {
@@ -2984,8 +2984,7 @@ input[type=button].searchSubmit {
 
 .modalWindow {
   background: #fff url("assets/images/ArtistModalBGGraphic.png") no-repeat;
-  background-position-y: -258px;
-  padding: 40px; }
+  background-position-y: -258px; }
 
 .artistModalImage {
   flex-grow: 1;

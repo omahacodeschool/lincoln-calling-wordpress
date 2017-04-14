@@ -5,6 +5,7 @@ window.addEventListener("load", function(){
 	var artistImage = document.getElementsByClassName("artistModalImage")[0];
 	var artistTitle = document.getElementsByClassName("artistName")[0];
 	var artistSummary = document.getElementsByClassName("artistSummary")[0];
+	var artistWebsiteLink = document.getElementsByClassName("webLink")[0];
 
 	var instagram = document.getElementsByClassName("instagramLink")[0];
 	var snapchat = document.getElementsByClassName("snapchatLink")[0];
@@ -47,15 +48,16 @@ window.addEventListener("load", function(){
 
 	function fillImage(clickedElement){
 		// Fills artist image.
-		var artistImageURL = clickedElement.parentNode.childNodes[3].innerHTML;
+		var artistImageURL = clickedElement.parentNode.dataset.artistFullImage;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 	}
 
 	function fillDescription(clickedElement){
 		// Fills artist description.
-		var artistLink = clickedElement.parentNode.childNodes[7].innerHTML;
-		var artistDescription = clickedElement.parentNode.childNodes[9].innerHTML;
-		artistSummary.innerHTML = artistLink + "<br>" + artistDescription;
+		artistWebsiteLink.href = clickedElement.parentNode.dataset.artistSiteLink;
+		artistWebsiteLink.innerHTML = clickedElement.parentNode.dataset.artistWebsiteName;
+		var artistDescription = clickedElement.parentNode.dataset.artistDescription;
+		artistSummary.innerHTML = "<br>" + artistDescription;
 	}
 
 	function fillHeader(clickedElement){
@@ -67,11 +69,11 @@ window.addEventListener("load", function(){
 	function fillSocials(clickedElement){
 		// Fills artist social icons.
 		// Defining Artist socials
-		var artistInstagram = clickedElement.parentNode.childNodes[13].childNodes[1].innerHTML;
-		var artistSnapchat = clickedElement.parentNode.childNodes[13].childNodes[3].innerHTML;
-		var artistFacebook = clickedElement.parentNode.childNodes[13].childNodes[5].innerHTML;
-		var artistTwitter = clickedElement.parentNode.childNodes[13].childNodes[7].innerHTML;
-		var artistSoundcloud = clickedElement.parentNode.childNodes[13].childNodes[9].innerHTML;
+		var artistInstagram = clickedElement.parentNode.dataset.artistInstagram;
+		var artistSnapchat = clickedElement.parentNode.dataset.artistSnapchat;
+		var artistFacebook = clickedElement.parentNode.dataset.artistFacebook;
+		var artistTwitter = clickedElement.parentNode.dataset.artistTwitter;
+		var artistSoundcloud = clickedElement.parentNode.dataset.artistSoundcloud;
 
 		instagram.href = artistInstagram;
 		snapchat.href = artistSnapchat;
@@ -113,16 +115,17 @@ window.addEventListener("load", function(){
 	function fillNextModal(originalArtist){
 
 		// Fills artist image.
-		var artistImageURL = originalArtist.nextSibling.nextSibling.childNodes[3].innerHTML;
+		var artistImageURL = originalArtist.nextElementSibling.dataset.artistFullImage;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
 		// Fills artist description.
-		var artistLink = originalArtist.nextSibling.nextSibling.childNodes[7].innerHTML;
-		var artistDescription = originalArtist.nextSibling.nextSibling.childNodes[9].innerHTML;
-		artistSummary.innerHTML = artistLink + "<br>" + artistDescription;
+		artistWebsiteLink.href = originalArtist.nextElementSibling.dataset.artistSiteLink;
+		artistWebsiteLink.innerHTML = originalArtist.nextElementSibling.dataset.artistWebsiteName;
+		var artistDescription = originalArtist.nextElementSibling.dataset.artistDescription;
+		artistSummary.innerHTML = "<br>" + artistDescription;
 
 		// Fills artist name.
-		var artistName = originalArtist.nextSibling.nextSibling.childNodes[5].innerHTML;
+		var artistName = originalArtist.nextElementSibling.dataset.artistName;
 		artistTitle.innerHTML = '<h1>' + artistName + '</h1>';
 
 		// Sets new point of origin.
@@ -136,20 +139,21 @@ window.addEventListener("load", function(){
 	function fillPrevModal(originalArtist){
 		
 		// Fills artist image.
-		var artistImageURL = originalArtist.previousSibling.previousSibling.childNodes[3].innerHTML;
+		var artistImageURL = originalArtist.previousElementSibling.dataset.artistFullImage;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
 		// Fills artist description.
-		var artistLink = originalArtist.previousSibling.previousSibling.childNodes[7].innerHTML;
-		var artistDescription = originalArtist.previousSibling.previousSibling.childNodes[9].innerHTML;
-		artistSummary.innerHTML = artistLink + "<br>" + artistDescription;
+		artistWebsiteLink.href = originalArtist.previousElementSibling.dataset.artistSiteLink;
+		artistWebsiteLink.innerHTML = originalArtist.previousElementSibling.dataset.artistWebsiteName;
+		var artistDescription = originalArtist.previousElementSibling.dataset.artistDescription;
+		artistSummary.innerHTML = "<br>" + artistDescription;
 
 		// Fills artist name.
-		var artistName = originalArtist.previousSibling.previousSibling.childNodes[5].innerHTML;
+		var artistName = originalArtist.previousElementSibling.dataset.artistName;
 		artistTitle.innerHTML = '<h1>' + artistName + '</h1>';
 
 		// Sets new point of origin.
-		var newOriginal = originalArtist.previousSibling.previousSibling.childNodes[1];
+		var newOriginal = originalArtist.previousElementSibling.childNodes[1];
 
 		// Prepares Next and Previous buttons in the modal.
 		prepForNextPrev(newOriginal);
