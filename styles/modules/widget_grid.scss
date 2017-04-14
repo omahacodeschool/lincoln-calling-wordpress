@@ -10,3 +10,13 @@
 .widgets__spotify{
 	background-color: $gray;
 }
+
+.widgets__slideshow{
+	background-color: $green;
+}
+
+@media(max-width: 700px){
+	.widgets__slideshow{
+		margin-bottom: 70px;
+	}
+}

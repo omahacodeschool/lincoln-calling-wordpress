@@ -2576,28 +2576,40 @@ body, html {
   display: flex;
   justify-content: space-between; }
 
-.l-widgets::after {
-  clear: both;
-  content: "";
-  display: block; }
+@media (min-width: 700px) {
+  .l-widgets::after {
+    clear: both;
+    content: "";
+    display: block; }
 
-.l-widgets__youtube {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px;
-  height: 380px; }
+  .l-widgets__youtube {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    height: 380px; }
 
-.l-widgets__slideshow {
-  width: calc(66.66667% - 33.33333px);
-  float: left;
-  margin-left: 20px; }
+  .l-widgets__slideshow {
+    width: calc(66.66667% - 33.33333px);
+    float: left;
+    margin-left: 20px;
+    height: 535px; }
 
-.l-widgets__spotify {
-  width: calc(33.33333% - 26.66667px);
-  float: left;
-  margin-left: 20px;
-  height: 535px; }
+  .l-widgets__spotify {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px;
+    height: 535px; } }
+@media (max-width: 700px) {
+  .l-widgets__youtube {
+    height: 235px; }
 
+  .l-widgets__spotify {
+    height: 250px; }
+
+  .l-widgets__youtube,
+  .l-widgets__slideshow,
+  .l-widgets__spotify {
+    width: 100%; } }
 .ticketsGraphic {
   float: right;
   margin: 20px 0px 0px 0px; }
@@ -3270,6 +3282,12 @@ input[type=button].searchSubmit {
 .widgets__spotify {
   background-color: #808080; }
 
+.widgets__slideshow {
+  background-color: #25bcac; }
+
+@media (max-width: 700px) {
+  .widgets__slideshow {
+    margin-bottom: 70px; } }
 .templateTitle {
   font-family: freightSansBoldItalic, sans-serif;
   color: #fff;

@@ -10,8 +10,11 @@ window.addEventListener("load", function(){
 
 	const imageStrip = document.getElementsByClassName('js-imageStrip')[0];
 	const container = document.getElementsByClassName('js-slideShow')[0];
+
+	// TODO: update these values when screen is resized
 	const widthOfContainer = container.offsetWidth;
 	const maxPos = widthOfContainer * imageStrip.children.length;
+	//
 
 	const controls = document.getElementsByClassName("slideShowControls")[0].children;
 	const links = document.getElementsByClassName("slideShowArticles")[0].children;
