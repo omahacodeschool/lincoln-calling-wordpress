@@ -2829,7 +2829,7 @@ body, html {
   background-color: #25bcac; }
 
 .navSubList__item {
-  font-size: inherit; }
+  font-size: 2vw; }
 
 .navSubList__link {
   flex-grow: 1;
