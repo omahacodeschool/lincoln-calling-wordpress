@@ -2813,11 +2813,7 @@ body, html {
   .passOptions {
     background: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png") no-repeat 100% 35px; } }
 /*Main nav background*/
-.nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: relative;
+.navList {
   background-color: #21b0e6; }
 
 /*Formats the link text*/
