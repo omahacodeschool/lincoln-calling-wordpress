@@ -2,8 +2,8 @@
 
 <div class="templateBody">
 	<div class="categoryInfo">
-		<h1 class="categoryInfo__title"><?php single_cat_title('Info - '); ?></h1>
-		<p class="categoryInfo__description">
+		<h1 class="templateTitle l-templateTitle"><?php single_cat_title('Info - '); ?></h1>
+		<p class="pageDescription">
 			<?php echo strip_tags(category_description()); ?>
 		</p>
 	</div>
