@@ -1,3 +1,36 @@
 .templateBody{
 	color: $white;
 }
+
+.article__title {
+	line-height: 1.2em;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	font-family: $font-fam-SemiboldItalic;
+}
+
+.article__meta {
+	font-family: $font-fam-Italic;
+	font-size: 1.75em;
+	line-height: 1.23em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.pageBody {
+	color: $white;
+	font-size: 1.62em;
+	line-height: 1.23em;
+	-webkit-font-smoothing: antialiased;
+	font-family: $font-fam;
+}
+
+.author__avatar {
+	width: 180px;
+}
+
+.author__blurb {
+	font-family: $font-fam-Italic;
+	font-size: 1.75em;
+	line-height: 1.23em;
+	-webkit-font-smoothing: antialiased;
+}

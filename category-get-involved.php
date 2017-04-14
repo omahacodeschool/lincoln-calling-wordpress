@@ -25,26 +25,26 @@
 					/>
 				<?php endif ?>
 				<!-- Get the post title -->
-				<h3 class='article__title'>
+				<h3 class='templateTitle article__title l-article__title'>
 					<?php the_title(); ?>
 				</h3>
 				<!-- Get the author and date -->
-				<p class="article__meta">
+				<p class="article__meta l-article__meta">
 					<?php echo "by "; the_author(); echo " | "; the_date(); ?>
 				</p>
 				<!-- Get the post body -->
-			    <p class='article__body'>
+			    <p class='pageBody'>
 				    <?php echo get_field('article_body'); ?>	
 			    </p>
 		    </div>
 
 		    <!-- Get the author info -->
-		    <div class="author">
+		    <div class="author l-author">
 		    	<img 
-			    	class="author__avatar" 
+			    	class="author__avatar l-author__avatar" 
 					src="<?php echo get_avatar_url(get_the_author_meta('user_email')); ?>" 
 				/>
-		    	<p class="author__blurb">
+		    	<p class="author__blurb l-author__blurb">
 			    	<?php the_author(); ?> is Hear Nebraska's managing editor. Reach him with news tips and story ideas at <?php echo get_the_author_meta('user_email'); ?>.	
 		    	</p>
 		    </div>
@@ -54,6 +54,12 @@
 	    the_posts_pagination();
 	endif;
 	?>
+</div>
+
+<div class="hr">
+	<i class="fa fa-circle" aria-hidden="true"></i>
+	<i class="fa fa-circle" aria-hidden="true"></i>
+	<i class="fa fa-circle" aria-hidden="true"></i>
 </div>
 
 <?php get_footer(); ?>

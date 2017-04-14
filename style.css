@@ -12,6 +12,9 @@ Version: 1.0
   font-family: freightSansMedium;
   src: url("assets/fonts/Freight Sans Pro Medium.otf"); }
 @font-face {
+  font-family: freightSansMediumItalic;
+  src: url("assets/fonts/Freight Sans Pro Medium Italic.otf"); }
+@font-face {
   font-family: freightSansSemiboldItalic;
   src: url("assets/fonts/Freight Sans Pro Semibold Italic.otf"); }
 @font-face {
@@ -2676,6 +2679,27 @@ body, html {
   .desktop-hide {
     display: none; } }
 
+.l-article__title {
+  margin-top: 100px;
+  margin-bottom: 60px; }
+
+.l-article__meta {
+  margin-bottom: 30px; }
+
+.l-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 115px;
+  padding: 0px 5px;
+  margin-bottom: 115px; }
+
+.l-author__avatar {
+  margin: 0px 35px 0px 0px; }
+
+.l-author__blurb {
+  flex-grow: 1; }
+
 .buyTicketsDecor {
   position: relative;
   height: 600px;
@@ -3370,6 +3394,34 @@ input[type=button].searchSubmit {
 
 .templateBody {
   color: #fff; }
+
+.article__title {
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  font-family: freightSansSemiboldItalic, sans-serif; }
+
+.article__meta {
+  font-family: freightSansMediumItalic, sans-serif;
+  font-size: 1.75em;
+  line-height: 1.23em;
+  -webkit-font-smoothing: antialiased; }
+
+.pageBody {
+  color: #fff;
+  font-size: 1.62em;
+  line-height: 1.23em;
+  -webkit-font-smoothing: antialiased;
+  font-family: freightSansMedium, sans-serif; }
+
+.author__avatar {
+  width: 180px; }
+
+.author__blurb {
+  font-family: freightSansMediumItalic, sans-serif;
+  font-size: 1.75em;
+  line-height: 1.23em;
+  -webkit-font-smoothing: antialiased; }
 
 .starDivider {
   width: 100%;
