@@ -5,10 +5,6 @@
 }
 
 .passOptions {
-	background-image: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png");
-	background-repeat: no-repeat;
-	background-position: 100% 35px;
-	background-size: auto;
 	padding-bottom: 60px;
 }
 
@@ -50,4 +46,10 @@
 .passOption--soldOut .passOption__title,
 .passOption--soldOut .passOption__note{
 	color: $gray;
+}
+
+@media (min-width: 700px){
+	.passOptions{
+		background: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png") no-repeat 100% 35px;
+	}
 }
