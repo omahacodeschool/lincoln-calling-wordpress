@@ -70,7 +70,6 @@
 						<div class="closeModal l-closeX">x</div>
 
 						<div class="artistSummary l-artistSummary">
-							<a href="" class="webLink"></a>
 						</div>
 
 						<div class="modalSocialIcons l-modalSocialIcons l-posRelative">

@@ -54,10 +54,11 @@ window.addEventListener("load", function(){
 
 	function fillDescription(clickedElement){
 		// Fills artist description.
-		artistWebsiteLink.href = clickedElement.parentNode.dataset.artistSiteLink;
-		artistWebsiteLink.innerHTML = clickedElement.parentNode.dataset.artistWebsiteName;
+		var siteLink = clickedElement.parentNode.dataset.artistSiteLink;
+		var siteText = clickedElement.parentNode.dataset.artistWebsiteName;
+		var fullLink = "<a href='" + siteLink + "' class='webLink'>" + siteText + "</a>";
 		var artistDescription = clickedElement.parentNode.dataset.artistDescription;
-		artistSummary.innerHTML = "<br>" + artistDescription;
+		artistSummary.innerHTML = fullLink + "<br>" + artistDescription;
 	}
 
 	function fillHeader(clickedElement){
@@ -119,10 +120,11 @@ window.addEventListener("load", function(){
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
 		// Fills artist description.
-		artistWebsiteLink.href = originalArtist.nextElementSibling.dataset.artistSiteLink;
-		artistWebsiteLink.innerHTML = originalArtist.nextElementSibling.dataset.artistWebsiteName;
+		var siteLink = originalArtist.nextElementSibling.dataset.artistSiteLink;
+		var siteText = originalArtist.nextElementSibling.dataset.artistWebsiteName;
+		var fullLink = "<a href='" + siteLink + "' class='webLink'>" + siteText + "</a>";
 		var artistDescription = originalArtist.nextElementSibling.dataset.artistDescription;
-		artistSummary.innerHTML = "<br>" + artistDescription;
+		artistSummary.innerHTML = fullLink + "<br>" + artistDescription;
 
 		// Fills artist name.
 		var artistName = originalArtist.nextElementSibling.dataset.artistName;
@@ -143,10 +145,11 @@ window.addEventListener("load", function(){
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 
 		// Fills artist description.
-		artistWebsiteLink.href = originalArtist.previousElementSibling.dataset.artistSiteLink;
-		artistWebsiteLink.innerHTML = originalArtist.previousElementSibling.dataset.artistWebsiteName;
+		var siteLink = originalArtist.previousElementSibling.dataset.artistSiteLink;
+		var siteText = originalArtist.previousElementSibling.dataset.artistWebsiteName;
+		var fullLink = "<a href='" + siteLink + "' class='webLink'>" + siteText + "</a>";
 		var artistDescription = originalArtist.previousElementSibling.dataset.artistDescription;
-		artistSummary.innerHTML = "<br>" + artistDescription;
+		artistSummary.innerHTML = fullLink + "<br>" + artistDescription;
 
 		// Fills artist name.
 		var artistName = originalArtist.previousElementSibling.dataset.artistName;
