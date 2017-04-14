@@ -1,9 +1,41 @@
-/*Main nav background*/
 .navList{
   background-color: $blue;
+  text-align: center;
 }
 
-/*Formats the link text*/
+.navList__item{    
+  font-size: 1.4em;
+  display: inline-block;
+}
+
+.navSubList{
+  position: absolute;
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  left: 0;
+  background-color: $green;
+}
+
+.navSubList__item{
+  font-size: inherit;
+}
+
+.navSubList__link{
+  flex-grow: 1;
+  font-size: 0.65em;
+}
+
+.newsletterLink{
+  padding-right: 10px;
+  @include stretch(1.3, 1);
+}
+
+.navDownArrow{
+  padding-left: 4px;
+  @include stretch(1, 1.5);
+}
+
 .navList__item,
 .navSubList__item{
   flex-grow: 1;
@@ -20,63 +52,15 @@
   display: block;
 }
 
-.navList__link:hover {
-  background-color: $green;
-}
-
-/* Sub Menu font styling */
-.navSubList__item{
-  font-size: inherit;
-}
-
-.newsletterLink{
-  padding-right: 10px;
-  @include stretch(1.3, 1);
-}
-
-.navDownArrow{
-  padding-left: 4px;
-  @include stretch(1, 1.5);
-}
-
-
-
-
-
-
-.navList__item{    
-  font-size: 1.4em;
-  display: inline-block;
-}
-
-.navList{
-  text-align: center;
-}
-
-/* Sub Menus */
-.navSubList{
-  position: absolute;
-  display: none;
-  width: 100%;
-  justify-content: space-between;
-  left: 0;
-}
-
 .navList__item:hover .navSubList{
   display: flex;
   align-items: stretch;
-}
-
-.navSubList{
-	background-color: $green;
 }
 
 .navSubList__link:hover {
 	background-color: $blue;
 }
 
-.navSubList__link{
-	flex-grow: 1;
-  font-size: 0.65em;
+.navList__link:hover {
+  background-color: $green;
 }
-

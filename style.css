@@ -2812,31 +2812,28 @@ body, html {
 @media (min-width: 700px) {
   .passOptions {
     background: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png") no-repeat 100% 35px; } }
-/*Main nav background*/
 .navList {
-  background-color: #21b0e6; }
+  background-color: #21b0e6;
+  text-align: center; }
 
-/*Formats the link text*/
-.navList__item,
-.navSubList__item {
-  flex-grow: 1;
-  font-family: freightSansLighter, sans-serif, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px; }
+.navList__item {
+  font-size: 1.4em;
+  display: inline-block; }
 
-.navList__link,
-.navSubList__link {
-  color: #fff;
-  font-size: 0.75em;
-  padding: 13px 4px;
-  display: block; }
-
-.navList__link:hover {
+.navSubList {
+  position: absolute;
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  left: 0;
   background-color: #25bcac; }
 
-/* Sub Menu font styling */
 .navSubList__item {
   font-size: inherit; }
+
+.navSubList__link {
+  flex-grow: 1;
+  font-size: 0.65em; }
 
 .newsletterLink {
   padding-right: 10px;
@@ -2862,34 +2859,29 @@ body, html {
   /* Opera */
   transform: scale(1, 1.5); }
 
-.navList__item {
-  font-size: 1.4em;
-  display: inline-block; }
+.navList__item,
+.navSubList__item {
+  flex-grow: 1;
+  font-family: freightSansLighter, sans-serif, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
 
-.navList {
-  text-align: center; }
-
-/* Sub Menus */
-.navSubList {
-  position: absolute;
-  display: none;
-  width: 100%;
-  justify-content: space-between;
-  left: 0; }
+.navList__link,
+.navSubList__link {
+  color: #fff;
+  font-size: 0.75em;
+  padding: 13px 4px;
+  display: block; }
 
 .navList__item:hover .navSubList {
   display: flex;
   align-items: stretch; }
 
-.navSubList {
-  background-color: #25bcac; }
-
 .navSubList__link:hover {
   background-color: #21b0e6; }
 
-.navSubList__link {
-  flex-grow: 1;
-  font-size: 0.65em; }
+.navList__link:hover {
+  background-color: #25bcac; }
 
 .searchForm {
   display: flex;
