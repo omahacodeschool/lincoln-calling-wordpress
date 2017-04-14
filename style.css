@@ -2824,19 +2824,18 @@ body, html {
   text-transform: uppercase;
   letter-spacing: 4px; }
 
-/*Resets link formatting, adds rollover transition animation*/
-.nav a {
-  text-decoration: none;
+.navList__link,
+.navSubList__link {
   color: #fff;
-  display: block;
+  font-size: 0.75em;
   padding: 13px 4px;
-  font-size: 0.75em; }
+  display: block; }
 
-.nav a:hover {
+.navList__link:hover {
   background-color: #25bcac; }
 
 /* Sub Menu font styling */
-.nav li li {
+.navSubList__item {
   font-size: inherit; }
 
 .newsletterLink {
@@ -2863,38 +2862,35 @@ body, html {
   /* Opera */
   transform: scale(1, 1.5); }
 
-@media screen and (min-width: 650px) {
-  .nav li {
-    font-size: 1.4em;
-    display: inline-block; }
+.navList__item {
+  font-size: 1.4em;
+  display: inline-block; }
 
-  .nav > ul > li {
-    text-align: center; }
+.navList {
+  text-align: center; }
 
-  /* Sub Menus */
-  .nav li ul {
-    position: absolute;
-    display: none;
-    width: 100%;
-    justify-content: space-between;
-    left: 0; }
+/* Sub Menus */
+.navSubList {
+  position: absolute;
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  left: 0; }
 
-  .nav li:hover ul {
-    display: flex;
-    align-items: stretch; }
+.navList__item:hover .navSubList {
+  display: flex;
+  align-items: stretch; }
 
-  .nav li ul {
-    background-color: #25bcac; }
+.navSubList {
+  background-color: #25bcac; }
 
-  .nav li ul a:hover {
-    background-color: #21b0e6; }
+.navSubList__link:hover {
+  background-color: #21b0e6; }
 
-  .nav li ul li {
-    display: flex; }
+.navSubList__link {
+  flex-grow: 1;
+  font-size: 0.65em; }
 
-  .nav li ul li a {
-    flex-grow: 1;
-    font-size: 0.65em; } }
 .searchForm {
   display: flex;
   width: 350px;
