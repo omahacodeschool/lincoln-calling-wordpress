@@ -51,7 +51,7 @@
       <input type="button" class="searchSubmit">
     </form>
 
-    <div class="socialLinks l-socialLinks">
+    <div class="socialLinks l-socialLinks  mobile-hide">
       <a href="https://www.instagram.com/lincolncalling_/">
         <i class="fa fa-instagram"></i>
       </a>
@@ -90,8 +90,26 @@
       </li>
     </ul>
   </div>
-
 </div>
+
+<div class="socialLinks l-socialLinks desktop-hide">
+  <a href="https://www.instagram.com/lincolncalling_/">
+    <i class="fa fa-instagram"></i>
+  </a>
+  <a href="#">
+    <i class="fa fa-snapchat-ghost"></i>
+  </a>
+  <a href="https://www.facebook.com/LincolnCalling/">
+    <i class="fa fa-facebook-official"></i>
+  </a>
+  <a href="https://twitter.com/lincolncalling_?lang=en">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <a href="#">
+    <i class="fa fa-soundcloud"></i>
+  </a>
+</div>
+
 
 <?php wp_footer(); ?>
 
