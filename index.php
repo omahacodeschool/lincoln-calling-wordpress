@@ -32,15 +32,15 @@
         <li class="passOption">
         <?php endif ?>
          
-        <small class="passOption__date">
-        <?php echo get_field('start_date')." "; echo get_field('end_date')?>
-        </small>  
-        <a href="#"><h3 class="passOption__title">
-        <?php the_title(); ?> &mdash; <?php echo '$'.get_field('price')?>
-           
-        <span class="passOption__note"><?php the_content() ?></span>
-           
-        </h3></a>
+          <small class="passOption__date">
+          <?php echo get_field('start_date')." "; echo get_field('end_date')?>
+          </small>  
+          <a href="#"><h3 class="passOption__title">
+          <?php the_title(); ?> &mdash; <?php echo '$'.get_field('price')?>
+             
+          <span class="passOption__note"><?php the_content() ?></span>
+             
+          </h3></a>
         </li>
 
         <?php
@@ -53,22 +53,27 @@
     </ul>
   </div>
 
-
   <div class="clearFloat">
   </div>
+</div>
 
-  <div class="l-centerAnnouncement">
-    <div class="centerText l-centerText">
-      <h3 class="centerText__title">Advance Single-Day Passes</h3>
-      <p class="centerText__subtitle">All Venues</p>
-      <p class="centerText__body">Will go live later in the summer, coinciding with the day-schedule announcement.</p>
-    </div>
+<div class="starDivider l-starDivider"></div>
 
-    <div class="centerText l-centerText">
-      <h3 class="centerText__title">Specialty Passes</h3>
-      <p class="centerText__subtitle">3 day pass &mdash; All Venues</p>
-      <p class="centerText__body">Featuring perks designed to enhance your Lincoln Calling experience, these will go live on May 4, coinciding with first-round lineup announcement.</p>
-    </div>
+<div class="outerContainer">
+  <div class="centerText l-centerText">
+    <h3 class="centerText__title">Advance Single-Day Passes</h3>
+    <p class="centerText__subtitle">All Venues</p>
+    <p class="centerText__body">Will go live later in the summer, coinciding with the day-schedule announcement.</p>
+  </div>
+</div>
+
+<div class="starDivider l-starDivider"></div>
+
+<div class="outerContainer">
+  <div class="centerText l-centerText">
+    <h3 class="centerText__title">Specialty Passes</h3>
+    <p class="centerText__subtitle">3 day pass &mdash; All Venues</p>
+    <p class="centerText__body">Featuring perks designed to enhance your Lincoln Calling experience, these will go live on May 4, coinciding with first-round lineup announcement.</p>
   </div>
 
   <a href="#" class="buyNowButton l-fullWidth l-buyNow">
