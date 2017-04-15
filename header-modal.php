@@ -15,7 +15,10 @@
 
 <div class="outerContainer">
   <div class="header">
-    <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation.">
+    <?php $url = home_url(); ?>
+    <a href="<?php echo $url; ?>">
+      <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation.">
+    </a>
   </div>
 
   <div class="nav">
