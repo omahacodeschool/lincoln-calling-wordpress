@@ -35,12 +35,15 @@
       <li>
         <a href="">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
         <ul class="subNav">
-          <?php wp_list_categories( array (
-            'title_li' => '',
-            'orderby' => 'id',
-            'child_of' => get_cat_ID( 'get-involved' ),
-            'hide_empty' => 0
-          ) ); ?>
+          <?php $posts = get_posts( array(
+            'category' => get_cat_ID( 'get involved' )
+            )); 
+          foreach ($posts as $post) {
+          ?>
+            <li>
+              <a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?></a>
+            </li>
+          <?php } ?>
         </ul>
         <li><a href="#">Updates</a></li>
         <li><a href="#">Fest Info</a></li>
