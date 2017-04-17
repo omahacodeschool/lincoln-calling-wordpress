@@ -50,5 +50,8 @@
     </ul>
   </div>
 </div>
-<img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
+
+<a href="<?php echo home_url(); ?>">
+  <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
+</a>
 <div class="outerContainer">
