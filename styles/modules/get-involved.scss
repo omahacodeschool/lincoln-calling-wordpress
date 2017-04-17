@@ -9,14 +9,13 @@
 }
 
 .pageBody{
-	color: $white;
 	font-size: 1.62em;
 	line-height: 1.23em;
 	font-family: $font-fam;
 }
 
 .author__avatar{
-	width: 180px;
+	width: 125px;
 }
 
 .author__blurb,
@@ -33,3 +32,9 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 700px){
+	.author__avatar{
+		width: 150px;
+		height: 150px;
+	}
+}

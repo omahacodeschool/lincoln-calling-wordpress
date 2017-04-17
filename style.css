@@ -2667,6 +2667,9 @@ body, html {
   text-align: center;
   margin-top: 40px; }
 
+@media (max-width: 700px) {
+  .l-templateTitle {
+    margin-top: 0px; } }
 @media (min-width: 700px) {
   .l-starDivider {
     display: none; } }
@@ -2688,17 +2691,27 @@ body, html {
 
 .l-author {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0px 5px;
-  margin: 115px 0px; }
+  margin: 115px 0px;
+  word-break: break-word; }
 
-.l-author__avatar {
+.l-avatarWrapper {
   margin-right: 35px; }
 
 .l-author__blurb {
   flex-grow: 1; }
 
+@media (max-width: 700px) {
+  .l-article__title {
+    margin: 60px 0px; }
+
+  .l-article__meta {
+    margin-bottom: 40px; }
+
+  .l-author {
+    margin-top: 75px;
+    margin-bottom: 150px; } }
 .buyTicketsDecor {
   position: relative;
   height: 600px;
@@ -3366,10 +3379,8 @@ input[type=button].searchSubmit {
     margin-bottom: 70px; } }
 .templateTitle {
   font-family: freightSansBoldItalic, sans-serif;
-  color: #fff;
   font-size: 3.3em;
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
   line-height: 2em;
   -webkit-transform: scale(1, 1.1);
   /* Safari and Chrome */
@@ -3379,17 +3390,22 @@ input[type=button].searchSubmit {
   /* IE 9 */
   -o-transform: scale(1, 1.1);
   /* Opera */
-  transform: scale(1, 1.1);
-  /* W3C */ }
+  transform: scale(1, 1.1); }
 
 .pageDescription {
   font-family: freightSansMedium, sans-serif;
-  color: #fff;
   font-size: 1.62em;
   line-height: 1.23em;
-  -webkit-font-smoothing: antialiased;
   padding: 20px 90px 65px; }
 
+.pageDescription,
+.templateTitle {
+  color: #fff;
+  -webkit-font-smoothing: antialiased; }
+
+@media (max-width: 700px) {
+  .pageDescription {
+    padding: 0px 0px 50px; } }
 .templateBody {
   color: #fff; }
 
@@ -3399,13 +3415,12 @@ input[type=button].searchSubmit {
   font-family: freightSansSemiboldItalic, sans-serif; }
 
 .pageBody {
-  color: #fff;
   font-size: 1.62em;
   line-height: 1.23em;
   font-family: freightSansMedium, sans-serif; }
 
 .author__avatar {
-  width: 180px; }
+  width: 125px; }
 
 .author__blurb,
 .article__meta {
@@ -3419,6 +3434,10 @@ input[type=button].searchSubmit {
 .pageBody {
   -webkit-font-smoothing: antialiased; }
 
+@media (max-width: 700px) {
+  .author__avatar {
+    width: 150px;
+    height: 150px; } }
 .starDivider {
   width: 100%;
   height: 80px;

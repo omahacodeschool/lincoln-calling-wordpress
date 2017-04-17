@@ -9,16 +9,31 @@
 
 .l-author{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	padding: 0px 5px;
 	margin: 115px 0px;
+	word-break: break-word;
 }
 
-.l-author__avatar{
+.l-avatarWrapper{
 	margin-right: 35px;
 }
 
 .l-author__blurb{
 	flex-grow: 1;
+}
+
+@media (max-width: 700px){
+	.l-article__title{
+		margin: 60px 0px;
+	}
+
+	.l-article__meta{
+		margin-bottom: 40px;
+	}
+
+	.l-author{
+		margin-top: 75px;
+		margin-bottom: 150px;
+	}
 }

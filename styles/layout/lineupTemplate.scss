@@ -2,3 +2,9 @@
 	text-align: center;
 	margin-top: 40px;
 }
+
+@media (max-width: 700px){
+	.l-templateTitle{
+		margin-top: 0px;
+	}
+}
