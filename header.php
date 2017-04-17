@@ -14,37 +14,46 @@
   <div class="header">
     <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation.">
   </div>
+
   <div class="nav">
-    <ul>
-      <li><a href="#">Buy Tickets</a></li>
-      <li>
-        <a href="">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
-        <ul class="subNav">
-        <?php wp_list_categories( array (
-          'title_li' => '',
-          'orderby' => 'id',
-          'child_of' => get_cat_ID( 'lineup' ),
-          'hide_empty' => 0
-        ) ); ?>
-        </ul>
+    <ul class="navList l-navList">
+      <li class="navList__item">
+        <a class="navList__link" href="#">Buy Tickets</a>
       </li>
-      <li>
-        <a href="">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
-        <ul class="subNav">
+      <li class="navList__item">
+        <a class="navList__link" href="#">Lineup</a>
+        <ul class="navSubList l-navSubList">
           <?php wp_list_categories( array (
             'title_li' => '',
             'orderby' => 'id',
-            'child_of' => get_cat_ID( 'get-involved' ),
+            'child_of' => get_cat_ID( 'lineup' ),
             'hide_empty' => 0
           ) ); ?>
         </ul>
-        <li><a href="#">Updates</a></li>
-        <li><a href="#">Fest Info</a></li>
-        <li>
-          <a href="#"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
-        </li>
+      </li>
+      <li class="navList__item">
+        <a class="navList__link" href="#">Get Involved</a>
+        <ul class="navSubList l-navSubList">
+          <?php wp_list_categories( array (
+            'title_li' => '',
+            'orderby' => 'id',
+            'child_of' => get_cat_ID( 'Get Involved' ),
+            'hide_empty' => 0
+          ) ); ?>
+        </ul>
+      </li>
+      <li class="navList__item">
+        <a class="navList__link" href="#">Updates</a>
+      </li>
+      <li class="navList__item">
+        <a class="navList__link" href="#">Fest Info</a>
+      </li>
+      <li class="navList__item">
+        <a class="navList__link" href="#"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
+      </li>
     </ul>
   </div>
 </div>
+
 <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
 <div class="outerContainer">

@@ -2614,7 +2614,8 @@ body, html {
     right: 0px; } }
 .l-navList {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
 
 .l-navSubList {
   justify-content: space-between; }
