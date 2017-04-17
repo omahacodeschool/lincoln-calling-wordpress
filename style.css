@@ -2819,9 +2819,6 @@ body, html {
 @media (min-width: 700px) {
   .passOptions {
     background: url("/wp-content/themes/lincoln-calling-wordpress/assets/images/ticketsPageGraphic.png") no-repeat 100% 35px; } }
-.navList {
-  text-align: center; }
-
 .navList__item {
   font-size: 1.4em;
   display: inline-block; }
@@ -2832,10 +2829,10 @@ body, html {
   width: 100%;
   left: 0; }
 
-.navSubList__item {
+.navSubList li {
   font-size: inherit; }
 
-.navSubList__link {
+.navSubList li a {
   flex-grow: 1;
   font-size: 0.65em; }
 
@@ -2864,20 +2861,21 @@ body, html {
   transform: scale(1, 1.5); }
 
 .navList__item,
-.navSubList__item {
+.navSubList li {
   flex-grow: 1;
   font-family: freightSansLighter, sans-serif, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px; }
 
 .navList__link,
-.navSubList__link {
+.navSubList li a {
   color: #fff;
   font-size: 0.75em;
+  text-align: center;
   padding: 13px 4px;
   display: block; }
 
-.navSubList__link:hover,
+.navSubList li a:hover,
 .navList {
   background-color: #21b0e6; }
 
