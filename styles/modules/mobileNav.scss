@@ -4,18 +4,40 @@
 
 .mobileLogo {
 	background-color: $green;
-	flex-grow: 1;
 }
 
 .mobileLogo img {
-	height: auto;
+	width: 100%;
+	max-width: 250px;
 }
 
-.headerBuyTickets {
+.mobileRight a {
 	background-color: $blue;
 	color: $white;
 	font-family: $font-fam-Bold;
-	font-size: 2em;
+	font-size: 1.7em;
+	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+.headerBuyTickets a {
 	padding: 15px;
+}
+
+.mobileNav {
+	background-color: $white;
+	color: $blue;
+	font-family: $font-fam-Bold;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.mobileNav ul li ul li a {
+	background-color: $green;
+	color: $white;
+}
+
+.newsletterMobileLink {
+	padding-left: 10px;
+	@include stretch(1.3, 1);
 }
