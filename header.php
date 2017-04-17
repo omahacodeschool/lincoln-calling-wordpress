@@ -29,21 +29,29 @@
           'orderby' => 'id',
           'child_of' => get_cat_ID( 'lineup' ),
           'hide_empty' => 0
-        ) ); ?>
+        )); ?>
         </ul>
       </li>
       <li>
         <a href="">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
         <ul class="subNav">
-          <?php $posts = get_posts( array(
-            'category' => get_cat_ID( 'get involved' )
-            )); 
-          foreach ($posts as $post) {
-          ?>
-            <li>
-              <a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?></a>
-            </li>
-          <?php } ?>
+         
+          <?php 
+          $the_query = new WP_Query( array( 
+            'category_name' => 'get involved'
+          )); ?>
+
+          <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+              <li>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </li>
+
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+          <?php endif; ?>
+
         </ul>
         <li><a href="#">Updates</a></li>
         <li><a href="#">Fest Info</a></li>
