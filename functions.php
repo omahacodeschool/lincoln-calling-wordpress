@@ -499,6 +499,63 @@ if(function_exists("register_field_group"))
 	));
 }
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_author-fields',
+		'title' => 'Author Fields',
+		'fields' => array (
+			array (
+				'key' => 'field_58f4ea4d93c52',
+				'label' => 'Workplace',
+				'name' => 'workplace',
+				'type' => 'text',
+				'instructions' => 'Enter the name of where you work.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58f4eb354ed49',
+				'label' => 'Position',
+				'name' => 'position',
+				'type' => 'text',
+				'instructions' => 'Enter your job title here.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'ef_user',
+					'operator' => '==',
+					'value' => 'all',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+
 // Makes children categories use parents template
 function new_subcategory_hierarchy() { 
     $category = get_queried_object();
