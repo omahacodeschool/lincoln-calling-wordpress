@@ -1,25 +1,24 @@
-.l-article__title {
+.l-article__title{
 	margin-top: 100px;
 	margin-bottom: 60px;
 }
 
-.l-article__meta {
+.l-article__meta{
 	margin-bottom: 30px;
 }
 
-.l-author {
+.l-author{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 115px;
 	padding: 0px 5px;
-	margin-bottom: 115px;
+	margin: 115px 0px;
 }
 
-.l-author__avatar {
-	margin: 0px 35px 0px 0px;
+.l-author__avatar{
+	margin-right: 35px;
 }
 
-.l-author__blurb {
+.l-author__blurb{
 	flex-grow: 1;
 }

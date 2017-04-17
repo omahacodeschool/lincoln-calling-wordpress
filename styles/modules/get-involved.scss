@@ -2,35 +2,34 @@
 	color: $white;
 }
 
-.article__title {
+.article__title{
 	line-height: 1.2em;
 	letter-spacing: 1px;
-	-webkit-font-smoothing: antialiased;
 	font-family: $font-fam-SemiboldItalic;
 }
 
-.article__meta {
-	font-family: $font-fam-Italic;
-	font-size: 1.75em;
-	line-height: 1.23em;
-	-webkit-font-smoothing: antialiased;
-}
-
-.pageBody {
+.pageBody{
 	color: $white;
 	font-size: 1.62em;
 	line-height: 1.23em;
-	-webkit-font-smoothing: antialiased;
 	font-family: $font-fam;
 }
 
-.author__avatar {
+.author__avatar{
 	width: 180px;
 }
 
-.author__blurb {
+.author__blurb,
+.article__meta{
 	font-family: $font-fam-Italic;
 	font-size: 1.75em;
 	line-height: 1.23em;
+}
+
+.article__title,
+.article__meta,
+.author__blurb,
+.pageBody{
 	-webkit-font-smoothing: antialiased;
 }
+

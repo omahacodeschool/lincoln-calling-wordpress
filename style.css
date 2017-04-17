@@ -2690,12 +2690,11 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 115px;
   padding: 0px 5px;
-  margin-bottom: 115px; }
+  margin: 115px 0px; }
 
 .l-author__avatar {
-  margin: 0px 35px 0px 0px; }
+  margin-right: 35px; }
 
 .l-author__blurb {
   flex-grow: 1; }
@@ -3397,29 +3396,27 @@ input[type=button].searchSubmit {
 .article__title {
   line-height: 1.2em;
   letter-spacing: 1px;
-  -webkit-font-smoothing: antialiased;
   font-family: freightSansSemiboldItalic, sans-serif; }
-
-.article__meta {
-  font-family: freightSansMediumItalic, sans-serif;
-  font-size: 1.75em;
-  line-height: 1.23em;
-  -webkit-font-smoothing: antialiased; }
 
 .pageBody {
   color: #fff;
   font-size: 1.62em;
   line-height: 1.23em;
-  -webkit-font-smoothing: antialiased;
   font-family: freightSansMedium, sans-serif; }
 
 .author__avatar {
   width: 180px; }
 
-.author__blurb {
+.author__blurb,
+.article__meta {
   font-family: freightSansMediumItalic, sans-serif;
   font-size: 1.75em;
-  line-height: 1.23em;
+  line-height: 1.23em; }
+
+.article__title,
+.article__meta,
+.author__blurb,
+.pageBody {
   -webkit-font-smoothing: antialiased; }
 
 .starDivider {
