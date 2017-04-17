@@ -60,7 +60,16 @@
 						/>
 					</div>
 			    	<p class="author__blurb l-author__blurb">
-				    	<?php the_author(); ?> is Hear Nebraska's managing editor. Reach him with news tips and story ideas at <?php echo get_the_author_meta('user_email'); ?>.	
+				    	<?php the_author(); ?> is
+				    	
+				    	<?php $authorId = get_the_author_meta('id');
+				    	echo the_field( 'workplace', "user_".strval($authorId) )."'s ";
+				    	echo the_field( 'position', "user_".strval($authorId) ).".";
+				    	?>
+
+				  		Reach them with news tips and story ideas at 
+
+				  		<?php echo get_the_author_meta('user_email'); ?>.	
 			    	</p>
 			    </div>
 
