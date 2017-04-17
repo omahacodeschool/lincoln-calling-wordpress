@@ -12,7 +12,7 @@
 
 <div class="outerContainer">
   <div class="header">
-    <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation.">
+    <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation." class="l-desktopOnly">
   </div>
 
   <div class="nav">

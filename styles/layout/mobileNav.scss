@@ -1,0 +1,21 @@
+.l-flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.l-mobilePreHeader {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.l-burger {
+	width: 100px;
+	padding: 30px 10px;
+}
+
+.l-burger img {
+	width: 100%;
+	height: auto;
+}

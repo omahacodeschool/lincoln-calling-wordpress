@@ -2684,6 +2684,24 @@ body, html {
   .desktop-hide {
     display: none; } }
 
+.l-flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.l-mobilePreHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.l-burger {
+  width: 100px;
+  padding: 30px 10px; }
+
+.l-burger img {
+  width: 100%;
+  height: auto; }
+
 .buyTicketsDecor {
   position: relative;
   height: 600px;
@@ -3352,5 +3370,23 @@ input[type=button].searchSubmit {
   width: 100%;
   height: 80px;
   background-image: url("assets/images/stars.png"); }
+
+.burger {
+  background-color: #21b0e6; }
+
+.mobileLogo {
+  background-color: #25bcac;
+  flex-grow: 1; }
+
+.mobileLogo img {
+  height: auto; }
+
+.headerBuyTickets {
+  background-color: #21b0e6;
+  color: #fff;
+  font-family: freightSansBold, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */

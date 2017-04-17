@@ -1,0 +1,21 @@
+.burger {
+	background-color: $blue;
+}
+
+.mobileLogo {
+	background-color: $green;
+	flex-grow: 1;
+}
+
+.mobileLogo img {
+	height: auto;
+}
+
+.headerBuyTickets {
+	background-color: $blue;
+	color: $white;
+	font-family: $font-fam-Bold;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding: 15px;
+}
