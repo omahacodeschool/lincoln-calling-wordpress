@@ -31,11 +31,21 @@ window.addEventListener("load", function(){
 	// After filling the modal, makes the modal visible.
 	function showModal(e){
 		e.preventDefault();
-		fillModal(this);
-		modalBackground.style.display = "flex";
+		detectScreenSize(this);
 	}
 
 // Functions!
+
+	function detectScreenSize(clickedElement){
+		var screenWidth = window.innerWidth;
+		if(screenWidth <= "700"){
+			return false;
+		}
+		else {
+			fillModal(clickedElement);
+			modalBackground.style.display = "flex";
+		}
+	}
 
 	// Fills the modal with relevant information.
 	function fillModal(clickedElement){
