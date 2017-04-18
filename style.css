@@ -3059,9 +3059,9 @@ input[type=button].searchSubmit {
   padding: 15px;
   text-transform: uppercase; }
 
-.ocsLogo {
-  height: auto !important;
-  width: 70px !important; }
+.credit.ocsLogo img {
+  height: auto;
+  width: 70px; }
 
 .footerCredits img {
   height: 50px;

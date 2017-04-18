@@ -77,9 +77,9 @@
         </div>
       </li>
       <li>
-        <div class="credit l-credit">
+        <div class="credit ocsLogo l-credit">
           <p>Site by:</p>
-          <img class="ocsLogo" src="<?php bloginfo("template_directory"); ?>/assets/images/OCS.png">
+          <img src="<?php bloginfo("template_directory"); ?>/assets/images/OCS.png">
         </div>
       </li>
       <li>
