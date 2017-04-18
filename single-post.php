@@ -2,7 +2,8 @@
 
 	<div class="templateBody">
 
-		<?php if (!empty( get_field('nav_title') )): ?>
+		<?php // If nav title is present, renders it and the description on the page
+		if (!empty( get_field('nav_title') )): ?>
 			<div>
 				<h1 class="templateTitle l-templateTitle"><?php the_field('nav_title'); ?></h1>
 				<p class="pageDescription">
@@ -11,7 +12,8 @@
 			</div>
 		<?php endif ?>
 
-		<?php if ( have_posts() ) :
+		<?php // Renders the post info
+		if ( have_posts() ) :
 		    while ( have_posts() ) : the_post();
 		    ?>
 				<div class="article">
