@@ -45,7 +45,13 @@
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <li>
-                <a href="<?php the_permalink(); ?>"><?php the_field('nav_title') ?></a>
+                <a href="<?php the_permalink(); ?>">
+                <?php if (!empty( get_field('nav_title') )):
+                  the_field('nav_title');
+                else:
+                  the_title();
+                endif ?>
+                </a>
               </li>
 
             <?php endwhile; ?>
