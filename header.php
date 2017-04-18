@@ -130,7 +130,7 @@
         </ul>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#">Updates</a>
+        <a class="navList__link" href="<?php echo get_site_url(); ?>/updates">Updates</a>
       </li>
       <li class="navList__item">
         <a class="navList__link" href="#">Fest Info</a>
