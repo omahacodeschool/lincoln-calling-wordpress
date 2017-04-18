@@ -15,21 +15,6 @@ function create_ticket_type() {
   );
 }
 
-add_action( 'init', 'create_artist_type' );
-
-function create_artist_type() {
-  register_post_type( 'artist',
-    array(
-      'labels' => array(
-        'name' => __( 'Artists' ),
-        'singular_name' => __( 'Artist' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );
-}
-
 add_action( 'init', 'create_pagetemplate_type' );
 
 function create_pagetemplate_type() {
@@ -159,14 +144,14 @@ if(function_exists("register_field_group"))
 				'type' => 'textarea',
 				'instructions' => 'Artist\'s website, city, day/time of performance, venue, summary',
 				'required' => 1,
-				'default_value' => 'The artist\'s website link will be added here if it was provided.
-	Artist City (optional)
-	
-	Day/Time (optional)
-	Venue (optional)
-	
-	Summary (required)',
-				'placeholder' => '',
+				'default_value' => '',
+				'placeholder' => 'The artist\'s website link will be added here if it was provided.
+Artist City (optional)
+
+Day/Time (optional)
+Venue (optional)
+
+Summary (required)',
 				'maxlength' => '',
 				'rows' => '',
 				'formatting' => 'br',
@@ -203,7 +188,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'post_category',
 					'operator' => '==',
-					'value' => '24',
+					'value' => get_cat_ID( 'lineup' ),
 					'order_no' => 0,
 					'group_no' => 0,
 				),
@@ -299,150 +284,6 @@ if(function_exists("register_field_group"))
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => 'acf_artists-fields',
-		'title' => 'Artists Fields',
-		'fields' => array (
-			array (
-				'key' => 'field_58eba0a578546',
-				'label' => 'Artist City',
-				'name' => 'artist_city',
-				'type' => 'text',
-				'required' => 1,
-				'instructions' => 'Artist city of origin.',
-				'default_value' => '',
-				'placeholder' => 'Artist City...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58eba19f78547',
-				'label' => 'Artist Website',
-				'name' => 'artist_website',
-				'type' => 'text',
-				'instructions' => 'Enter the artist\'s website here.',
-				'default_value' => '',
-				'placeholder' => 'Artist Website...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58eba1ef78548',
-				'label' => 'Artist Card Thumbnail Image',
-				'name' => 'artist_card_thumbnail_image',
-				'type' => 'image',
-				'instructions' => 'This image will be used on the artist card. Resolution must be 310 px X 222 px.',
-				'required' => 1,
-				'save_format' => 'object',
-				'preview_size' => 'thumbnail',
-				'library' => 'all',
-			),
-			array (
-				'key' => 'field_58eba2b378549',
-				'label' => 'Artist Full Size Image',
-				'name' => 'artist_full_size_image',
-				'type' => 'image',
-				'instructions' => 'Artist\'s full size image for the pop-up modal. This image must be 783 px X 505 px.',
-				'required' => 1,
-				'save_format' => 'object',
-				'preview_size' => 'thumbnail',
-				'library' => 'all',
-			),
-			array (
-				'key' => 'field_58eba3927854a',
-				'label' => 'Artist Twitter',
-				'name' => 'artist_twitter',
-				'type' => 'text',
-				'instructions' => 'Link to artist\'s twitter page.',
-				'default_value' => '',
-				'placeholder' => 'Twitter...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58eba3ca7854b',
-				'label' => 'Artist\'s Snapchat',
-				'name' => 'artists_snapchat',
-				'type' => 'text',
-				'instructions' => 'Link to artist\'s snapchat.',
-				'default_value' => '',
-				'placeholder' => 'Snapchat...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58eba3e27854c',
-				'label' => 'Artist\'s Soundcloud',
-				'name' => 'artists_soundcloud',
-				'type' => 'text',
-				'instructions' => 'Link to artist\'s soundcloud page.',
-				'default_value' => '',
-				'placeholder' => 'Soundcloud...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58eba3f77854d',
-				'label' => 'Artist\'s Facebook',
-				'name' => 'artists_facebook',
-				'type' => 'text',
-				'instructions' => 'Link to artist\'s facebook page.',
-				'default_value' => '',
-				'placeholder' => 'Facebook...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58eba40c7854e',
-				'label' => 'Artist\'s Instagram',
-				'name' => 'artists_instagram',
-				'type' => 'text',
-				'instructions' => 'Link to artist\'s instagram page.',
-				'default_value' => '',
-				'placeholder' => 'Instagram...',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'artist',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
-}
-
-
-
-if(function_exists("register_field_group"))
-{
-	register_field_group(array (
 		'id' => 'acf_basic-posts',
 		'title' => 'Basic posts',
 		'fields' => array (
@@ -483,9 +324,9 @@ if(function_exists("register_field_group"))
 		'location' => array (
 			array (
 				array (
-					'param' => 'post_type',
+					'param' => 'post_category',
 					'operator' => '==',
-					'value' => 'post',
+					'value' => get_cat_ID( 'updates' ),
 					'order_no' => 0,
 					'group_no' => 0,
 				),
@@ -535,6 +376,40 @@ if(function_exists("register_field_group"))
 				'rows' => '',
 				'formatting' => 'br',
 			),
+			array (
+				'key' => 'field_58ed4933ceb7d',
+				'label' => 'Article Body',
+				'name' => 'article_body',
+				'type' => 'textarea',
+				'instructions' => 'Write the meat of your post in here.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'Body...',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_58ee367170da6',
+				'label' => 'Article Image',
+				'name' => 'article_image',
+				'type' => 'image',
+				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title)',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'null',
+							'operator' => '==',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'save_format' => 'object',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+
 		),
 		'location' => array (
 			array (
