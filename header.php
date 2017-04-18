@@ -114,7 +114,13 @@
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
               <li>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>">
+                <?php if (!empty( get_field('nav_title') )):
+                  the_field('nav_title');
+                else:
+                  the_title();
+                endif ?>
+                </a>
               </li>
 
             <?php endwhile; ?>
@@ -124,7 +130,7 @@
         </ul>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#">Updates</a>
+        <a class="navList__link" href="<?php echo get_site_url(); ?>/updates">Updates</a>
       </li>
       <li class="navList__item">
         <a class="navList__link" href="#">Fest Info</a>
