@@ -1,4 +1,14 @@
-.l-spaceAcross {
+.l-navList{
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+}
+
+.l-navSubList{
+	justify-content: space-between;
+}
+
+.navList__item:hover .l-navSubList{
+	display: flex;
+	align-items: stretch;
 }
