@@ -438,37 +438,14 @@ if(function_exists("register_field_group"))
 	));
 }
 
+
+
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => 'acf_get-involved-posts',
-		'title' => 'Get Involved posts',
+		'id' => 'acf_basic-posts',
+		'title' => 'Basic posts',
 		'fields' => array (
-			array (
-				'key' => 'field_58f61b7b6d428',
-				'label' => 'Nav Title',
-				'name' => 'nav_title',
-				'type' => 'text',
-				'instructions' => 'Enter in a title for the nav-bar display. If left empty will use post title instead.',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_58f61ba46d429',
-				'label' => 'Page Description',
-				'name' => 'page_description',
-				'type' => 'textarea',
-				'instructions' => 'Enter a short description for the page.',
-				'default_value' => '',
-				'placeholder' => '',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
-			),
 			array (
 				'key' => 'field_58ed4933ceb7d',
 				'label' => 'Article Body',
@@ -501,6 +478,62 @@ if(function_exists("register_field_group"))
 				'save_format' => 'object',
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_get-involved-posts',
+		'title' => 'Get Involved posts',
+		'fields' => array (
+			array (
+				'key' => 'field_58f61b7b6d428',
+				'label' => 'Nav Title',
+				'name' => 'nav_title',
+				'type' => 'text',
+				'instructions' => 'Enter in a title for the nav-bar display. If left empty will use post title instead.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58f61ba46d429',
+				'label' => 'Page Description',
+				'name' => 'page_description',
+				'type' => 'textarea',
+				'instructions' => 'Enter a short description for the page.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
 			),
 		),
 		'location' => array (
