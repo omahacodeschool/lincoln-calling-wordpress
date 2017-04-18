@@ -11,7 +11,6 @@
 
 <body>
 
-<!-- mobile header -->
 <div class="mobileHead l-mobileHead l-mobileOnly">
   <div class="mobileLeft l-mobileLeft">
 
@@ -97,8 +96,6 @@
   <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
 </a>
 
-
-<!-- desktop header -->
 <div class="outerContainer">
   <div class="header">
 
