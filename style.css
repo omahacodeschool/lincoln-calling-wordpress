@@ -2456,6 +2456,9 @@ body, html {
   justify-content: space-between; }
 
 @media (min-width: 700px) {
+  .l-footerCredits {
+    align-items: center; }
+
   .l-credit {
     display: flex;
     align-items: center; } }
@@ -3055,6 +3058,10 @@ input[type=button].searchSubmit {
   text-align: center;
   padding: 15px;
   text-transform: uppercase; }
+
+.ocsLogo {
+  height: auto !important;
+  width: 70px !important; }
 
 .footerCredits img {
   height: 50px;
