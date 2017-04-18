@@ -3,6 +3,43 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="<?php 
+  if ( is_single() ){
+    $excerpt = strip_tags( get_field('article_body') );
+    echo substr($excerpt, 0, 157).'...';
+  }
+  elseif ( is_category() && !empty( category_description() )){
+    echo strip_tags( category_description() );
+  }
+  else{
+    bloginfo('description');
+  }?>"
+  >
+
+
+
+
+
+
+
+
+  <title>
+    <?php
+     if ( is_category() ) {
+      single_cat_title(); echo ' | '; bloginfo( 'name' );
+    }elseif ( is_search() ) {
+      echo 'Search for '.wp_specialchars($s).' | '; bloginfo( 'name' );
+    }elseif ( is_home() || is_front_page() ) {
+      bloginfo( 'name' );
+    } elseif ( is_404() ) {
+      echo 'Error 404 Not Found | '; bloginfo( 'name' );
+    }elseif ( is_single() ) {
+      wp_title(''); echo " | "; bloginfo( 'name' );
+    }else {
+      echo wp_title( ' | ', false, right ); bloginfo( 'name' );
+    } ?>
+  </title>
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css" />
   <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/scripts/modalScript.js"></script>
