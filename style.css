@@ -2451,6 +2451,16 @@ body, html {
 .artist__name {
   flex-grow: 1; }
 
+@media (max-width: 700px) {
+  .l-artistCardContainer {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px; } }
+@media (max-width: 550px) {
+  .l-artistCardContainer {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; } }
 .l-footerCredits {
   display: flex;
   justify-content: space-between; }
@@ -3059,6 +3069,18 @@ input[type=button].searchSubmit {
   padding: 15px;
   text-transform: uppercase; }
 
+@media (max-width: 700px) {
+  .artist__name {
+    font-size: 1.8em; }
+
+  .artist__city {
+    font-size: 1em; } }
+@media (max-width: 550px) {
+  .artist__name {
+    font-size: 2.5em; }
+
+  .artist__city {
+    font-size: 1.5em; } }
 .credit.ocsLogo img {
   height: auto;
   width: 70px; }

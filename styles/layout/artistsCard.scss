@@ -17,3 +17,15 @@
 .artist__name {
 	flex-grow: 1;
 }
+
+@media(max-width: 700px){
+	.l-artistCardContainer {
+		@include grid-column(6);
+	}
+}
+
+@media(max-width: 550px){
+	.l-artistCardContainer {
+		@include grid-column(12);
+	}
+}
