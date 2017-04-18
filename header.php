@@ -79,7 +79,11 @@
 
 <div class="outerContainer">
   <div class="header">
-    <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation." class="l-desktopOnly">
+
+    <?php $url = home_url(); ?>
+    <a href="<?php echo $url; ?>">
+      <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation.">
+    </a>
   </div>
 
   <div class="nav l-desktopOnly">
@@ -101,12 +105,22 @@
       <li class="navList__item">
         <a class="navList__link" href="#">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
         <ul class="navSubList l-navSubList">
-          <?php wp_list_categories( array (
-            'title_li' => '',
-            'orderby' => 'id',
-            'child_of' => get_cat_ID( 'Get Involved' ),
-            'hide_empty' => 0
-          ) ); ?>
+          <?php 
+          $the_query = new WP_Query( array( 
+            'category_name' => 'get involved'
+          )); ?>
+
+          <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+              <li>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </li>
+
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+          <?php endif; ?>
+
         </ul>
       </li>
       <li class="navList__item">
@@ -122,5 +136,8 @@
   </div>
 </div>
 
-<img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
+<a href="<?php echo home_url(); ?>">
+  <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
+</a>
+
 <div class="outerContainer">

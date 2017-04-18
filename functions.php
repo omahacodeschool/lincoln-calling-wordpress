@@ -47,6 +47,180 @@ function create_pagetemplate_type() {
 
 if(function_exists("register_field_group"))
 {
+	register_field_group(array (
+		'id' => 'acf_artists',
+		'title' => 'Artists',
+		'fields' => array (
+			array (
+				'key' => 'field_58ee5c07138e5',
+				'label' => 'Artist Subtitle',
+				'name' => 'artist_subtitle',
+				'type' => 'text',
+				'instructions' => 'Artist City or subtitle goes here.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'Artist city or subtitle...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58ee5c45138e6',
+				'label' => 'Artist Card Image',
+				'name' => 'artist_card_image',
+				'type' => 'image',
+				'instructions' => 'This image will be the artist thumbnail image. Resolution needs to be 310px X 222px.',
+				'required' => 1,
+				'save_format' => 'url',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_58ee5ca3138e7',
+				'label' => 'Artist Full Image',
+				'name' => 'artist_full_image',
+				'type' => 'image',
+				'instructions' => 'Full image for the pop-up modal. Resolution should be 783px X 505px.',
+				'required' => 1,
+				'save_format' => 'url',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_58ee5cc9138e8',
+				'label' => 'Artist Twitter',
+				'name' => 'artist_twitter',
+				'type' => 'text',
+				'instructions' => 'Enter the artist\'s twitter link here.',
+				'default_value' => '',
+				'placeholder' => 'Twitter...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58ee5cf0138e9',
+				'label' => 'Artist Instagram',
+				'name' => 'artist_instagram',
+				'type' => 'text',
+				'instructions' => 'Enter the artist\'s instagram link here.',
+				'default_value' => '',
+				'placeholder' => 'Instagram...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58ee5d0b138ea',
+				'label' => 'Artist Facebook',
+				'name' => 'artist_facebook',
+				'type' => 'text',
+				'instructions' => 'Enter the artist\'s facebook link here.',
+				'default_value' => '',
+				'placeholder' => 'Facebook...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58ee5d1c138eb',
+				'label' => 'Artist Snapchat',
+				'name' => 'artist_snapchat',
+				'type' => 'text',
+				'instructions' => 'Enter the artist\'s snapchat link here.',
+				'default_value' => '',
+				'placeholder' => 'Snapchat...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58ee5d2b138ec',
+				'label' => 'Artist Soundcloud',
+				'name' => 'artist_soundcloud',
+				'type' => 'text',
+				'instructions' => 'Enter the artist\'s soundcloud link here.',
+				'default_value' => '',
+				'placeholder' => 'Soundcloud...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58eea0fa9f7b5',
+				'label' => 'Artist Summary',
+				'name' => 'artist_summary',
+				'type' => 'textarea',
+				'instructions' => 'Artist\'s website, city, day/time of performance, venue, summary',
+				'required' => 1,
+				'default_value' => 'The artist\'s website link will be added here if it was provided.
+	Artist City (optional)
+	
+	Day/Time (optional)
+	Venue (optional)
+	
+	Summary (required)',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'formatting' => 'br',
+			),
+			array (
+				'key' => 'field_58eeb42c46594',
+				'label' => 'Artist Website URL',
+				'name' => 'artist_website_url',
+				'type' => 'text',
+				'instructions' => 'Enter the artist\'s website URL here.',
+				'default_value' => '',
+				'placeholder' => 'www.realestateband.com...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58eeb70b46595',
+				'label' => 'Artist Website Name',
+				'name' => 'artist_website_name',
+				'type' => 'text',
+				'instructions' => 'This text will be displayed instead of the URL.',
+				'default_value' => '',
+				'placeholder' => 'realestateband.com...',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_category',
+					'operator' => '==',
+					'value' => '24',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+if(function_exists("register_field_group"))
+{
   register_field_group(array (
     'id' => 'acf_ticket-fields',
     'title' => 'Ticket Fields',
@@ -325,6 +499,63 @@ if(function_exists("register_field_group"))
 	));
 }
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_author-fields',
+		'title' => 'Author Fields',
+		'fields' => array (
+			array (
+				'key' => 'field_58f4ea4d93c52',
+				'label' => 'Workplace',
+				'name' => 'workplace',
+				'type' => 'text',
+				'instructions' => 'Enter the name of where you work.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_58f4eb354ed49',
+				'label' => 'Position',
+				'name' => 'position',
+				'type' => 'text',
+				'instructions' => 'Enter your job title here.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'ef_user',
+					'operator' => '==',
+					'value' => 'all',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+
 // Makes children categories use parents template
 function new_subcategory_hierarchy() { 
     $category = get_queried_object();
@@ -355,3 +586,4 @@ function my_remove_post_type_support() {
 
 remove_filter('the_content', 'wpautop');
 ?>
+
