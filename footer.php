@@ -46,9 +46,9 @@
       </div>
     </div>
 
-    <form class="searchForm">
-      <input class="searchBar" type="text" name="search" placeholder="SEARCH...">
-      <input type="button" class="searchSubmit">
+    <form action="/" class="searchForm">
+      <input class="searchBar" type="text" name="s" id="s" placeholder="SEARCH...">
+      <button type="submit" id="searchsubmit" class="searchSubmit"></button>
     </form>
 
     <div class="socialLinks l-socialLinks  mobile-hide">
