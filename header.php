@@ -11,6 +11,7 @@
 
 <body>
 
+<!-- mobile header -->
 <div class="mobileHead l-mobileHead l-mobileOnly">
   <div class="mobileLeft l-mobileLeft">
 
@@ -50,16 +51,31 @@
         <li class="mobileNavList__item l-mobileNavList__item">
           <a class="mobileNavList__link js-hasSubNav" href="#">Get Involved</a>
           <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
-            <?php wp_list_categories( array (
-              'title_li' => '',
-              'orderby' => 'id',
-              'child_of' => get_cat_ID( 'Get Involved' ),
-              'hide_empty' => 0
-            ) ); ?>
+            <?php 
+            $the_query = new WP_Query( array( 
+             'category_name' => 'get involved'
+            )); ?>
+
+            <?php if ( $the_query->have_posts() ) : ?>
+             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+               <li>
+                 <a href="<?php the_permalink(); ?>">
+                 <?php if (!empty( get_field('nav_title') )):
+                   the_field('nav_title');
+                 else:
+                   the_title();
+                 endif ?>
+                 </a>
+               </li>
+
+             <?php endwhile; ?>
+             <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
           </ul>
         </li>
         <li class="mobileNavList__item">
-          <a class="mobileNavList__link" href="#">Updates</a>
+          <a class="mobileNavList__link" href="<?php echo get_site_url(); ?>/updates">Updates</a>
         </li>
         <li class="mobileNavList__item">
           <a class="mobileNavList__link" href="#">Fest Info</a>
@@ -77,11 +93,16 @@
   </div>
 </div>
 
+<a href="<?php echo home_url(); ?>">
+  <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
+</a>
+
+
+<!-- desktop header -->
 <div class="outerContainer">
   <div class="header">
 
-    <?php $url = home_url(); ?>
-    <a href="<?php echo $url; ?>">
+    <a href="<?php echo home_url(); ?>">
       <img src="<?php bloginfo("template_directory"); ?>/assets/images/header.png" alt="This is Lincoln Calling: music, art, innovation.">
     </a>
   </div>
@@ -140,10 +161,3 @@
       </li>
     </ul>
   </div>
-</div>
-
-<a href="<?php echo home_url(); ?>">
-  <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
-</a>
-
-<div class="outerContainer">
