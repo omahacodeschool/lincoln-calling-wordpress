@@ -2556,8 +2556,11 @@ body, html {
   text-align: right;
   margin-top: 30px; }
 
-.modalIcon {
-  margin: 10px 27px; }
+.l-modalSocialIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0px; }
 
 .l-artistName {
   max-width: 530px; }
@@ -2579,10 +2582,7 @@ body, html {
 
   .l-artistSummary {
     width: 360px;
-    height: 50%; }
-
-  .modalIcon {
-    margin: 10px 12px; } }
+    height: 50%; } }
 .l-centerText {
   margin: 35px auto;
   padding: 10px 120px 40px;
@@ -3239,7 +3239,7 @@ input[type=button].searchSubmit {
   font-size: 1.7em; }
 
 .modalSocialIcons {
-  box-shadow: -20px -30px 30px #fff;
+  box-shadow: -8px -28px 18px 12px #fff;
   background-color: #fff; }
 
 .iconOblong {
@@ -3279,7 +3279,11 @@ input[type=button].searchSubmit {
 
   .modalWindow::-webkit-scrollbar-thumb {
     background-color: #aaaaaa;
-    border: 2px solid #eaeaea; } }
+    border: 2px solid #eaeaea; }
+
+  .modalSocialIcons {
+    box-shadow: -8px -20px 20px 14px #fff;
+    background-color: #fff; } }
 .featured {
   font-size: 48px;
   font-family: freightSansBold, sans-serif;
