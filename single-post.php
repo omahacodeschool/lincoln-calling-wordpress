@@ -1,18 +1,19 @@
 <?php get_header(); ?>
 
 	<div class="templateBody">
-		<div class="categoryInfo">
-			<h1 class="templateTitle l-templateTitle"><?php the_field('nav_title'); ?></h1>
-			<p class="pageDescription">
-				<?php echo get_field('page_description'); ?>
-			</p>
-		</div>
+
+		<?php if (!empty( get_field('nav_title') )): ?>
+			<div>
+				<h1 class="templateTitle l-templateTitle"><?php the_field('nav_title'); ?></h1>
+				<p class="pageDescription">
+					<?php echo get_field('page_description'); ?>
+				</p>
+			</div>
+		<?php endif ?>
 
 		<?php if ( have_posts() ) :
 		    while ( have_posts() ) : the_post();
 		    ?>
-
-
 				<div class="article">
 				    <!-- Get Image -->
 				    <?php $image = get_field('article_image');
