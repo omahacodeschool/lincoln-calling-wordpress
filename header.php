@@ -3,27 +3,24 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta name="description" content="<?php 
   if ( is_single() ){
     $excerpt = strip_tags( get_field('article_body') );
     echo substr($excerpt, 0, 157).'...';
-  }
-  elseif ( is_category() && !empty( category_description() )){
+  }elseif ( is_category() && !empty( category_description() )){
     echo strip_tags( category_description() );
-  }
-  else{
+  }else{
     bloginfo('description');
   }?>"
   >
-
-
-
-
-
-
-
-
+  <meta property="og:image" content="<?php
+  $image = get_field('article_image')['url']; 
+  if ( is_single() && !empty($image)){
+    echo $image;
+  }else{
+    echo get_template_directory_uri()."/assets/images/mobileheader.png";
+  }?>"
+  >
   <title>
     <?php
      if ( is_category() ) {
