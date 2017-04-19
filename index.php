@@ -17,7 +17,6 @@
     <ul>
       <?php if ( have_posts() ) :
         // Change Query to post_type of tickets rather than post (default)
-        $today = date("Y/m/j");
         $args = array(
           'post_type'=> 'ticket', 
           'meta_key' => 'start_date',
