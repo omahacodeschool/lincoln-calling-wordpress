@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-<h1>404 page not found</h1>
+<h5 class='templateTitle'>404 page not found</h5>
 
 <?php get_footer(); ?>

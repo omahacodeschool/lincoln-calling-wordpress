@@ -17,7 +17,12 @@
     <ul>
       <?php if ( have_posts() ) :
         // Change Query to post_type of tickets rather than post (default)
-        $args = array('post_type'=>array('ticket'), 'orderby' => 'date', 'order' => 'ASC' );
+        $args = array(
+          'post_type'=> 'ticket', 
+          'meta_key' => 'start_date',
+          'orderby' => 'meta_value',
+          'order' => 'ASC',
+        );
         query_posts($args);
         // Start the loop.
         while ( have_posts() ) : the_post();
@@ -44,12 +49,10 @@
         </li>
 
         <?php
-        // End the loop.
         endwhile;
-        // Previous/next page navigation.
-        the_posts_pagination();
-        endif;
-        ?>
+      endif;
+      wp_reset_postdata(); 
+      ?>
     </ul>
   </div>
 

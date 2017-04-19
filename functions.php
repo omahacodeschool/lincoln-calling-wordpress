@@ -518,5 +518,17 @@ function my_remove_post_type_support() {
 }
 
 remove_filter('the_content', 'wpautop');
+
+function searchfilter($query) {
+
+    if ($query->is_search) {
+        $query->set('post_type',array('post','page'));
+    }
+
+return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');
+
 ?>
 
