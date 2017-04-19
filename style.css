@@ -2634,11 +2634,11 @@ body, html {
   position: relative; }
 
 .l-navSubList {
+  display: flex;
   justify-content: space-between; }
 
-.navList__item:hover .l-navSubList {
-  display: flex;
-  align-items: stretch; }
+.navList__item:hover > .l-navSubList {
+  height: auto; }
 
 @media (min-width: 700px) {
   .l-widgets::after {
@@ -2936,9 +2936,10 @@ body, html {
 
 .navSubList {
   position: absolute;
-  display: none;
   width: 100%;
-  left: 0; }
+  left: 0;
+  overflow: hidden;
+  height: 0px; }
 
 .navSubList li {
   font-size: inherit; }

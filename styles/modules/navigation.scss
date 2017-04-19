@@ -5,9 +5,10 @@
 
 .navSubList{
   position: absolute;
-  display: none;
   width: 100%;
   left: 0;
+  overflow: hidden;
+  height: 0px;
 }
 
 .navSubList li{

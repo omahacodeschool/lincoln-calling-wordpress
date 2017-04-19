@@ -5,10 +5,10 @@
 }
 
 .l-navSubList{
+	display: flex;
 	justify-content: space-between;
 }
 
-.navList__item:hover .l-navSubList{
-	display: flex;
-	align-items: stretch;
+.navList__item:hover > .l-navSubList{
+	height: auto;
 }
