@@ -17,7 +17,13 @@
     <ul>
       <?php if ( have_posts() ) :
         // Change Query to post_type of tickets rather than post (default)
-        $args = array('post_type'=>array('ticket'), 'orderby' => 'date', 'order' => 'ASC' );
+        $today = date("Y/m/j");
+        $args = array(
+          'post_type'=> 'ticket', 
+          'meta_key' => 'start_date',
+          'orderby' => 'meta_value',
+          'order' => 'ASC',
+        );
         query_posts($args);
         // Start the loop.
         while ( have_posts() ) : the_post();
