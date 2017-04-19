@@ -49,12 +49,10 @@
         </li>
 
         <?php
-        // End the loop.
         endwhile;
-        // Previous/next page navigation.
-        the_posts_pagination();
-        endif;
-        ?>
+      endif;
+      wp_reset_postdata(); 
+      ?>
     </ul>
   </div>
 
