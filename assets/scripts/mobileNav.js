@@ -1,27 +1,22 @@
 window.addEventListener("load", function(){
 	var burgerIcon = document.getElementsByClassName("burger")[0];
-	var mobileNav = document.getElementsByClassName("js-mobileNav")[0];
-	var mobileSubNav = document.getElementsByClassName("js-mobileSubNav");
-	var hasSubNav = document.getElementsByClassName("js-hasSubNav");
+	var mobileNav = document.getElementsByClassName("js-mobileNavList")[0];
+	var subNavs = document.getElementsByClassName("js-mobileSubNav");
+	var snLinks = document.getElementsByClassName("js-hasSubNav");
 
-	mobileNav.style.display = "none";
-	hideAllSubNavs();
+	burgerIcon.addEventListener("click", showHideNav);
+	addSubNavEvents();
 
-	function hideAllSubNavs(){
-		for (var i = 0; i < mobileSubNav.length; i++){
-			mobileSubNav[i].style.display = "none";
+	// Adds events to sub navs for show/hide
+	function addSubNavEvents(){
+		for (var i = 0; i < snLinks.length; i++){
+			snLinks[i].addEventListener("click", showHideSubNav);
 		}
 	}
 
-	for (var i = 0; i < hasSubNav.length; i++){
-		hasSubNav[i].addEventListener("click", showHideSubNav);
-	}
-
-	burgerIcon.addEventListener("click", showHideNav);
-
+	// Determines to hide or show the main nav
 	function showHideNav(){
-		
-		if (mobileNav.style.display === "none"){
+		if ( !mobileNav.classList.contains("nav--extend") ){
 			showNav();
 		}
 		else {
@@ -29,33 +24,30 @@ window.addEventListener("load", function(){
 		}
 	}
 
+	// Shows main nav
 	function showNav(){
-		mobileNav.style.display = "block";
+		mobileNav.classList.add("nav--extend");
 	}
 
+	// Hides main nav
 	function hideNav(){
-		mobileNav.style.display = "none";
-		hideAllSubNavs();
+		mobileNav.classList.remove("nav--extend");	
+		hideSubNavs();
 	}
 
-
+	// Hides / Shows the sub navs
+	//
+	// e - event of click on a anchor element
 	function showHideSubNav(e){
 		e.preventDefault();
-		var mySubNav = this.parentElement.childNodes[3];
-		if (mySubNav.style.display === "none"){
-			showSubNav(mySubNav);
-		}
-		else {
-			hideSubNav(mySubNav);
-		}
+		e.target.nextElementSibling.classList.toggle("nav--extend");
 	}
 
-	function showSubNav(mySubNav){
-		mySubNav.style.display = "block";
-	}
-
-	function hideSubNav(mySubNav){
-		mySubNav.style.display = "none";
+	// Loops through the sub nav list elements and hides them
+	function hideSubNavs(){
+		for (var i = 0; i < subNavs.length; i++) {
+			subNavs[i].classList.remove("nav--extend");
+		}
 	}
 });
 

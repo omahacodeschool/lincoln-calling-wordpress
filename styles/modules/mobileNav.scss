@@ -41,3 +41,13 @@
 	padding-left: 10px;
 	@include stretch(1.3, 1);
 }
+
+.mobileNavSubList, .mobileNavList{
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 400ms;
+}
+
+.nav--extend{
+	max-height: 2000px;
+}

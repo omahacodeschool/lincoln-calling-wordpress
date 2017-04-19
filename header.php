@@ -54,14 +54,14 @@
       </div>
 
       <div class="mobileLogo l-mobileLogo">
-        <a href="#">
+        <a href="/">
           <img src="<?php bloginfo("template_directory"); ?>/assets/images/mobileLogo.png">
         </a>
       </div>
     </div>
 
-    <div class="mobileNav l-mobileNav js-mobileNav">
-      <ul class="mobileNavList l-mobileNavList">
+    <div class="mobileNav l-mobileNav">
+      <ul class="mobileNavList l-mobileNavList  js-mobileNavList">
 
         <li class="mobileNavList__item l-tinyOnly">
           <a class="mobileNavList__link" href="#">Buy Tickets</a>
