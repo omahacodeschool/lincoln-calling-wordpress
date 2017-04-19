@@ -62,8 +62,8 @@
       </div>
     </div>
 
-    <div class="mobileNav l-mobileNav js-mobileNav">
-      <ul class="mobileNavList l-mobileNavList">
+    <div class="mobileNav l-mobileNav">
+      <ul class="mobileNavList l-mobileNavList js-mobileNavList">
 
         <li class="mobileNavList__item l-tinyOnly">
           <a class="mobileNavList__link" href="#">Buy Tickets</a>
