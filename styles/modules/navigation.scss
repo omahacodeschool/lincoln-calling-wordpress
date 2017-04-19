@@ -9,6 +9,7 @@
   left: 0;
   overflow: hidden;
   height: 0px;
+  transition: height 500ms ease-out;
 }
 
 .navSubList li{
@@ -52,7 +53,7 @@
 	background-color: $blue;
 }
 
-.navList__link:hover,
+.navList__item:hover,
 .navSubList{
   background-color: $green;
 }

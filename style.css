@@ -2638,7 +2638,7 @@ body, html {
   justify-content: space-between; }
 
 .navList__item:hover > .l-navSubList {
-  height: auto; }
+  height: 100%; }
 
 @media (min-width: 700px) {
   .l-widgets::after {
@@ -2939,7 +2939,8 @@ body, html {
   width: 100%;
   left: 0;
   overflow: hidden;
-  height: 0px; }
+  height: 0px;
+  transition: height 500ms ease-out; }
 
 .navSubList li {
   font-size: inherit; }
@@ -2991,7 +2992,7 @@ body, html {
 .navList {
   background-color: #21b0e6; }
 
-.navList__link:hover,
+.navList__item:hover,
 .navSubList {
   background-color: #25bcac; }
 
