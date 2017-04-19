@@ -74,6 +74,7 @@
 
 						<div class="modalSocialIcons l-modalSocialIcons l-posRelative">
 
+							
 							<a class="instagramLink" href=""><i class="fa fa-instagram modalIcon" aria-hidden="true"></i></a>
 
 							<a class="snapchatLink" href=""><i class="fa fa-snapchat-ghost modalIcon" aria-hidden="true"></i></a>

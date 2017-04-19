@@ -36,6 +36,7 @@ window.addEventListener("load", function(){
 
 // Functions!
 
+	// Detects the screen size to disable the modal on small screens.
 	function detectScreenSize(clickedElement){
 		var screenWidth = window.innerWidth;
 		if(screenWidth <= "700"){
@@ -56,14 +57,14 @@ window.addEventListener("load", function(){
 		prepForNextPrev(clickedElement);
 	}
 
+	// Fills artist image.
 	function fillImage(clickedElement){
-		// Fills artist image.
 		var artistImageURL = clickedElement.parentNode.dataset.artistFullImage;
 		artistImage.innerHTML = '<img src="' + artistImageURL + '">';
 	}
 
+	// Fills artist description.
 	function fillDescription(clickedElement){
-		// Fills artist description.
 		var siteLink = clickedElement.parentNode.dataset.artistSiteLink;
 		var siteText = clickedElement.parentNode.dataset.artistWebsiteName;
 		var fullLink = "<a href='" + siteLink + "' class='webLink'>" + siteText + "</a>";
@@ -71,26 +72,87 @@ window.addEventListener("load", function(){
 		artistSummary.innerHTML = fullLink + "<br>" + artistDescription;
 	}
 
+	// Fills artist name.
 	function fillHeader(clickedElement){
-		// Fills artist name.
 		var artistName = clickedElement.parentNode.dataset.artistName;
 		artistTitle.innerHTML = '<h1>' + artistName + '</h1>';
 	}
 
+	// Fills artist social icons.
 	function fillSocials(clickedElement){
-		// Fills artist social icons.
+
 		// Defining Artist socials
 		var artistInstagram = clickedElement.parentNode.dataset.artistInstagram;
 		var artistSnapchat = clickedElement.parentNode.dataset.artistSnapchat;
 		var artistFacebook = clickedElement.parentNode.dataset.artistFacebook;
 		var artistTwitter = clickedElement.parentNode.dataset.artistTwitter;
 		var artistSoundcloud = clickedElement.parentNode.dataset.artistSoundcloud;
+		
+		checkForEmptySocials(artistInstagram, artistSnapchat, artistFacebook, artistTwitter, artistSoundcloud);
+	}
 
-		instagram.href = artistInstagram;
-		snapchat.href = artistSnapchat;
-		facebook.href = artistFacebook;
-		twitter.href = artistTwitter;
-		soundcloud.href = artistSoundcloud;
+	// If social links are empty, the icon will not be displayed.
+	function checkForEmptySocials(artistInstagram, artistSnapchat, artistFacebook, artistTwitter, artistSoundcloud){
+		checkInstagram(artistInstagram);
+		checkSnapchat(artistSnapchat);
+		checkFacebook(artistFacebook);
+		checkTwitter(artistTwitter);
+		checkSoundcloud(artistSoundcloud);
+	}
+
+	// If instagram link is empty, do not display instagram icon.
+	function checkInstagram(artistInstagram){
+		if(artistInstagram === ""){
+			instagram.style.display = "none";
+		}
+		else {
+			instagram.style.display = "inline-block";
+			instagram.href = artistInstagram;
+		}
+	}
+
+	// If snapchat link is empty, do not display snapchat icon.
+	function checkSnapchat(artistSnapchat){
+		if(artistSnapchat === ""){
+			snapchat.style.display = "none";
+		}
+		else {
+			snapchat.style.display = "inline-block";
+			snapchat.href = artistSnapchat;
+		}
+	}
+
+	// If facebook link is empty, do not display facebook icon.
+	function checkFacebook(artistFacebook){
+		if(artistFacebook === ""){
+			facebook.style.display = "none";
+		}
+		else {
+			facebook.style.display = "inline-block";
+			facebook.href = artistFacebook;
+		}
+	}
+
+	// If twitter link is empty, do not display twitter icon.
+	function checkTwitter(artistTwitter){
+		if(artistTwitter === ""){
+			twitter.style.display = "none";
+		}
+		else {
+			twitter.style.display = "inline-block";
+			twitter.href = artistTwitter;
+		}
+	}
+
+	// If soundcloud link is empty, do not display soundcloud icon.
+	function checkSoundcloud(artistSoundcloud){
+		if(artistSoundcloud === ""){
+			soundcloud.style.display = "none";
+		}
+		else {
+			soundcloud.style.display = "inline-block";
+			soundcloud.href = artistSoundcloud;
+		}
 	}
 
 
@@ -102,7 +164,7 @@ window.addEventListener("load", function(){
 
 	
 
-
+	// Preparing Next and Previous buttons to work for the current modal.
 	function prepForNextPrev(clickedElement){
 
 		removeListenersNext(nextButton);
@@ -118,11 +180,13 @@ window.addEventListener("load", function(){
 		addButtonListeners(nextButton, prevButton, originalArtist);
 	}
 
+	// Adds event listeners to next/previous buttons.
 	function addButtonListeners(nextButton, prevButton, originalArtist){
 		nextButton.addEventListener("click", function(){ fillNextModal(originalArtist); });
 		prevButton.addEventListener("click", function(){ fillPrevModal(originalArtist); });
 	}
 
+	// Fills the modal when the user pushes "next".
 	function fillNextModal(originalArtist){
 
 		// Fills artist image.
@@ -143,11 +207,15 @@ window.addEventListener("load", function(){
 		// Sets new point of origin.
 		var newOriginal = originalArtist.nextSibling.nextSibling.childNodes[1];
 
+		// Refill socials with the correct ones for the "next" artist.
+		fillSocials(newOriginal);
+
 		// Prepares Next and Previous buttons in the modal.
 		prepForNextPrev(newOriginal);
 		
 	}
 
+	// Fills the modal when the user pushes "previous".
 	function fillPrevModal(originalArtist){
 		
 		// Fills artist image.
@@ -168,22 +236,29 @@ window.addEventListener("load", function(){
 		// Sets new point of origin.
 		var newOriginal = originalArtist.previousElementSibling.childNodes[1];
 
+		// Refill socials with the correct ones for the "previous" artist.
+		fillSocials(newOriginal);
+
 		// Prepares Next and Previous buttons in the modal.
 		prepForNextPrev(newOriginal);
 	}
 
+	// Removes all event listeners from the next button to prevent stacking.
 	function removeListenersNext(nextButton){
 		var nb = document.getElementsByClassName("nextButton")[0];
 		var nextClone = nb.cloneNode(true);
 		nb.parentNode.replaceChild(nextClone, nb);
 	}
 
+	// Removes all event listeners from the previous button to prevent stacking.
 	function removeListenersPrev(prevButton){
 		var pb = document.getElementsByClassName("prevButton")[0];
 		var prevClone = pb.cloneNode(true);
 		pb.parentNode.replaceChild(prevClone, pb);
 	}
 
+	// Checks to see if we are on the first or last artist, and hides the next
+	// or previous button if we are.
 	function checkFirstLast(nextButton, prevButton, clickedElement){
 
 		if(clickedElement.parentNode.previousElementSibling === null){
