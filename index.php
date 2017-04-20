@@ -38,7 +38,10 @@
         <?php endif ?>
          
           <small class="passOption__date">
-          <?php echo get_field('start_date')." "; echo get_field('end_date')?>
+          <?php echo get_field('start_date');
+          if ( !empty(get_field('end_date')) ){
+            echo " &ndash; ".get_field('end_date');
+          } ?>
           </small>  
           <a href="#"><h3 class="passOption__title">
           <?php the_title(); ?> &mdash; <?php echo '$'.get_field('price')?>
