@@ -87,6 +87,7 @@
 			    	<a class="slideShow__article" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		    		<?php endwhile;
 	    		endif;
+	    		wp_reset_postdata();
 				?>
 				</div>
 			</div>
