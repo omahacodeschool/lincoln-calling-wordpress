@@ -277,7 +277,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Article Image',
 				'name' => 'article_image',
 				'type' => 'image',
-				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title)',
+				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title) Resolution should be 1000px x 492px .',
 				'conditional_logic' => array (
 					'status' => 1,
 					'rules' => array (
