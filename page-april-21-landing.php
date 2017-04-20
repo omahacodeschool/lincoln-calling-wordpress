@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
   <div class="announcement">
-    <h2>A limited number of Early Bird tickets are available now! Get them while they last.</h2>
+    <h2><?php the_content(); ?></h2>
   </div>
 
-  <a href="#" class="buyNowButton l-fullWidth l-buyNow">
+  <a href="http://bit.ly/LC201701" class="buyNowButton l-fullWidth l-buyNow">
     <div class="condensed">Buy Now</div>
   </a>
 
@@ -42,7 +42,7 @@
             echo " &ndash; ".get_field('end_date');
           } ?>
           </small>  
-          <a href="#"><h3 class="passOption__title">
+          <a href="http://bit.ly/LC201701"><h3 class="passOption__title">
           <?php the_title(); ?> &mdash; <?php echo '$'.get_field('price')?>
           
           <?php if ( !empty(get_the_content()) ):?>
