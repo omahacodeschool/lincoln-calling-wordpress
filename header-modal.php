@@ -116,7 +116,7 @@
           <a class="mobileNavList__link" href="#">Fest Info</a>
         </li>
         <li class="mobileNavList__item">
-          <a class="mobileNavList__link" href="#">Newsletter <i class="fa fa-envelope-o newsletterMobileLink" aria-hidden="true"></i></a>
+          <a class="mobileNavList__link" href="http://eepurl.com/bR2kCr">Newsletter <i class="fa fa-envelope-o newsletterMobileLink" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
@@ -190,7 +190,7 @@
         <a class="navList__link" href="#">Fest Info</a>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
+        <a class="navList__link" href="http://eepurl.com/bR2kCr"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
       </li>
     </ul>
   </div>
