@@ -44,86 +44,93 @@
 </head>
 
 <body>
-<div class="mobileHead l-mobileHead l-mobileOnly">
-  <div class="mobileLeft l-mobileLeft">
 
-    <div class="mobileLeftTop l-mobileLeftTop">
+<?php
+date_default_timezone_set('America/Chicago');
+$currentDate = date('m/d/Y');
+$designatedDate = date('05/04/2017');
+if ($currentDate >= $designatedDate) { ?>
+  <div class="mobileHead l-mobileHead l-mobileOnly">
+    <div class="mobileLeft l-mobileLeft">
 
-      <div class="burger l-burger">
-        <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/burgerIcon.png">
+      <div class="mobileLeftTop l-mobileLeftTop">
+
+        <div class="burger l-burger">
+          <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/burgerIcon.png">
+        </div>
+
+        <div class="mobileLogo l-mobileLogo">
+          <a href="/">
+            <img src="<?php bloginfo("template_directory"); ?>/assets/images/mobileLogo.png">
+          </a>
+        </div>
       </div>
 
-      <div class="mobileLogo l-mobileLogo">
-        <a href="/">
-          <img src="<?php bloginfo("template_directory"); ?>/assets/images/mobileLogo.png">
-        </a>
+      <div class="mobileNav l-mobileNav">
+        <ul class="mobileNavList l-mobileNavList  js-mobileNavList">
+
+          <li class="mobileNavList__item l-tinyOnly">
+            <a class="mobileNavList__link" href="#">Buy Tickets</a>
+          </li>
+          
+          <li class="mobileNavList__item l-mobileNavList__item">
+
+            <a class="mobileNavList__link js-hasSubNav" href="">Lineup</a>
+
+            <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
+              <?php wp_list_categories( array (
+                'title_li' => '',
+                'orderby' => 'id',
+                'child_of' => get_cat_ID( 'lineup' ),
+                'hide_empty' => 0
+              ) ); ?>
+            </ul>
+          </li>
+          <li class="mobileNavList__item l-mobileNavList__item">
+            <a class="mobileNavList__link js-hasSubNav" href="">Get Involved</a>
+            <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
+              <?php 
+              $the_query = new WP_Query( array( 
+               'category_name' => 'get involved'
+              )); ?>
+
+              <?php if ( $the_query->have_posts() ) : ?>
+               <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+                 <li>
+                   <a href="<?php the_permalink(); ?>">
+                   <?php if (!empty( get_field('nav_title') )):
+                     the_field('nav_title');
+                   else:
+                     the_title();
+                   endif ?>
+                   </a>
+                 </li>
+
+               <?php endwhile; ?>
+               <?php wp_reset_postdata(); ?>
+              <?php endif; ?>
+            </ul>
+          </li>
+          <li class="mobileNavList__item">
+            <a class="mobileNavList__link" href="<?php echo get_site_url(); ?>/updates">Updates</a>
+          </li>
+          <li class="mobileNavList__item">
+            <a class="mobileNavList__link" href="#">Fest Info</a>
+          </li>
+          <li class="mobileNavList__item">
+            <a class="mobileNavList__link" href="#">Newsletter <i class="fa fa-envelope-o newsletterMobileLink" aria-hidden="true"></i></a>
+          </li>
+        </ul>
       </div>
+
     </div>
-
-    <div class="mobileNav l-mobileNav">
-      <ul class="mobileNavList l-mobileNavList  js-mobileNavList">
-
-        <li class="mobileNavList__item l-tinyOnly">
-          <a class="mobileNavList__link" href="#">Buy Tickets</a>
-        </li>
-        
-        <li class="mobileNavList__item l-mobileNavList__item">
-
-          <a class="mobileNavList__link js-hasSubNav" href="">Lineup</a>
-
-          <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
-            <?php wp_list_categories( array (
-              'title_li' => '',
-              'orderby' => 'id',
-              'child_of' => get_cat_ID( 'lineup' ),
-              'hide_empty' => 0
-            ) ); ?>
-          </ul>
-        </li>
-        <li class="mobileNavList__item l-mobileNavList__item">
-          <a class="mobileNavList__link js-hasSubNav" href="">Get Involved</a>
-          <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
-            <?php 
-            $the_query = new WP_Query( array( 
-             'category_name' => 'get involved'
-            )); ?>
-
-            <?php if ( $the_query->have_posts() ) : ?>
-             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-               <li>
-                 <a href="<?php the_permalink(); ?>">
-                 <?php if (!empty( get_field('nav_title') )):
-                   the_field('nav_title');
-                 else:
-                   the_title();
-                 endif ?>
-                 </a>
-               </li>
-
-             <?php endwhile; ?>
-             <?php wp_reset_postdata(); ?>
-            <?php endif; ?>
-          </ul>
-        </li>
-        <li class="mobileNavList__item">
-          <a class="mobileNavList__link" href="<?php echo get_site_url(); ?>/updates">Updates</a>
-        </li>
-        <li class="mobileNavList__item">
-          <a class="mobileNavList__link" href="#">Fest Info</a>
-        </li>
-        <li class="mobileNavList__item">
-          <a class="mobileNavList__link" href="#">Newsletter <i class="fa fa-envelope-o newsletterMobileLink" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
 
   <div class="mobileRight l-mobileRight">
     <a href="#">Buy Tickets</a>
   </div>
 </div>
+<?php } ?>
 
 <a href="<?php echo home_url(); ?>">
   <img class="desktop-hide" src="<?php bloginfo("template_directory"); ?>/assets/images/mobileheader.png">
@@ -137,6 +144,7 @@
     </a>
   </div>
 
+  <?php if ($currentDate >= $designatedDate) { ?>
   <div class="nav l-desktopOnly">
     <ul class="navList l-navList">
       <li class="navList__item">
@@ -191,3 +199,4 @@
       </li>
     </ul>
   </div>
+  <?php } ?>
