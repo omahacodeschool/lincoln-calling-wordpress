@@ -1,6 +1,6 @@
 <?php get_header( 'modal' ); ?>
 
-<h1 class="templateTitle l-templateTitle"><?php single_cat_title("Info - "); ?></h1>
+<h1 class="templateTitle l-templateTitle"><?php single_cat_title(); ?></h1>
 
 <p class="pageDescription"><?php echo strip_tags( category_description( $category_id ) ); ?></p>
 

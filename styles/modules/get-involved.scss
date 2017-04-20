@@ -8,10 +8,18 @@
 	font-family: $font-fam-SemiboldItalic;
 }
 
+.article__image{
+	margin-top: 60px;
+}
+
 .pageBody{
 	font-size: 1.62em;
 	line-height: 1.23em;
 	font-family: $font-fam;
+}
+
+.pageBody img{
+	padding: 40px 0px;
 }
 
 .author__avatar{

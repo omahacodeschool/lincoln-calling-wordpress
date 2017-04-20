@@ -28,7 +28,6 @@
         while ( have_posts() ) : the_post();
         ?>
 
-        <!-- Change class depending on status -->
         <?php if (get_field('status') == "Discounted"): ?>
         <li class="passOption passOption--forSale">
         <?php elseif (get_field('status') == "Sold Out"): ?>
@@ -38,12 +37,17 @@
         <?php endif ?>
          
           <small class="passOption__date">
-          <?php echo get_field('start_date')." "; echo get_field('end_date')?>
+          <?php echo get_field('start_date');
+          if ( !empty(get_field('end_date')) ){
+            echo " &ndash; ".get_field('end_date');
+          } ?>
           </small>  
           <a href="#"><h3 class="passOption__title">
           <?php the_title(); ?> &mdash; <?php echo '$'.get_field('price')?>
-             
-          <span class="passOption__note"><?php the_content() ?></span>
+          
+          <?php if ( !empty(get_the_content()) ):?>
+            <span class="passOption__note"><?php the_content() ?></span>
+          <?php endif ?>
              
           </h3></a>
         </li>

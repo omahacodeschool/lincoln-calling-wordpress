@@ -55,7 +55,7 @@
       <a href="https://www.instagram.com/lincolncalling_/">
         <i class="fa fa-instagram"></i>
       </a>
-      <a href="#">
+      <a href="https://www.snapchat.com/add/lincolncalling">
         <i class="fa fa-snapchat-ghost"></i>
       </a>
       <a href="https://www.facebook.com/LincolnCalling/">
@@ -64,7 +64,7 @@
       <a href="https://twitter.com/lincolncalling_?lang=en">
         <i class="fa fa-twitter"></i>
       </a>
-      <a href="#">
+      <a href="https://www.soundcloud.com/lincoln_calling">
         <i class="fa fa-soundcloud"></i>
       </a>
     </div>
@@ -96,7 +96,7 @@
   <a href="https://www.instagram.com/lincolncalling_/">
     <i class="fa fa-instagram"></i>
   </a>
-  <a href="#">
+  <a href="https://www.snapchat.com/add/lincolncalling">
     <i class="fa fa-snapchat-ghost"></i>
   </a>
   <a href="https://www.facebook.com/LincolnCalling/">
@@ -105,7 +105,7 @@
   <a href="https://twitter.com/lincolncalling_?lang=en">
     <i class="fa fa-twitter"></i>
   </a>
-  <a href="#">
+  <a href="https://www.soundcloud.com/lincoln_calling">
     <i class="fa fa-soundcloud"></i>
   </a>
 </div>

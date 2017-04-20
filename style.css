@@ -3496,10 +3496,16 @@ button.searchSubmit {
   letter-spacing: 1px;
   font-family: freightSansSemiboldItalic, sans-serif; }
 
+.article__image {
+  margin-top: 60px; }
+
 .pageBody {
   font-size: 1.62em;
   line-height: 1.23em;
   font-family: freightSansMedium, sans-serif; }
+
+.pageBody img {
+  padding: 40px 0px; }
 
 .author__avatar {
   width: 125px; }

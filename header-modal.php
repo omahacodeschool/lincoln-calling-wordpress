@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php 
   if ( is_single() ){
-    $excerpt = strip_tags( get_field('article_body') );
+    global $post;
+    $excerpt = strip_tags( $post->post_content );
     echo substr($excerpt, 0, 157).'...';
   }elseif ( is_category() && !empty( category_description() )){
     echo strip_tags( category_description() );
@@ -66,7 +67,7 @@
       <ul class="mobileNavList l-mobileNavList js-mobileNavList">
 
         <li class="mobileNavList__item l-tinyOnly">
-          <a class="mobileNavList__link" href="#">Buy Tickets</a>
+          <a class="mobileNavList__link" href="http://bit.ly/LC201701">Buy Tickets</a>
         </li>
         
         <li class="mobileNavList__item l-mobileNavList__item">
@@ -115,7 +116,7 @@
           <a class="mobileNavList__link" href="#">Fest Info</a>
         </li>
         <li class="mobileNavList__item">
-          <a class="mobileNavList__link" href="#">Newsletter <i class="fa fa-envelope-o newsletterMobileLink" aria-hidden="true"></i></a>
+          <a class="mobileNavList__link" href="http://eepurl.com/bR2kCr">Newsletter <i class="fa fa-envelope-o newsletterMobileLink" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
@@ -123,7 +124,7 @@
   </div>
 
   <div class="mobileRight l-mobileRight">
-    <a href="#">Buy Tickets</a>
+    <a href="http://bit.ly/LC201701">Buy Tickets</a>
   </div>
 </div>
 
@@ -142,7 +143,7 @@
   <div class="nav l-desktopOnly">
     <ul class="navList l-navList">
       <li class="navList__item">
-        <a class="navList__link" href="#">Buy Tickets</a>
+        <a class="navList__link" href="http://bit.ly/LC201701">Buy Tickets</a>
       </li>
       <li class="navList__item">
         <a class="navList__link" href="#">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
@@ -189,7 +190,7 @@
         <a class="navList__link" href="#">Fest Info</a>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
+        <a class="navList__link" href="http://eepurl.com/bR2kCr"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
       </li>
     </ul>
   </div>
