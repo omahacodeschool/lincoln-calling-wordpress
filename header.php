@@ -65,7 +65,7 @@
       <ul class="mobileNavList l-mobileNavList  js-mobileNavList">
 
         <li class="mobileNavList__item l-tinyOnly">
-          <a class="mobileNavList__link" href="#">Buy Tickets</a>
+          <a class="mobileNavList__link" href="http://bit.ly/LC201701">Buy Tickets</a>
         </li>
         
         <li class="mobileNavList__item l-mobileNavList__item">
@@ -122,7 +122,7 @@
   </div>
 
   <div class="mobileRight l-mobileRight">
-    <a href="#">Buy Tickets</a>
+    <a href="http://bit.ly/LC201701">Buy Tickets</a>
   </div>
 </div>
 
@@ -141,7 +141,7 @@
   <div class="nav l-desktopOnly">
     <ul class="navList l-navList">
       <li class="navList__item">
-        <a class="navList__link" href="#">Buy Tickets</a>
+        <a class="navList__link" href="http://bit.ly/LC201701">Buy Tickets</a>
       </li>
       <li class="navList__item">
         <a class="navList__link" href="#">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
