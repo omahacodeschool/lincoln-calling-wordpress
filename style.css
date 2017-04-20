@@ -3495,6 +3495,9 @@ button.searchSubmit {
   line-height: 1.23em;
   font-family: freightSansMedium, sans-serif; }
 
+.pageBody img {
+  padding: 40px 0px; }
+
 .author__avatar {
   width: 125px; }
 
