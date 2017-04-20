@@ -2,4 +2,7 @@
 
 <h1>This is the page.php file. It's for any page post_type.</h1>
 
+<?php global $post;
+echo "page-".$post->post_name.".php"; ?>
+
 <?php get_footer(); ?>

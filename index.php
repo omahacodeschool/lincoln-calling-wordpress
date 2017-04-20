@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?>
 
   <div class="announcement">
     <h2>A limited number of Early Bird tickets are available now! Get them while they last.</h2>
@@ -87,4 +87,4 @@
     <div class="condensed">Buy Now</div>
   </a>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> -->
