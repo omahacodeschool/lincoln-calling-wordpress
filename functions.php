@@ -269,25 +269,17 @@ if(function_exists("register_field_group"))
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => 'acf_basic-posts',
-		'title' => 'Basic posts',
+		'id' => 'acf_updates-posts',
+		'title' => 'Updates posts',
 		'fields' => array (
 			array (
 				'key' => 'field_58ee367170da6',
 				'label' => 'Article Image',
 				'name' => 'article_image',
 				'type' => 'image',
+				'required' => 1,
 				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title) Resolution should be 1000px x 492px .',
-				'conditional_logic' => array (
-					'status' => 1,
-					'rules' => array (
-						array (
-							'field' => 'null',
-							'operator' => '==',
-						),
-					),
-					'allorany' => 'all',
-				),
+				
 				'save_format' => 'object',
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
@@ -360,7 +352,7 @@ if(function_exists("register_field_group"))
 				'formatting' => 'br',
 			),
 			array (
-				'key' => 'field_58ee367170da6',
+				'key' => 'field_58ee367170da7',
 				'label' => 'Article Image',
 				'name' => 'article_image',
 				'type' => 'image',
@@ -380,7 +372,7 @@ if(function_exists("register_field_group"))
 				'library' => 'all',
 			),
 			array (
-				'key' => 'field_58f61ba46d428',
+				'key' => 'field_58f61ba46d430',
 				'label' => 'Article Image Link',
 				'name' => 'article_image_link',
 				'type' => 'text',

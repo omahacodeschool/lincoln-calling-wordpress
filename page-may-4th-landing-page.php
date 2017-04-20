@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 	<div class="featured l-featured">
 		<ul class="featuredArtists">
 			<li class="featuredItem">
@@ -57,25 +56,38 @@
 		<div class="widgets__youtube l-widgets__youtube"></div>
 		<div class="widgets__slideshow l-widgets__slideshow">
 			<div class="slideShow js-slideShow">
+				<?php // Set wp_query to ask for updates posts 
+				$args = array(
+					'posts_per_page'   => 5,
+					'category_name'    => 'updates',
+					'orderby'          => 'date',
+				);
+				query_posts( $args ); ?>
 				<div class="slideShowImages">
 					<div class="imageStrip js-imageStrip">
-						<img src="<?php bloginfo('template_directory'); ?>/assets/images/shredders.png"></img>
-						<img src="<?php bloginfo('template_directory'); ?>/assets/images/shredders.png"></img>
-						<img src="<?php bloginfo('template_directory'); ?>/assets/images/shredders.png"></img>
-						<img src="<?php bloginfo('template_directory'); ?>/assets/images/shredders.png"></img>
+						<?php if ( have_posts() ) :
+					        while ( have_posts() ) : the_post(); ?>
+					    	<img src="<?php echo get_field('article_image')['url']; ?>"></img>
+				    		<?php endwhile;
+			    		endif;
+						?>
 					</div>
 				</div>
 				<div class="slideShowControls">
-					<i class="slideShow__control fa fa-circle"></i>
-					<i class="slideShow__control fa fa-circle"></i>
-					<i class="slideShow__control fa fa-circle"></i>
-					<i class="slideShow__control fa fa-circle"></i>
+					<?php if ( have_posts() ) :
+				       while ( have_posts() ) : the_post(); ?> 
+					    <i class="slideShow__control fa fa-circle"></i>	
+			    		<?php endwhile;
+		    		endif;
+					?>
 				</div>
 				<div class="slideShowArticles">
-					<a class="slideShow__article" href="#">10 shredders at lincoln calling</a>
-					<a class="slideShow__article" href="#">Caulfield records' mcginn re-turns for lincoln calling workshop</a>
-					<a class="slideShow__article" href="#">volunteer for lincoln calling by september 26</a>
-					<a class="slideShow__article" href="#">six must-see comedians at lincoln calling</a>
+				<?php if ( have_posts() ) :
+			        while ( have_posts() ) : the_post(); ?>
+			    	<a class="slideShow__article" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		    		<?php endwhile;
+	    		endif;
+				?>
 				</div>
 			</div>
 		</div>
