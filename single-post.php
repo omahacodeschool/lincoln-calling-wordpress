@@ -14,13 +14,36 @@
 
 		<?php // Renders the post info
 		if ( have_posts() ) :
-		    while ( have_posts() ) : the_post();
-		    ?>
+		    while ( have_posts() ) : the_post(); ?>
 				<div class="article">
-				    <!-- Get Image -->
-				    <?php $image = get_field('article_image');
-				    if (!empty($image)):
+
+				    <?php // Get main image with/without link
+				    $image = get_field('article_image');
+				    $image_link = get_field("article_image_link");
+				    if (!empty($image) && !empty($image_link)):
 				    ?>
+						<a href="<?php echo $image_link; ?>">
+							<img 
+								class="article__image mobile-hide"
+								src="<?php echo $image['url']; ?>" 
+								alt="<?php $image['alt']; ?>"
+							/>
+						</a>
+				</div>
+			</div>
+		</div>
+		<a href="<?php echo $image_link; ?>">
+			<img 
+				class="article__image desktop-hide"
+				src="<?php echo $image['url']; ?>" 
+				alt="<?php $image['alt']; ?>"
+			/>
+		</a>
+		<div class="outerContainer">
+			<div class="templateBody">
+				<div class="article">
+
+					<?php elseif ( !empty($image) ): ?>
 						<img 
 							class="article__image mobile-hide"
 							src="<?php echo $image['url']; ?>" 
@@ -29,17 +52,16 @@
 				</div>
 			</div>
 		</div>
-
 		<img 
 			class="article__image desktop-hide"
 			src="<?php echo $image['url']; ?>" 
 			alt="<?php $image['alt']; ?>"
 		/>
-
 		<div class="outerContainer">
 			<div class="templateBody">
 				<div class="article">
 					<?php endif ?>
+
 					<!-- Get the post title -->
 					<h3 class='templateTitle article__title l-article__title'>
 						<?php the_title(); ?>

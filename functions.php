@@ -307,6 +307,19 @@ if(function_exists("register_field_group"))
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
 			),
+			array (
+				'key' => 'field_58f61ba46d428',
+				'label' => 'Article Image Link',
+				'name' => 'article_image_link',
+				'type' => 'text',
+				'instructions' => 'Enter a link for the main image',
+				'default_value' => '',
+				'placeholder' => 'http://example.com',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
 		),
 		'location' => array (
 			array (
@@ -381,7 +394,19 @@ if(function_exists("register_field_group"))
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
 			),
-
+			array (
+				'key' => 'field_58f61ba46d428',
+				'label' => 'Article Image Link',
+				'name' => 'article_image_link',
+				'type' => 'text',
+				'instructions' => 'Enter a link for the main image',
+				'default_value' => '',
+				'placeholder' => 'http://example.com',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
 		),
 		'location' => array (
 			array (
