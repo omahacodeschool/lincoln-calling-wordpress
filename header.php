@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php 
   if ( is_single() ){
-    $excerpt = strip_tags( get_field('article_body') );
+    global $post;
+    $excerpt = strip_tags( $post->post_content );
     echo substr($excerpt, 0, 157).'...';
   }elseif ( is_category() && !empty( category_description() )){
     echo strip_tags( category_description() );

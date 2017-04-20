@@ -288,19 +288,6 @@ if(function_exists("register_field_group"))
 		'title' => 'Basic posts',
 		'fields' => array (
 			array (
-				'key' => 'field_58ed4933ceb7d',
-				'label' => 'Article Body',
-				'name' => 'article_body',
-				'type' => 'textarea',
-				'instructions' => 'Write the meat of your post in here.',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => 'Body...',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
-			),
-			array (
 				'key' => 'field_58ee367170da6',
 				'label' => 'Article Image',
 				'name' => 'article_image',
@@ -354,8 +341,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Nav Title',
 				'name' => 'nav_title',
 				'type' => 'text',
-				'instructions' => 'Enter in a title for the nav-bar display. If left empty will use post title instead.',
-				'required' => 1,
+				'instructions' => 'Enter in a title for the nav-bar display. If left empty will use post title instead. (Will be displayed at the very top)',
 				'default_value' => '',
 				'placeholder' => '',
 				'prepend' => '',
@@ -369,22 +355,8 @@ if(function_exists("register_field_group"))
 				'name' => 'page_description',
 				'type' => 'textarea',
 				'instructions' => 'Enter a short description for the page.',
-				'required' => 1,
 				'default_value' => '',
 				'placeholder' => '',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
-			),
-			array (
-				'key' => 'field_58ed4933ceb7d',
-				'label' => 'Article Body',
-				'name' => 'article_body',
-				'type' => 'textarea',
-				'instructions' => 'Write the meat of your post in here.',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => 'Body...',
 				'maxlength' => '',
 				'rows' => '',
 				'formatting' => 'br',
@@ -512,10 +484,6 @@ function new_subcategory_hierarchy() {
 
 add_filter( 'category_template', 'new_subcategory_hierarchy' );
 
-add_action( 'init', 'my_remove_post_type_support', 999 );
-function my_remove_post_type_support() {
-    remove_post_type_support( 'post', 'editor' );
-}
 
 remove_filter('the_content', 'wpautop');
 

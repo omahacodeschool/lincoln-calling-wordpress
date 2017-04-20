@@ -50,7 +50,7 @@
 					</p>
 					<!-- Get the post body -->
 				    <p class='pageBody'>
-					    <?php echo get_field('article_body'); ?>	
+					    <?php the_content(); ?>	
 				    </p>
 			    </div>
 
