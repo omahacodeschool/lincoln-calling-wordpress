@@ -2418,6 +2418,9 @@ body, html {
 .clearFloat {
   clear: both; }
 
+.underlined {
+  text-decoration: underline; }
+
 .l-fullWidth {
   display: block;
   width: 100%; }
@@ -2940,7 +2943,7 @@ body, html {
   left: 0;
   overflow: hidden;
   height: 0px;
-  transition: height 500ms ease-out; }
+  transition: height 200ms ease-out; }
 
 .navSubList li {
   font-size: inherit; }
@@ -3044,6 +3047,9 @@ button.searchSubmit {
   letter-spacing: 2px;
   color: #999999;
   font-weight: 600; }
+
+.searchUL {
+  margin-top: 60px; }
 
 .imageContainer {
   height: 220px;
@@ -3566,7 +3572,7 @@ button.searchSubmit {
 .mobileNavSubList, .mobileNavList {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 400ms; }
+  transition: max-height 200ms; }
 
 .nav--extend {
   max-height: 2000px; }

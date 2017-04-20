@@ -3,14 +3,14 @@
       <div class="footerLinks l-footerLinks">
         <h4 class="footerLinks__title">LINEUP</h4>
         <ul>
-          <li><a href="#">Artists</a></li>
+          <li><a href="/category/lineup/music">Artists</a></li>
           <li><a href="#">Conference</a></li>
           <ul class="footerLinks__sublinks">
-            <li><a href="#">Yp Week</a></li>
-            <li><a href="#">Startup Week</a></li>
-            <li><a href="#">Fit Week</a></li>
+            <li><a href="/category/lineup/yp-week">Yp Week</a></li>
+            <li><a href="/category/lineup/startup-week">Startup Week</a></li>
+            <li><a href="/category/lineup/fit-week">Fit Week</a></li>
           </ul>
-          <li><a href="#">Night Market</a></li>
+          <li><a href="/category/lineup/night-market">Night Market</a></li>
           <li><a href="#">2016 Lineup</a></li>
         </ul>
       </div>
@@ -22,11 +22,11 @@
       <div class="footerLinks l-footerLinks">
         <h4 class="footerLinks__title">FEST INFO</h4>
         <ul>
-          <li><a href="#">Ticket Info</a></li>
+          <li><a href="/index">Ticket Info</a></li>
           <li><a href="#">Venues</a></li>
           <li><a href="#">Hotels</a></li>
           <li><a href="#">Map</a></li>
-          <li><a href="#">Sustainability</a></li>
+          <li><a href="/category/lineup/sustainability">Sustainability</a></li>
           <li><a href="#">Sponsors</a></li>
           <li><a href="#">Email Updates</a></li>
           <li><a href="#">About</a></li>
@@ -38,10 +38,10 @@
       <div class="footerLinks l-footerLinks">
         <h4 class="footerLinks__title">GET INVOLVED</h4>
         <ul>
-          <li><a href="#">Volunteer</a></li>
-          <li><a href="#">Perform</a></li>
-          <li><a href="#">Sponsor</a></li>
-          <li><a href="#">Media</a></li>
+          <li><a href="/get-involved/volunteer">Volunteer</a></li>
+          <li><a href="/get-involved/perform">Perform</a></li>
+          <li><a href="/get-involved/sponsor">Sponsor</a></li>
+          <li><a href="/get-involved/media">Media</a></li>
         </ul>
       </div>
     </div>

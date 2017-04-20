@@ -7,7 +7,7 @@
 	while ( have_posts() ) : the_post(); ?>
 
 	<li>
-		<a class="footerLinks__title l-block hr" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		<a class="footerLinks__title l-block hr underlined" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	</li>
 
 	<?php endwhile;

@@ -49,6 +49,18 @@ window.addEventListener("load", function(){
 			subNavs[i].classList.remove("nav--extend");
 		}
 	}
+
+	// -----------------------------------------------------
+	// var dontJump = document.getElementsByClassName("js-stopJump");
+	// debugger;
+	// for(var i = 0; i < dontJump.length; i++){
+	// 	dontJump[i].addEventListener("click", stopJumper);
+	// }
+
+	// function stopJumper(e){
+	// 	debugger;
+	// 	e.preventDefault();
+	// }
 });
 
 

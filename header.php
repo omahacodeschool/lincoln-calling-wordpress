@@ -69,7 +69,7 @@
         
         <li class="mobileNavList__item l-mobileNavList__item">
 
-          <a class="mobileNavList__link js-hasSubNav" href="#">Lineup</a>
+          <a class="mobileNavList__link js-hasSubNav" href="">Lineup</a>
 
           <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
             <?php wp_list_categories( array (
@@ -81,7 +81,7 @@
           </ul>
         </li>
         <li class="mobileNavList__item l-mobileNavList__item">
-          <a class="mobileNavList__link js-hasSubNav" href="#">Get Involved</a>
+          <a class="mobileNavList__link js-hasSubNav" href="">Get Involved</a>
           <ul class="mobileNavSubList l-mobileNavSubList js-mobileSubNav">
             <?php 
             $the_query = new WP_Query( array( 
@@ -143,7 +143,7 @@
         <a class="navList__link" href="#">Buy Tickets</a>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
+        <a class="navList__link js-stopJump" href="#">Lineup <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
         <ul class="navSubList l-navSubList">
           <?php wp_list_categories( array (
             'title_li' => '',
@@ -154,7 +154,7 @@
         </ul>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
+        <a class="navList__link js-stopJump" href="#">Get Involved <i class="fa fa-caret-down navDownArrow" aria-hidden="true"></i></a>
         <ul class="navSubList l-navSubList">
           <?php 
           $the_query = new WP_Query( array( 
@@ -184,7 +184,7 @@
         <a class="navList__link" href="<?php echo get_site_url(); ?>/updates">Updates</a>
       </li>
       <li class="navList__item">
-        <a class="navList__link" href="#">Fest Info</a>
+        <a class="navList__link" href="/fest-info">Fest Info</a>
       </li>
       <li class="navList__item">
         <a class="navList__link" href="#"><i class="fa fa-envelope-o newsletterLink" aria-hidden="true"></i>Newsletter</a>
