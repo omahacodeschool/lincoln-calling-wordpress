@@ -15,21 +15,6 @@ function create_ticket_type() {
   );
 }
 
-add_action( 'init', 'create_pagetemplate_type' );
-
-function create_pagetemplate_type() {
-  register_post_type( 'template',
-    array(
-      'labels' => array(
-        'name' => __( 'Template Page' ),
-        'singular_name' => __( 'Template' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );
-}
-
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -246,8 +231,8 @@ if(function_exists("register_field_group"))
 	'name' => 'start_date',
 	'type' => 'date_picker',
 	'required' => 1,
-	'date_format' => 'MM dd',
-	'display_format' => 'MM dd',
+	'date_format' => 'M d',
+	'display_format' => 'M d',
 	'first_day' => 1,
       ),
       array (
@@ -255,8 +240,8 @@ if(function_exists("register_field_group"))
 	'label' => 'End Date',
 	'name' => 'end_date',
 	'type' => 'date_picker',
-	'date_format' => 'MM dd',
-	'display_format' => 'MM dd',
+	'date_format' => 'M d',
+	'display_format' => 'M d',
 	'first_day' => 1,
       ),
     ),
@@ -288,24 +273,11 @@ if(function_exists("register_field_group"))
 		'title' => 'Basic posts',
 		'fields' => array (
 			array (
-				'key' => 'field_58ed4933ceb7d',
-				'label' => 'Article Body',
-				'name' => 'article_body',
-				'type' => 'textarea',
-				'instructions' => 'Write the meat of your post in here.',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => 'Body...',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
-			),
-			array (
 				'key' => 'field_58ee367170da6',
 				'label' => 'Article Image',
 				'name' => 'article_image',
 				'type' => 'image',
-				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title)',
+				'instructions' => 'Add an Optional Image to this post. (Will be displayed above the Article Title) Resolution should be 1000px x 492px .',
 				'conditional_logic' => array (
 					'status' => 1,
 					'rules' => array (
@@ -319,6 +291,19 @@ if(function_exists("register_field_group"))
 				'save_format' => 'object',
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
+			),
+			array (
+				'key' => 'field_58f61ba46d428',
+				'label' => 'Article Image Link',
+				'name' => 'article_image_link',
+				'type' => 'text',
+				'instructions' => 'Enter a link for the main image',
+				'default_value' => '',
+				'placeholder' => 'http://example.com',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
 			),
 		),
 		'location' => array (
@@ -354,8 +339,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Nav Title',
 				'name' => 'nav_title',
 				'type' => 'text',
-				'instructions' => 'Enter in a title for the nav-bar display. If left empty will use post title instead.',
-				'required' => 1,
+				'instructions' => 'Enter in a title for the nav-bar display. If left empty will use post title instead. (Will be displayed at the very top)',
 				'default_value' => '',
 				'placeholder' => '',
 				'prepend' => '',
@@ -369,22 +353,8 @@ if(function_exists("register_field_group"))
 				'name' => 'page_description',
 				'type' => 'textarea',
 				'instructions' => 'Enter a short description for the page.',
-				'required' => 1,
 				'default_value' => '',
 				'placeholder' => '',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
-			),
-			array (
-				'key' => 'field_58ed4933ceb7d',
-				'label' => 'Article Body',
-				'name' => 'article_body',
-				'type' => 'textarea',
-				'instructions' => 'Write the meat of your post in here.',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => 'Body...',
 				'maxlength' => '',
 				'rows' => '',
 				'formatting' => 'br',
@@ -409,7 +379,19 @@ if(function_exists("register_field_group"))
 				'preview_size' => 'thumbnail',
 				'library' => 'all',
 			),
-
+			array (
+				'key' => 'field_58f61ba46d428',
+				'label' => 'Article Image Link',
+				'name' => 'article_image_link',
+				'type' => 'text',
+				'instructions' => 'Enter a link for the main image',
+				'default_value' => '',
+				'placeholder' => 'http://example.com',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
 		),
 		'location' => array (
 			array (
@@ -512,10 +494,6 @@ function new_subcategory_hierarchy() {
 
 add_filter( 'category_template', 'new_subcategory_hierarchy' );
 
-add_action( 'init', 'my_remove_post_type_support', 999 );
-function my_remove_post_type_support() {
-    remove_post_type_support( 'post', 'editor' );
-}
 
 remove_filter('the_content', 'wpautop');
 
