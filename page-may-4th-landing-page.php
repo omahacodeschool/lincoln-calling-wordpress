@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+	<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/scripts/slideshow.js"></script>
 	<div class="featured l-featured">
 		<ul class="featuredArtists">
 			<li class="featuredItem">
@@ -44,7 +45,7 @@
 <div class="outerContainer">
 	<div class="buyTicketsDecor">
 		<div class="buyTicketsButton">
-			<a href="#">BUY TICKETS</a>
+			<a href="http://bit.ly/LC201701">BUY TICKETS</a>
 		</div>
 	</div>
 </div>
@@ -67,7 +68,11 @@
 					<div class="imageStrip js-imageStrip">
 						<?php if ( have_posts() ) :
 					        while ( have_posts() ) : the_post(); ?>
-					    	<img src="<?php echo get_field('article_image')['url']; ?>"></img>
+<!-- 
+					        	<div class="img" style="background-image:url('<?php echo get_field('article_image')['url']; ?>');"></div>
+					        	 -->
+						    	<img src="<?php echo get_field('article_image')['url']; ?>"></img>
+
 				    		<?php endwhile;
 			    		endif;
 						?>
