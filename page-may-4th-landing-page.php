@@ -54,7 +54,9 @@
 
 <div class="outerContainer">
 	<div class="widgets l-widgets">
-		<div class="widgets__youtube l-widgets__youtube"></div>
+		<div class="widgets__youtube l-widgets__youtube">
+			<?php echo do_shortcode( '[ytp_video source="81LseY89j9A"]' ); ?>
+		</div>
 		<div class="widgets__slideshow l-widgets__slideshow">
 			<div class="slideShow js-slideShow">
 				<?php // Set wp_query to ask for updates posts 
