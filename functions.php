@@ -123,25 +123,6 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_58eea0fa9f7b5',
-				'label' => 'Artist Summary',
-				'name' => 'artist_summary',
-				'type' => 'textarea',
-				'instructions' => 'Artist\'s website, city, day/time of performance, venue, summary',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => 'The artist\'s website link will be added here if it was provided.
-Artist City (optional)
-
-Day/Time (optional)
-Venue (optional)
-
-Summary (required)',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'br',
-			),
-			array (
 				'key' => 'field_58eeb42c46594',
 				'label' => 'Artist Website URL',
 				'name' => 'artist_website_url',

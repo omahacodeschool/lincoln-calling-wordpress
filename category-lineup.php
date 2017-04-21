@@ -16,7 +16,7 @@
 	data-artist-full-image="<?php echo get_field('artist_full_image'); ?>"
 	data-artist-site-link="<?php echo get_field('artist_website_url'); ?>"
 	data-artist-website-name="<?php echo get_field('artist_website_name'); ?>"
-	data-artist-description="<?php echo get_field( 'artist_summary' ); ?>"
+	data-artist-description="<?php the_content(); ?>"
 	data-artist-instagram="<?php echo get_field( 'artist_instagram' ); ?>"
 	data-artist-snapchat="<?php echo get_field( 'artist_snapchat' ); ?>"
 	data-artist-facebook="<?php echo get_field( 'artist_facebook' ); ?>"
