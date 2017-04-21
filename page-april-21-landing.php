@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
   <div class="announcement">
-    <h2><?php the_content(); ?></h2>
+    <h2><?php global $post;
+    echo $content = $post->post_content; ?></h2>
   </div>
 
   <a href="http://bit.ly/LC201701" class="buyNowButton l-fullWidth l-buyNow">
