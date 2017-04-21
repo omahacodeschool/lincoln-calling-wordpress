@@ -6,7 +6,8 @@ window.addEventListener("load", function(){
 	const links = document.getElementsByClassName("slideShowArticles")[0].children;
 
 	var widthOfContainer = container.offsetWidth;
-	var maxPos = widthOfContainer * imageStrip.children.length;
+	var numOfPics = imageStrip.children.length;
+	var maxPos = widthOfContainer * numOfPics;
 	var currentPos = 0;
 	var state = 0;
 	var slideshow;
@@ -60,7 +61,7 @@ window.addEventListener("load", function(){
 
 	// Checks the is the state doesn't exceed the max
 	function checkstate(){
-		if (state >= 4){ state = 0 };
+		if (state >= numOfPics){ state = 0 };
 	}
 
 	// Moves the image roll
