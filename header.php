@@ -14,6 +14,17 @@
     bloginfo('description');
   }?>"
   >
+  <meta property="og:description" content="<?php 
+  if ( is_single() ){
+    global $post;
+    $excerpt = strip_tags( $post->post_content );
+    echo substr($excerpt, 0, 157).'...';
+  }elseif ( is_category() && !empty( category_description() )){
+    echo strip_tags( category_description() );
+  }else{
+    bloginfo('description');
+  }?>"
+  >
   <meta property="og:image" content="<?php
   $image = get_field('article_image')['url']; 
   if ( is_single() && !empty($image)){
