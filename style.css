@@ -2856,7 +2856,8 @@ body, html {
     height: 316px;
     margin: 50px 0px; } }
 .hr {
-  text-align: center; }
+  text-align: center;
+  margin-top: 115px; }
 
 .hr .fa {
   font-size: 1.5em;
