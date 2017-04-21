@@ -1,5 +1,6 @@
-<?php get_header( 'modal' ); ?>
+<?php get_header(); ?>
 
+<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/scripts/modalScript.js"></script>
 <h1 class="templateTitle l-templateTitle"><?php single_cat_title(); ?></h1>
 
 <p class="pageDescription"><?php echo strip_tags( category_description( $category_id ) ); ?></p>
