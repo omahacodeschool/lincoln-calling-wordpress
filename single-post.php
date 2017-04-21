@@ -77,6 +77,7 @@
 			    </div>
 
 			    <!-- Get the author info -->
+			    <?php if (get_the_category()[0]->name != 'Get Involved'): ?>
 			    <div class="author l-author">
 					<div class="l-avatarWrapper">
 				    	<img 
@@ -97,6 +98,7 @@
 				  		<?php echo get_the_author_meta('user_email'); ?>.	
 			    	</p>
 			    </div>
+				<?php endif ?>
 
 
 		    <?php endwhile;
