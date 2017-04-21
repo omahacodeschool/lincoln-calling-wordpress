@@ -4,7 +4,7 @@
 	}
 	.l-widgets__youtube{
 		@include grid-column(12);
-		height: 380px;
+
 	}
 	.l-widgets__slideshow{
 		@include grid-column(8);
@@ -18,7 +18,7 @@
 
 @media(max-width: 700px){
 	.l-widgets__youtube{
-		height: 235px;
+
 	}
 
 	.l-widgets__spotify{
