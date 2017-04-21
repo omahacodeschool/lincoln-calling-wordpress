@@ -1,5 +1,6 @@
-<?php get_header( 'modal' ); ?>
+<?php get_header(); ?>
 
+<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/scripts/modalScript.js"></script>
 <h1 class="templateTitle l-templateTitle"><?php single_cat_title(); ?></h1>
 
 <p class="pageDescription"><?php echo strip_tags( category_description( $category_id ) ); ?></p>
@@ -16,7 +17,7 @@
 	data-artist-full-image="<?php echo get_field('artist_full_image'); ?>"
 	data-artist-site-link="<?php echo get_field('artist_website_url'); ?>"
 	data-artist-website-name="<?php echo get_field('artist_website_name'); ?>"
-	data-artist-description="<?php echo get_field( 'artist_summary' ); ?>"
+	data-artist-description="<?php the_content(); ?>"
 	data-artist-instagram="<?php echo get_field( 'artist_instagram' ); ?>"
 	data-artist-snapchat="<?php echo get_field( 'artist_snapchat' ); ?>"
 	data-artist-facebook="<?php echo get_field( 'artist_facebook' ); ?>"

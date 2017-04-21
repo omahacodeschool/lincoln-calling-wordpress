@@ -2856,7 +2856,8 @@ body, html {
     height: 316px;
     margin: 50px 0px; } }
 .hr {
-  text-align: center; }
+  text-align: center;
+  margin-top: 115px; }
 
 .hr .fa {
   font-size: 1.5em;
@@ -3421,6 +3422,9 @@ button.searchSubmit {
   height: 250px;
   transition: right 300ms; }
 
+.imageStrip img {
+  min-width: 633.32px; }
+
 .slideShowControls {
   text-align: center;
   padding: 16px 0px; }
@@ -3454,7 +3458,7 @@ button.searchSubmit {
   background-color: #808080; }
 
 .widgets__slideshow {
-  background-color: #25bcac; }
+  background-color: #21b0e6; }
 
 @media (max-width: 700px) {
   .widgets__slideshow {
