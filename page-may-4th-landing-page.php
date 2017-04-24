@@ -55,7 +55,12 @@
 <div class="outerContainer">
 	<div class="widgets l-widgets">
 		<div class="widgets__youtube l-widgets__youtube">
-			<?php echo do_shortcode( '[ytp_video source="81LseY89j9A"]' ); ?>
+			<?php if ( have_posts() ) :
+		        while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
+	    		<?php endwhile;
+    		endif;
+			?>
 		</div>
 		<div class="widgets__slideshow l-widgets__slideshow">
 			<div class="slideShow js-slideShow">
@@ -94,12 +99,21 @@
 			    	<a class="slideShow__article" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		    		<?php endwhile;
 	    		endif;
-	    		wp_reset_postdata();
+	    		wp_reset_query();
 				?>
 				</div>
 			</div>
 		</div>
-		<div class="widgets__spotify l-widgets__spotify"></div>
+		<div class="widgets__spotify l-widgets__spotify">
+			<?php if ( have_posts() ) :
+		        while ( have_posts() ) : the_post(); ?>			
+
+		        <?php the_field("spotify"); ?>
+
+	    		<?php endwhile;
+    		endif;
+			?>
+		</div>
 	</div>
 
 <?php get_footer(); ?>

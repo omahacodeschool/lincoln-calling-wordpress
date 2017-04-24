@@ -13,8 +13,7 @@
 	    </div>
 	</div>
 
-<?php endwhile; else : ?>
-	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endwhile; ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>
