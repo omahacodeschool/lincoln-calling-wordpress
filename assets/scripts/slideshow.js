@@ -5,7 +5,7 @@ window.addEventListener("load", function(){
 	const controls = document.getElementsByClassName("slideShowControls")[0].children;
 	const links = document.getElementsByClassName("slideShowArticles")[0].children;
 
-	var widthOfContainer = container.offsetWidth;
+	var widthOfContainer = parseFloat( window.getComputedStyle(container, null).width, 10);
 	var numOfPics = imageStrip.children.length;
 	var maxPos = widthOfContainer * numOfPics;
 	var currentPos = 0;
