@@ -3425,7 +3425,7 @@ button.searchSubmit {
   transition: right 300ms; }
 
 .imageStrip img {
-  min-width: 633.32px; }
+  min-width: 100%; }
 
 .slideShowControls {
   text-align: center;
