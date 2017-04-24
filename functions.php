@@ -443,6 +443,44 @@ if(function_exists("register_field_group"))
 	));
 }
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_shortcode',
+		'title' => 'shortcode',
+		'fields' => array (
+			array (
+				'key' => 'field_58fa54c0bf02f',
+				'label' => 'Spofity Shortcode',
+				'name' => 'spotify',
+				'type' => 'wysiwyg',
+				'instructions' => 'Enter the shortcode for the youtube plugin here.',
+				'required' => 1,
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page',
+					'operator' => '==',
+					'value' => '176',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
 
 // Makes children categories use parents template
 function new_subcategory_hierarchy() { 
