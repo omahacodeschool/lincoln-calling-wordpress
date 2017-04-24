@@ -14,6 +14,18 @@
 		margin-bottom: 30px;
 	}
 
+	.l-featuredItem {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.l-cornerImages {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
 	.l-inline-block{
 		display: inline-block;
 	}

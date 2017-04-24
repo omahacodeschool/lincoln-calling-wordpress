@@ -1,0 +1,17 @@
+.instagramWidget {
+	color: $white;
+	font-size: 1.7em;
+	font-family: $font-fam;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fa-instagram.instagramWidgetIcon {
+	font-size: 1.3em;
+}
+
+.instagramPlaceholder {
+	background-color: $white;
+}

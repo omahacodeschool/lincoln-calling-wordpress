@@ -2,18 +2,24 @@
 
 	<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/assets/scripts/slideshow.js"></script>
 	<div class="featured l-featured">
+
+		<div class="l-cornerImages">
+			<img class="corner-top-left mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
+			<img class="corner-top-right mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
+		</div>
+
 		<ul class="featuredArtists">
-			<li class="featuredItem">
+			<li class="featuredItem l-featuredItem">
 				<p class="featured__artist l-inline-block">Real estate</p>
 				<i class="fa fa-circle"></i>
 				<p class="featured__artist l-inline-block">cloud nothings</p>
 			</li>
-			<li class="featuredItem">
+			<li class="featuredItem l-featuredItem">
 				<p class="featured__artist l-inline-block">Domo genesis</p>
 				<i class="fa fa-circle"></i>
 				<p class="featured__artist l-inline-block">The mynabirds</p>
 			</li>
-			<li class="featuredItem">
+			<li class="featuredItem l-featuredItem">
 				<p class="featured__artist l-inline-block">David bowie</p>
 				<i class="fa fa-circle"></i>
 				<p class="featured__artist l-inline-block">frank ocean</p>
@@ -21,22 +27,24 @@
 		</ul>
 		<hr class="featuredDivider">
 		<ul class="featuredArticles">
-			<li class="featuredItem">
+			<li class="featuredItem l-featuredItem">
 				<p class="featured__article l-inline-block">Innovation</p>
 				<i class="fa fa-circle"></i>
 				<p class="featured__article l-inline-block">Night Market</p>
 			</li>
-			<li class="featuredItem">
+			<li class="featuredItem l-featuredItem">
 				<p class="featured__article l-inline-block">Workshops</p>
 				<i class="fa fa-circle"></i>
 				<p class="featured__article l-inline-block">Yp week</p>
 			</li>
 		</ul>
 		<a class="featuredFullLink l-block" href="#">SEE FUll lineup</a>
-		<img class="corner-top-left l-pos-top-left mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
-		<img class="corner-top-right l-pos-top-right mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
-		<img class="corner-bottom-left l-pos-bottom-left mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
-		<img class="corner-bottom-right l-pos-bottom-right mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
+
+		<div class="l-cornerImages">
+			<img class="corner-bottom-left mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
+			<img class="corner-bottom-right mobile-hide" src="<?php bloginfo('template_directory'); ?>/assets/images/corner.png">
+		</div>
+
 	</div>
 </div>
 
@@ -99,5 +107,18 @@
 		</div>
 		<div class="widgets__spotify l-widgets__spotify"></div>
 	</div>
+
+</div>
+
+<div class="instagramWidget l-instagramWidget">
+	<div class="instagramText l-instagramText">
+		<span><i class="fa fa-instagram instagramWidgetIcon l-instagramWidgetIcon" aria-hidden="true"></i>@LincolnCalling</span>
+	</div>
+
+	<div class="instagramPlaceholder l-instagramPlaceholder">
+	</div>
+</div>
+
+<div class="outerContainer">
 
 <?php get_footer(); ?>

@@ -36,13 +36,14 @@
 
 @media(min-width: 700px){
 	.featured{
-		font-size: 48px;
+		font-size: 54px;
+		line-height: 64px;
 		@include header-bold-blue;
 	}
 
 	.featuredDivider{
 		border-color: $green;
-		margin: 40px 70px;
+		margin: 30px 70px;
 	}
 
 	.featuredItem{
@@ -50,13 +51,13 @@
 	}
 
 	.featured .fa-circle{
-		font-size: 16px;
-		padding: 0px 8px;
+		font-size: 25px;
+		padding: 15px 25px 0px;
 	}
 
 	.featuredFullLink{
-		font-size: 18px;
-		padding-top: 30px;
+		font-size: 24px;
+		padding-top: 10px;
 	}
 
 	.featuredArtists .fa-circle,
@@ -80,7 +81,7 @@
 	.corner-top-right,
 	.corner-bottom-left,
 	.corner-bottom-right{
-		width: 80px; 
-		height: 80px;
+		width: 90px; 
+		height: 90px;
 	}
 }
