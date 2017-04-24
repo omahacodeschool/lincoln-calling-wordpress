@@ -75,11 +75,7 @@
 					<div class="imageStrip js-imageStrip">
 						<?php if ( have_posts() ) :
 					        while ( have_posts() ) : the_post(); ?>
-<!-- 
-					        	<div class="img" style="background-image:url('<?php echo get_field('article_image')['url']; ?>');"></div>
-					        	 -->
 						    	<img src="<?php echo get_field('article_image')['url']; ?>"></img>
-
 				    		<?php endwhile;
 			    		endif;
 						?>

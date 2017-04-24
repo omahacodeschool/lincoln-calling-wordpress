@@ -14,13 +14,13 @@
 		@include grid-column(4);
 		height: 535px;
 	}
+
+	.l-widgets__spotify iframe{
+		height: 100%;
+	}
 }
 
 @media(max-width: 700px){
-	.l-widgets__youtube{
-
-	}
-
 	.l-widgets__spotify{
 		height: 250px;
 	}
@@ -29,5 +29,9 @@
 	.l-widgets__slideshow,
 	.l-widgets__spotify{
 		width: 100%;
+	}
+
+	.l-widgets__spotify iframe{
+		height: 280px;
 	}
 }

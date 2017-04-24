@@ -2664,7 +2664,10 @@ body, html {
     width: calc(33.33333% - 26.66667px);
     float: left;
     margin-left: 20px;
-    height: 535px; } }
+    height: 535px; }
+
+  .l-widgets__spotify iframe {
+    height: 100%; } }
 @media (max-width: 700px) {
   .l-widgets__spotify {
     height: 250px; }
@@ -2672,7 +2675,10 @@ body, html {
   .l-widgets__youtube,
   .l-widgets__slideshow,
   .l-widgets__spotify {
-    width: 100%; } }
+    width: 100%; }
+
+  .l-widgets__spotify iframe {
+    height: 280px; } }
 .ticketsGraphic {
   float: right;
   margin: 20px 0px 0px 0px; }
@@ -3447,11 +3453,7 @@ button.searchSubmit {
   padding: 50px 0px; }
 
 .widgets__youtube {
-  margin-bottom: 70px;
-  background-color: #21b0e6; }
-
-.widgets__spotify {
-  background-color: #808080; }
+  margin-bottom: 70px; }
 
 .widgets__slideshow {
   background-color: #21b0e6; }
